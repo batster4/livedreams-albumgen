@@ -10,6 +10,8 @@ The only thing you add is your API key.
 - **[AGENT.md](AGENT.md)**: the short instruction for an AI agent that runs albumgen. Give it to your agent.
 - **[PROMPT_GUIDE.md](PROMPT_GUIDE.md)** + **[POSES.md](POSES.md)**: how to write album prompts by hand (every rule
   albumgen applies) and the proven wording of every pose. Reference, or for an agent that writes its own prompts.
+- **[CANVAS_GUIDE.md](CANVAS_GUIDE.md)**: a standalone guide to prompting `canvas` directly through the API, without
+  albumgen: how the model behaves, best and worst practices, poses, faces, fixing defects.
 - **[examples/](examples)**: two generated albums (requests + story), to see the format before installing.
 
 ## Quick start

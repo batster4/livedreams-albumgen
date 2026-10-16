@@ -212,7 +212,8 @@ Look at every page at full size. Fix by cause:
 
 | You see | Do |
 |---|---|
-| a clothed scene instead of the act, or a block although the prompt is clean | send the same prompt again with a new Idempotency-Key |
+| a clothed scene instead of the act | send the same prompt again with a new Idempotency-Key |
+| `content_rejected` | never resend it unchanged: replace the one word that could read off-policy (section 11) once; refused again → a different page |
 | a smile, grin or laugh during sex | use a sex face from section 6; remove every smile and lip-biting word |
 | a pained or frightened face | use a pleasure face; remove brow, frown and wide-eye words |
 | panties or clothes back on | name where the clothes lie and list the bare body parts; a kiss: chest-up camera |
