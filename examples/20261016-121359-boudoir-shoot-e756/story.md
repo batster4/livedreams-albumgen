@@ -1,0 +1,126 @@
+# Boudoir shoot
+
+*A boudoir photoshoot where the photographer puts the camera down, seen through his eyes.*
+
+- Album: `20261016-121359-boudoir-shoot-e756` · theme `boudoir_shoot` (pov) · arc `photoshoot` · shot 1: solo
+- Her: 41, Arab, long straight dark brown hair falling past her shoulders, athletic, toned figure with medium breasts and a firm round butt, a small rose tattoo on her shoulder
+- Him: He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin.
+- Place: a photo studio · light: bright studio light
+- Outfits: she wears a black satin chemise with lace trim; he wears a plain dark grey t-shirt, long dark blue jeans and black sneakers
+
+| Shot | Slot | Position | Status | She / He | Beat | Made by |
+|---|---|---|---|---|---|---|
+| 1 | reference | solo shot 1 | — | outfit | A boudoir photoshoot where the photographer puts the camera down, seen through his eyes. | template |
+| 2 | intro | `boudoir_shoot__open0` | ok | outfit / clothed |  | recipe |
+| 3 | solo | `solo_seated_side_legs` | strong | partial / absent |  | recipe |
+| 4 | tease | `undress_mechanics` | ok | underwear / absent |  | recipe |
+| 5 | solo | `solo_touching` | ok | underwear / absent |  | recipe |
+| 6 | solo | `solo_kneel_hands_behind_head` | strong | topless / absent |  | recipe |
+| 7 | solo | `solo_lying_top_down` | strong | nude / absent |  | recipe |
+| 8 | tease | `tease_pov_from_chair` | strong | nude / clothed |  | recipe |
+| 9 | oral | `handjob` | weak | nude / nude |  | recipe |
+| 10 | oral | `oral_pov_kneeling_steep` | ok | nude / nude |  | recipe |
+| 11 | sex | `doggy_pov_kneeling` | ok | nude / nude |  | recipe |
+| 12 | sex | `cowgirl_lean_forward_pov` | ok | nude / nude |  | recipe |
+| 13 | sex | `missionary_pov` | strong | nude / nude |  | recipe |
+| 14 | sex | `feet_on_chest_pov` | ok | nude / nude |  | recipe |
+| 15 | climax | `cumshot_breasts_kneeling` | strong | nude / nude |  | recipe |
+| 16 | outro | `afterglow_top_down` | ok | nude / absent |  | recipe |
+
+## Prompts
+
+### Shot 1 · qwen-image-3
+
+```text
+A full-body vertical photograph of one adult woman alone in a photo studio. She is 41 years old and Arab, with olive skin, long straight dark brown hair falling past her shoulders, brown eyes, defined brows and smoky eye makeup and nude lips. She has a small rose tattoo on her shoulder. She has an athletic, toned figure with medium breasts and a firm round butt. She wears a black satin chemise with lace trim, barefoot. She sits on a stool against the white paper backdrop in lingerie, softboxes on either side, looking into the camera with a confident, sultry look. Her whole face is clearly visible and evenly lit. The camera is at her eye level, about two metres away, 50 mm lens, her whole body in frame, natural adult proportions. Bright studio light, a little stronger from the front left, with soft natural shadows; a white paper backdrop, softbox lights and a stool around her. Unretouched realistic photo, natural skin texture with visible pores. No text, no logos, no watermark. She is the only person in the photo.
+```
+
+### Shot 2 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: first-person point-of-view shot from his eyes at standing height, her whole body in frame, she looks into the camera. She wears a black satin chemise with lace trim, barefoot. She lies on the floor on the white paper, propped on her elbows, beckoning the camera closer. She gives him a slow, flirtatious look, her lips slightly parted. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 3 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: three-quarter front view at the height of her face, about two metres away, her whole seated body in frame. She is alone in this shot. Her chemise is off; she still wears the black thong, barefoot. She sits with her legs folded to one side, leaning on her straight left arm, her right hand on her thigh, with a soft, inviting look. She looks into the camera with heavy-lidded, sultry eyes. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 4 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: three-quarter front view at chest height, her whole kneeling body in frame. She is alone in this shot. She is in only the black thong; the chemise is off, barefoot. She kneels on the blanket, both thumbs hooked into the sides of her underwear, slowly sliding it down her hips. She looks into the camera with heavy-lidded, sultry eyes. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 5 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: front view at chest height, her whole reclining body in frame. She is alone in this shot. She is in only the black thong; the chemise is off, barefoot. She reclines against the blanket, knees apart, her right hand resting between her thighs, her left hand on her breast, eyes nearly closed. She looks into the camera with heavy-lidded, sultry eyes. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 6 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: front view at chest height, about two metres away, her whole kneeling body in frame. She is alone in this shot. She is topless, barefoot, wearing only the black thong; the chemise is off. She kneels on the blanket, both hands behind her head, elbows out, a confident, smouldering look into the camera. She looks into the camera with heavy-lidded, sultry eyes. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 7 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: high angle from directly above, her body from the top of her head to her knees. She is alone in this shot. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts and body bare. She lies on her back on the blanket, arms over her head resting on the blanket, legs together, looking up into the camera. She looks into the camera with heavy-lidded, sultry eyes. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 8 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: point-of-view shot from the eyes of a man seated on a chair, her body from the top of her head to her knees in frame. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts and body bare. She stands in front of him, weight on one leg, both hands on her hips, a slow, seductive look with heavy-lidded eyes. She looks into the camera with heavy-lidded, sultry eyes. He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin. He is dressed in a plain dark grey t-shirt, long dark blue jeans and black sneakers. He is seated; only his knees are visible at the bottom edge of the frame. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 9 · canvas
+
+```text
+Handjob, kneeling. The woman is the woman from the reference photo: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera: three-quarter view from her front right at the height of her face, her whole kneeling body and his lower body in frame, the top edge of the frame at his chest. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts and body bare. She kneels upright facing him, her left hand resting on her own thigh, looking up at him with heavy-lidded eyes. Handjob: her right hand is wrapped around the middle of his erect penis, stroking it; the head of his penis shows above her fist, a hand's width from her face. She looks up with hungry, heavy-lidded eyes. He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin. He is fully nude, with a smooth chest and lightly hairy legs. He stands on the right of the photo facing her, his left arm at his side; the top edge of the frame cuts him at the chest, his head and shoulders above the frame. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 10 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: steep high-angle point-of-view shot from the eyes of a standing man, looking straight down at her, her whole kneeling body visible below. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts and body bare. Her look shows what happened: her hair messy and tangled, her makeup slightly smudged, her skin flushed and glistening with sweat. She kneels on the floor, both hands resting on her thighs, looking up into the camera. Oral sex: the head and half of his erect penis are inside her mouth, her lips wrapped tightly around the shaft. She looks up with hungry, heavy-lidded eyes. He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin. He is fully nude. Only his lower stomach and the base of his erect penis are visible at the top of the frame. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 11 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: first-person point-of-view shot from the eyes of a man kneeling upright on the blanket behind her, looking straight down at her lower back and buttocks, her face turned back toward the camera. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts, waist, hips, vulva and buttocks fully bare. Her look shows what happened: her hair messy and tangled, her makeup slightly smudged, her skin flushed and glistening with sweat. She is on all fours on the blanket, knees apart, back arched, looking back over her shoulder into the camera. Doggy-style sex: he kneels upright directly behind her, his thighs against the backs of her thighs, his hips pressed against her bare buttocks, and his erect penis is deep inside her vagina, its base hidden between her buttocks. Her eyes are half-closed and her lips parted in a moan of pleasure. He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin. He is fully nude. Only his lower stomach, the base of his penis and both his hands gripping her hips are visible at the bottom of the frame. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 12 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: low-angle point-of-view shot from the eyes of a man lying on his back, her face and breasts close above the camera. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts, waist, hips, vulva and buttocks fully bare. Her look shows what happened: her hair messy and tangled, her makeup slightly smudged, her skin flushed and glistening with sweat. She leans forward over him, her knees on the blanket on either side of his hips, both hands on the blanket beside his head, her face close above the camera. Vaginal sex in the cowgirl position: his erect penis is deep inside her vagina. Her eyes are half-closed and her lips parted in a moan of pleasure. He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin. He is fully nude. He lies on his back under her; only his chest and his hands on her waist are visible at the bottom of the frame, his head below the bottom edge of the frame. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 13 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: point-of-view shot from the eyes of a man kneeling between her legs, looking down along her body to her face. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts, waist, hips, vulva and buttocks fully bare. Her look shows what happened: her hair messy and tangled, her makeup slightly smudged, her skin flushed and glistening with sweat. She lies on her back, head on the blanket, legs spread and bent at the knees, both hands beside her head. Missionary sex: his erect penis is deep inside her vagina. Her eyes are half-closed and her lips parted in a moan of pleasure. He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin. He is fully nude. Only his lower stomach, his penis inside her and both his hands holding her knees are visible at the bottom of the frame. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 14 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: point-of-view shot from the eyes of a man kneeling between her legs, looking down along her raised legs to her face, her bare soles close to the camera. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts, waist, hips, vulva and buttocks fully bare. Her look shows what happened: her hair messy and tangled, her makeup slightly smudged, her skin flushed and glistening with sweat. She lies on her back on the blanket, both legs raised, the soles of both bare feet resting flat on his chest close to the camera, her hands gripping the blanket. Vaginal sex: his erect penis is deep inside her vagina. Her eyes are half-closed and her lips parted in a moan of pleasure. He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin. He is fully nude. Only his chest, his stomach, the base of his penis and his hands holding her ankles are visible. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 15 · canvas
+
+```text
+The reference photo shows only the woman. Keep her exactly as in the reference: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera, pose and clothing follow the text below. Camera: three-quarter view from her front left at chest height, her whole kneeling body and his body in frame. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts and body bare. Her look shows what happened: her hair messy and tangled, her makeup slightly smudged, her skin flushed and glistening with sweat. She kneels upright on the floor, both hands resting on her thighs, her chest pushed forward, looking up at him. He has just pulled out: his erect penis is outside her body, held near her breasts, and thick strands of white semen lie across her breasts and drip down her cleavage. She looks up with dazed, heavy-lidded, satisfied eyes. He is a separate adult man in his late twenties with a stocky, strong build and medium-brown skin. He is fully nude, with a smooth chest and lightly hairy legs. He stands on the left of the photo facing her, his left arm at his side, shown from the chest down, his head outside the frame. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```
+
+### Shot 16 · canvas
+
+```text
+Afterglow: she lies exhausted on her back on the blanket after sex. The woman is the woman from the reference photo: the same face, long straight dark brown hair falling past her shoulders, olive skin, a small rose tattoo on her shoulder, athletic, toned figure with medium breasts and a firm round butt and smoky eye makeup; she is 41 years old. Camera: high angle from directly above, her body from the top of her head to her knees. She is alone in this shot. She is completely naked and barefoot: her chemise and black thong lie on the floor nearby, her breasts and body bare. Her look shows what happened: her hair messy and tangled, her makeup slightly smudged, her skin flushed and glistening with sweat. White semen from earlier still glistens on her breasts. She lies on her back on the blanket, one arm thrown over her head, legs loosely apart. She looks into the camera with tired, satisfied, heavy-lidded eyes. Same photo studio and bright studio light; unretouched realistic photo, natural skin texture.
+```

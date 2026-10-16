@@ -1,0 +1,132 @@
+# Locations. `phrase` goes into shot 1 ("... in {phrase}") and the tail ("Same {tail} and {light}").
+# `props`: 2-3 background objects for shot 1. status: strong | ok | weak | avoid (for canvas 2:3 albums).
+# Notes on the model: large rooms with a bed, sofa, floor or table work best; tight spaces (car interiors,
+# shower cabins, closets), mirrors and window glass behind her face are weak.
+
+home:
+  - {id: living_room_sofa, phrase: "a cosy modern living room", tail: "living room", props: "a grey fabric sofa, a floor lamp and a low coffee table", light: "warm evening lamp light", status: strong}
+  - {id: home_kitchen, phrase: "a bright modern kitchen", tail: "kitchen", props: "a marble kitchen island, bar stools and pendant lights", light: "soft daylight from the window", status: strong}
+  - {id: master_bedroom, phrase: "a modern master bedroom", tail: "bedroom", props: "a large bed with white sheets, bedside lamps and linen curtains", light: "warm ambient light", status: strong}
+  - {id: loft_bedroom, phrase: "a bright loft bedroom", tail: "loft bedroom", props: "a low bed with white sheets, a large industrial window and a potted plant", light: "soft daylight", status: strong}
+  - {id: city_bedroom_night, phrase: "a modern bedroom in a city apartment at night", tail: "bedroom", props: "a large bed, a bedside lamp and city lights through the window", light: "warm lamp light", status: strong}
+  - {id: guest_bedroom, phrase: "a cosy guest bedroom", tail: "guest bedroom", props: "a double bed with a patterned quilt, a wooden dresser and a reading lamp", light: "warm lamp light", status: strong}
+  - {id: home_office, phrase: "a home office", tail: "home office", props: "a wooden desk, a leather office chair and bookshelves", light: "soft daylight", status: strong}
+  - {id: laundry_room, phrase: "a bright laundry room", tail: "laundry room", props: "a front-loading washing machine, a dryer and a folding counter", light: "bright daylight", status: ok, notes: "stuck-in-the-dryer setup and sex on the machine passed (2/2)"}
+  - {id: home_bathroom, phrase: "a spacious modern bathroom", tail: "bathroom", props: "a freestanding bathtub, white tiles and folded towels", light: "soft daylight", status: ok, notes: "a mirror reflection rendered plausibly once; still keep mirrors out where possible"}
+  - {id: walk_in_shower, phrase: "a spacious walk-in shower", tail: "shower", props: "grey stone tiles, a rain shower head and a wooden bench", light: "soft daylight", status: ok, notes: "from-behind POV under the water passed (1/1)"}
+  - {id: walk_in_closet, phrase: "a large walk-in closet", tail: "walk-in closet", props: "rails of clothes, shoe shelves and a padded ottoman", light: "warm spotlights", status: ok, notes: "keep mirrors out of view"}
+  - {id: home_gym, phrase: "a home gym", tail: "home gym", props: "a padded workout bench, a rack of dumbbells and a yoga mat", light: "bright daylight", status: ok}
+  - {id: garage_workshop, phrase: "a tidy home garage workshop", tail: "garage", props: "a workbench, a tool wall and a parked classic car", light: "warm work lights", status: ok}
+  - {id: dining_room, phrase: "an elegant dining room", tail: "dining room", props: "a long wooden dining table, candles and upholstered chairs", light: "warm candlelight", status: ok}
+  - {id: fireplace_lounge, phrase: "a living room with a stone fireplace", tail: "fireplace lounge", props: "a burning fireplace, a thick rug and a leather armchair", light: "warm firelight", status: strong}
+  - {id: penthouse_living, phrase: "a penthouse living room", tail: "penthouse", props: "floor-to-ceiling windows with a city skyline, a white leather sofa and a glass coffee table", light: "golden sunset light", status: strong}
+  - {id: studio_apartment, phrase: "a small studio apartment", tail: "studio apartment", props: "a bed by the window, a kitchenette and string lights", light: "warm string lights", status: strong}
+  - {id: entry_hallway, phrase: "the entry hallway of a modern house", tail: "hallway", props: "a front door, a console table and a coat rack", light: "warm daylight", status: ok, notes: "good for arrival shots; move to a room for sex beats"}
+  - {id: staircase, phrase: "a modern house with a wooden staircase", tail: "staircase", props: "wide wooden stairs, a glass railing and a runner rug", light: "soft daylight", status: ok, notes: "tease and from-behind POV on the stairs passed (2/2)"}
+  - {id: attic_bedroom, phrase: "a cosy attic bedroom", tail: "attic bedroom", props: "a sloped wooden ceiling, a skylight and a bed with knitted throws", light: "soft daylight", status: ok}
+  - {id: basement_den, phrase: "a basement den", tail: "den", props: "a large sectional sofa, a TV and a pool table", light: "warm lamp light", status: ok}
+  - {id: backyard_pool, phrase: "a backyard with a swimming pool", tail: "pool area", props: "a turquoise pool, sun loungers and palm trees", light: "bright sunshine", status: ok, notes: "sex beats on a sun lounger or a towel on the deck, not in the water"}
+  - {id: hot_tub_patio, phrase: "a patio with a steaming hot tub", tail: "patio", props: "a wooden hot tub, string lights and a wooden deck", light: "warm evening light", status: ok, notes: "edge and in-water cowgirl passed (2/2); penetration below the waterline"}
+  - {id: garden_terrace, phrase: "a private garden terrace", tail: "garden terrace", props: "an outdoor daybed, potted olive trees and lanterns", light: "golden hour light", status: ok}
+  - {id: city_balcony_night, phrase: "a balcony of a high-rise apartment at night", tail: "balcony", props: "a glass railing, city lights and an outdoor sofa", light: "soft night light", status: ok}
+
+hospitality:
+  - {id: luxury_hotel_suite, phrase: "a luxury hotel suite", tail: "hotel suite", props: "a king-size bed, a velvet armchair and tall windows with sheer curtains", light: "warm lamp light", status: strong}
+  - {id: boutique_hotel_room, phrase: "a boutique hotel room", tail: "hotel room", props: "a bed with a tufted headboard, brass lamps and patterned wallpaper", light: "warm lamp light", status: strong}
+  - {id: motel_room, phrase: "a retro roadside motel room", tail: "motel room", props: "a double bed with a floral bedspread, a neon sign glowing through the blinds and a vintage TV", light: "pink neon light mixed with lamp light", status: strong}
+  - {id: honeymoon_suite, phrase: "a honeymoon suite", tail: "honeymoon suite", props: "a canopy bed with white drapes, rose petals and champagne in a bucket", light: "soft candlelight", status: strong}
+  - {id: hotel_spa_room, phrase: "a hotel spa treatment room", tail: "spa room", props: "a padded massage table, candles and folded white towels", light: "dim warm candlelight", status: strong}
+  - {id: ski_chalet, phrase: "a wooden ski chalet", tail: "chalet", props: "a fireplace, a fur throw and snowy mountains through the window", light: "warm firelight", status: strong}
+  - {id: mountain_cabin, phrase: "a rustic mountain cabin", tail: "cabin", props: "log walls, a plaid-covered bed and a wood stove", light: "warm lamp light", status: strong}
+  - {id: beach_villa, phrase: "a seaside villa bedroom", tail: "seaside villa", props: "a bed with white linen, billowing curtains and the sea through open doors", light: "golden sunset light", status: strong}
+  - {id: yacht_cabin, phrase: "a yacht master cabin", tail: "yacht cabin", props: "a bed with navy linen, wooden panels and round portholes", light: "soft daylight", status: ok}
+  - {id: yacht_deck, phrase: "the sun deck of a private yacht", tail: "yacht deck", props: "white cushioned sunbeds, a teak deck and open sea", light: "bright sunshine", status: ok}
+  - {id: cruise_cabin, phrase: "a cruise ship balcony cabin", tail: "cruise cabin", props: "a double bed, a balcony door and the ocean outside", light: "soft daylight", status: ok}
+  - {id: glamping_tent, phrase: "a luxury glamping tent", tail: "glamping tent", props: "a big bed with fur throws, canvas walls and fairy lights", light: "warm fairy lights", status: ok}
+  - {id: airbnb_loft, phrase: "a stylish rented loft", tail: "loft", props: "exposed brick, a low bed and a vintage rug", light: "soft daylight", status: strong}
+  - {id: hotel_bar, phrase: "a dim hotel bar", tail: "hotel bar", props: "a polished bar counter, velvet stools and bottles on backlit shelves", light: "warm amber light", status: ok, notes: "flirt shots only; move to a room for sex beats"}
+
+work:
+  - {id: corner_office, phrase: "a corner office in a glass tower", tail: "office", props: "a large desk, a leather chair and a city view", light: "late evening light", status: strong}
+  - {id: open_office_night, phrase: "an empty open-plan office at night", tail: "office", props: "rows of desks, monitors and city lights through the windows", light: "cool night light with desk lamps", status: ok}
+  - {id: conference_room, phrase: "a glass conference room", tail: "conference room", props: "a long meeting table, office chairs and a whiteboard", light: "soft overhead light", status: ok}
+  - {id: copy_room, phrase: "an office copy room", tail: "copy room", props: "a large copier, shelves of paper and a counter", light: "fluorescent light", status: ok, notes: "from-behind POV on the copier passed (1/1)"}
+  - {id: reception_desk, phrase: "the reception area of a modern company", tail: "reception area", props: "a sleek reception desk, a logo-free wall and a lounge sofa", light: "soft overhead light", status: ok}
+  - {id: law_office, phrase: "a wood-panelled law office", tail: "law office", props: "a mahogany desk, leather chairs and shelves of law books", light: "warm desk lamps", status: ok}
+  - {id: empty_show_house, phrase: "an empty modern show house", tail: "show house", props: "white walls, a staged sofa and large windows", light: "bright daylight", status: ok}
+  - {id: photo_studio, phrase: "a photo studio", tail: "photo studio", props: "a white paper backdrop, softbox lights and a stool", light: "bright studio light", status: strong}
+  - {id: art_studio, phrase: "a painter's studio", tail: "art studio", props: "easels, paint-splattered floor and a draped sofa", light: "soft north-window daylight", status: strong}
+  - {id: music_studio, phrase: "a recording studio", tail: "recording studio", props: "a mixing desk, acoustic panels and a leather couch", light: "dim warm light", status: ok}
+  - {id: tattoo_studio, phrase: "a tattoo studio", tail: "tattoo studio", props: "a padded tattoo chair, framed flash art and a work lamp", light: "warm light", status: ok}
+  - {id: hair_salon, phrase: "a hair salon after closing", tail: "salon", props: "salon chairs, a wash basin and shelves of products", light: "warm light", status: ok, notes: "keep salon mirrors out of view"}
+  - {id: spa_massage_room, phrase: "a massage room in a day spa", tail: "massage room", props: "a padded massage table, oil bottles and candles", light: "dim warm candlelight", status: strong}
+  - {id: yoga_studio, phrase: "an empty yoga studio", tail: "yoga studio", props: "a wooden floor, rolled mats and large windows", light: "soft morning light", status: strong}
+  - {id: gym_after_hours, phrase: "an empty gym after closing", tail: "gym", props: "a weight bench, racks of dumbbells and gym mats", light: "dim overhead light", status: ok}
+  - {id: locker_room, phrase: "a gym locker room", tail: "locker room", props: "metal lockers, a wooden bench and towels", light: "bright overhead light", status: ok}
+  - {id: boxing_gym, phrase: "a boxing gym", tail: "boxing gym", props: "a boxing ring, heavy bags and ropes", light: "warm overhead light", status: ok}
+  - {id: dance_studio, phrase: "a dance studio", tail: "dance studio", props: "a wooden floor, a ballet barre and speakers", light: "soft daylight", status: ok, notes: "keep the mirror wall behind the camera"}
+  - {id: restaurant_kitchen, phrase: "a restaurant kitchen after closing", tail: "kitchen", props: "steel counters, hanging pans and a pass with heat lamps", light: "warm low light", status: ok}
+  - {id: bar_after_closing, phrase: "a cocktail bar after closing", tail: "bar", props: "a long bar counter, stools turned up and backlit bottles", light: "warm amber light", status: ok}
+  - {id: closed_coffee_shop, phrase: "a coffee shop after closing", tail: "coffee shop", props: "an espresso machine, wooden tables and hanging bulbs", light: "warm light", status: ok}
+  - {id: library_after_hours, phrase: "a quiet library after hours", tail: "library", props: "tall bookshelves, a reading table and green desk lamps", light: "warm lamp light", status: ok}
+  - {id: art_gallery_night, phrase: "an art gallery at night", tail: "gallery", props: "white walls with abstract paintings, a bench and spotlights", light: "spotlights", status: ok}
+  - {id: flower_shop, phrase: "a flower shop", tail: "flower shop", props: "buckets of fresh flowers, a wooden counter and hanging plants", light: "soft daylight", status: ok}
+  - {id: car_workshop, phrase: "a car repair workshop", tail: "workshop", props: "a lifted car, tool chests and a workbench", light: "warm work lights", status: ok}
+  - {id: car_showroom, phrase: "a car dealership showroom after hours", tail: "showroom", props: "a polished sports car, glossy floor and glass walls", light: "cool showroom light", status: ok}
+  - {id: fire_station_lounge, phrase: "a fire station crew lounge", tail: "fire station lounge", props: "a worn leather sofa, lockers with turnout gear and a coffee machine", light: "warm overhead light", status: ok}
+  - {id: backstage_dressing_room, phrase: "a backstage dressing room", tail: "dressing room", props: "a rail of costumes, a vanity table with bulb lights and a velvet sofa", light: "warm bulb light", status: ok, notes: "turn her away from the vanity mirror"}
+  - {id: film_trailer, phrase: "a film set trailer", tail: "trailer", props: "a built-in sofa, a small table and a costume rail", light: "warm light", status: ok}
+  - {id: doctors_lounge, phrase: "a hospital staff lounge", tail: "staff lounge", props: "a sofa, a coffee machine and staff lockers", light: "soft overhead light", status: ok, notes: "both are staff; nobody is a patient"}
+  - {id: hospital_ward_empty, phrase: "an empty private hospital ward after visiting hours", tail: "hospital ward", props: "a hospital bed with white sheets, a monitor on a stand and a privacy curtain", light: "warm ambient light", status: strong, notes: "tested; nobody is a patient"}
+  - {id: private_jet_cabin, phrase: "a private jet cabin", tail: "jet cabin", props: "cream leather seats, a polished wood table and oval windows", light: "soft daylight", status: ok, notes: "cowgirl in a seat passed (1/1)"}
+
+outdoors:
+  - {id: secluded_beach, phrase: "a secluded sandy beach", tail: "beach", props: "a striped towel, a parasol and turquoise water", light: "bright sunshine", status: strong}
+  - {id: beach_cabana, phrase: "a beach cabana", tail: "cabana", props: "a cushioned daybed, white curtains and the sea", light: "golden sunset light", status: strong}
+  - {id: forest_clearing, phrase: "a sunlit forest clearing", tail: "forest clearing", props: "a picnic blanket, tall trees and ferns", light: "dappled sunlight", status: ok}
+  - {id: lake_dock, phrase: "a wooden dock on a quiet lake", tail: "lake dock", props: "weathered planks, a towel and pine trees across the water", light: "golden hour light", status: ok}
+  - {id: vineyard, phrase: "a vineyard at sunset", tail: "vineyard", props: "rows of vines, a picnic blanket and a wine bottle", light: "golden sunset light", status: ok}
+  - {id: rooftop_terrace, phrase: "a rooftop terrace at night", tail: "rooftop", props: "a lounge sofa, string lights and a city skyline", light: "warm string lights", status: ok}
+  - {id: waterfall_pool, phrase: "a tropical waterfall pool", tail: "waterfall", props: "a flat rock ledge, a waterfall and lush plants", light: "dappled sunlight", status: ok, notes: "sex on the dry ledge passed"}
+  - {id: hiking_overlook, phrase: "a mountain overlook on a hiking trail", tail: "overlook", props: "a flat rock, a backpack and a valley view", light: "bright daylight", status: ok}
+  - {id: hay_barn, phrase: "a rustic hay barn", tail: "barn", props: "hay bales, wooden beams and a lantern", light: "warm light through the boards", status: ok}
+  - {id: garden_gazebo, phrase: "a private garden gazebo", tail: "gazebo", props: "a cushioned bench, climbing roses and lanterns", light: "soft evening light", status: ok}
+  - {id: campsite_tent, phrase: "a campsite tent at night", tail: "tent", props: "a thick camping mattress, a lantern and an open tent flap with a campfire outside", light: "warm lantern light", status: ok}
+  - {id: desert_oasis_tent, phrase: "a silk tent in a desert camp", tail: "desert tent", props: "silk cushions, brass lanterns and rugs", light: "warm lantern light", status: ok}
+
+vehicles:
+  - {id: car_backseat, phrase: "the back seat of a parked car at night", tail: "car", props: "leather seats and city lights through the windows", light: "dim street light", status: ok, notes: "cowgirl POV on the back seat passed (1/1)"}
+  - {id: limo_interior, phrase: "the interior of a limousine", tail: "limousine", props: "long leather seats, mood lights and a champagne bar", light: "purple mood lighting", status: ok, notes: "oral passed (1/1)"}
+  - {id: camper_van, phrase: "a camper van bed", tail: "camper van", props: "a bed with a quilt, wooden cabinets and a window to the coast", light: "soft daylight", status: ok}
+
+nightlife:
+  - {id: nightclub_vip, phrase: "a nightclub VIP lounge", tail: "VIP lounge", props: "a velvet booth, a low table with champagne and neon accents", light: "purple and pink neon light", status: ok}
+  - {id: private_dance_room, phrase: "a private dance room in a gentlemen's club", tail: "private room", props: "a velvet armchair, a small stage with a pole and red lights", light: "red mood lighting", status: ok}
+  - {id: karaoke_room, phrase: "a private karaoke room", tail: "karaoke room", props: "a leather sofa, a screen and microphones", light: "colourful disco light", status: ok}
+  - {id: casino_suite, phrase: "a high-roller casino suite", tail: "casino suite", props: "a poker table, a gold-trimmed bar and a bed", light: "warm gold light", status: ok}
+  - {id: party_bedroom, phrase: "a bedroom at a house party", tail: "bedroom", props: "a bed piled with coats, fairy lights and a closed door", light: "dim warm light", status: ok}
+
+fantasy_period:
+  - {id: castle_chamber, phrase: "a medieval castle chamber", tail: "castle chamber", props: "a four-poster bed, stone walls and candles", light: "warm candlelight", status: ok}
+  - {id: roman_bath, phrase: "a Roman-style bathhouse", tail: "bathhouse", props: "marble columns, a pool and a stone bench with cushions", light: "soft daylight", status: ok, notes: "sex on the cushioned bench, not in the water"}
+  - {id: western_saloon, phrase: "a Wild West saloon", tail: "saloon", props: "a wooden bar, a piano and swinging doors", light: "warm oil lamp light", status: ok}
+  - {id: saloon_room, phrase: "an upstairs room in a Wild West saloon", tail: "saloon room", props: "an iron bed, a washstand and lace curtains", light: "warm oil lamp light", status: ok}
+  - {id: pirate_cabin, phrase: "a captain's cabin on an old sailing ship", tail: "captain's cabin", props: "a wooden bed, maps on a table and brass lanterns", light: "warm lantern light", status: ok}
+  - {id: spaceship_quarters, phrase: "crew quarters on a futuristic spaceship", tail: "spaceship quarters", props: "a sleek bed, glowing panels and a window to the stars", light: "cool blue light", status: ok}
+  - {id: cyberpunk_apartment, phrase: "a neon-lit cyberpunk apartment", tail: "apartment", props: "a low bed, neon signs and rain on the window", light: "pink and blue neon light", status: ok}
+  - {id: gothic_mansion, phrase: "a gothic mansion bedroom", tail: "gothic bedroom", props: "a carved four-poster bed, dark velvet drapes and candelabras", light: "candlelight", status: ok}
+  - {id: arabian_tent, phrase: "a silk-draped Arabian nights tent", tail: "silk tent", props: "piles of cushions, brass lanterns and silk drapes", light: "warm lantern light", status: ok}
+  - {id: greek_temple, phrase: "the ruins of a Greek temple by the sea", tail: "temple ruins", props: "white marble columns, a stone bench with linen and the sea", light: "golden sunset light", status: ok}
+  - {id: retro_50s_diner, phrase: "a 1950s diner after closing", tail: "diner", props: "red vinyl booths, a chrome counter and a jukebox", light: "warm neon light", status: ok, notes: "flirt shots; move to a booth or the back room for sex"}
+  - {id: disco_70s_apartment, phrase: "a 1970s apartment", tail: "1970s apartment", props: "a shag rug, a round bed and a lava lamp", light: "warm orange light", status: ok}
+  - {id: victorian_parlor, phrase: "a Victorian parlour", tail: "parlour", props: "a velvet chaise longue, a fireplace and oil paintings", light: "warm firelight", status: ok}
+  - {id: noir_office, phrase: "a 1940s detective office", tail: "detective office", props: "a wooden desk, venetian blinds and a desk lamp", light: "striped light through the blinds", status: ok}
+
+story:   # places built for a scene in shot 1 (the meeting) that can also hold the sex pages
+  - {id: apartment_door_night, phrase: "a small modern city apartment at night, its front door open to the hallway", tail: "apartment", props: "the open front door, a grey sofa, a coffee table and a bed with white sheets", light: "warm lamp light", status: ok}
+  - {id: suburban_street_dusk, phrase: "a deserted suburban street at dusk", tail: "deserted street", props: "two cars stopped bumper to bumper, the white sedan's hood and quiet dark houses", light: "warm dusk light", status: weak, notes: "sex on the car hood: from-behind and lying on the hood"}
+  - {id: apartment_hallway_neighbor, phrase: "an apartment building hallway with her front door open", tail: "apartment", props: "two facing doors, her open door showing a sofa and a bed inside", light: "warm wall lamps", status: ok}
+  - {id: lingerie_boutique, phrase: "a lingerie boutique after closing", tail: "boutique", props: "a velvet fitting-room curtain, a padded bench, a chaise longue and racks of lace lingerie", light: "warm spotlights", status: ok}
+  - {id: nail_salon_evening, phrase: "a quiet nail salon after closing", tail: "salon", props: "a padded pedicure chair with a footrest, shelves of polish bottles and a cushioned daybed", light: "soft warm light", status: ok}
+  - {id: laundromat_night, phrase: "an empty laundromat late at night", tail: "laundromat", props: "rows of washing machines, a long folding table and a bench", light: "flickering fluorescent light", status: weak}
+  - {id: hotel_room_double_booked, phrase: "a hotel room with one king-size bed and two suitcases by the door", tail: "hotel room", props: "a king-size bed, two open suitcases and a desk", light: "warm lamp light", status: ok}

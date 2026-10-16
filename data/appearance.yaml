@@ -1,0 +1,96 @@
+# Appearance pools. The sampler builds one locked description per album (see agent-guide STEP 1).
+# Popularity notes: MILF is the #1 viewed category in 2024-2025; top ethnicity searches include Japanese,
+# Korean, Filipina, Indian, Latina, Arab, Black, Brazilian. Weights are relative.
+
+her:
+  age_bands:            # numeric age is drawn inside the band
+    - {id: twenties, range: [23, 29], weight: 3}
+    - {id: thirties, range: [30, 37], weight: 4}
+    - {id: milf, range: [38, 45], weight: 4}
+    - {id: mature, range: [46, 52], weight: 1, notes: "faces may drift younger; check likeness"}
+  ethnicity:            # phrase → default skin tone options
+    - {id: latina, phrase: "Latina", skin: ["warm olive", "golden tan", "light-brown"], weight: 4}
+    - {id: brazilian, phrase: "Brazilian", skin: ["golden tan", "warm caramel"], weight: 3}
+    - {id: black, phrase: "Black", skin: ["deep brown", "rich ebony", "warm medium-brown"], weight: 4}
+    - {id: white_european, phrase: "white European", skin: ["fair", "porcelain", "light beige"], weight: 4}
+    - {id: slavic, phrase: "Slavic", skin: ["fair", "light"], weight: 2}
+    - {id: scandinavian, phrase: "Scandinavian", skin: ["very fair", "fair with a light tan"], weight: 2}
+    - {id: mediterranean, phrase: "Mediterranean", skin: ["olive", "sun-kissed"], weight: 2}
+    - {id: japanese, phrase: "Japanese", skin: ["fair", "light"], weight: 4}
+    - {id: korean, phrase: "Korean", skin: ["fair", "porcelain"], weight: 3}
+    - {id: chinese, phrase: "Chinese", skin: ["fair", "light"], weight: 2}
+    - {id: filipina, phrase: "Filipina", skin: ["warm tan", "golden"], weight: 3}
+    - {id: thai, phrase: "Thai", skin: ["warm tan", "golden"], weight: 2}
+    - {id: indian, phrase: "Indian", skin: ["warm brown", "light-brown", "deep brown"], weight: 3}
+    - {id: arab, phrase: "Arab", skin: ["olive", "light-brown"], weight: 3}
+    - {id: persian, phrase: "Persian", skin: ["light olive", "fair"], weight: 2}
+    - {id: mixed, phrase: "mixed-race", skin: ["warm light-brown", "caramel", "golden"], weight: 3}
+  hair_colour:          # natural colours common, dyed ones rare
+    - {colour: jet-black, weight: 3}
+    - {colour: dark brown, weight: 4}
+    - {colour: chestnut-brown, weight: 3}
+    - {colour: honey-brown, weight: 2}
+    - {colour: auburn, weight: 2}
+    - {colour: copper-red, weight: 1.2}
+    - {colour: strawberry-blonde, weight: 1}
+    - {colour: golden blonde, weight: 2.5}
+    - {colour: platinum-blonde, weight: 1.2}
+    - {colour: ash-blonde, weight: 1.5}
+    - {colour: silver-grey, weight: 1, min_age: 46}
+    - {colour: pastel pink, weight: 0.2}
+    - {colour: deep burgundy, weight: 0.25}
+  hair_length_cut:      # `fits` limits a texture to the looks it suits; omitted = any
+    - {cut: "a sleek chin-length bob with straight bangs", weight: 1}
+    - {cut: "a sleek chin-length bob with a side parting", weight: 1}
+    - {cut: "a short pixie cut", weight: 0.6}
+    - {cut: "smooth shoulder-length hair with a side parting", weight: 1.2}
+    - {cut: "a shoulder-length shag with curtain bangs", weight: 0.8}
+    - {cut: "long straight hair falling past her shoulders", weight: 1.5}
+    - {cut: "long loose waves", weight: 1.5}
+    - {cut: "long tight curls", weight: 0.8, fits: [black, mixed, brazilian, latina, arab, persian, mediterranean, indian]}
+    - {cut: "a voluminous natural afro", weight: 0.8, fits: [black, mixed]}
+    - {cut: "long box braids", weight: 0.8, fits: [black, mixed]}
+    - {cut: "a sleek high ponytail", weight: 1}
+    - {cut: "a messy bun", weight: 0.7}
+    - {cut: "a single long side braid", weight: 0.6}
+    - {cut: "long hair with curtain bangs", weight: 1}
+  # never: pigtails, two braids, school-style hair accessories
+  eyes: [dark brown, brown, hazel, green, blue, grey]
+  figure:               # `short` goes into the identity sentence on every page
+    - {phrase: "a curvy hourglass figure with large natural breasts, a narrow waist and full hips", short: "curvy hourglass figure with large natural breasts", tags: [curvy, big_natural_breasts], weight: 5}
+    - {phrase: "a voluptuous figure with very large natural breasts and wide hips", short: "voluptuous figure with very large natural breasts and wide hips", tags: [curvy, big_natural_breasts], weight: 3}
+    - {phrase: "a slim adult figure with small natural breasts, natural adult proportions", short: "slim adult figure with small natural breasts and natural adult proportions", tags: [slim_small_breasts], weight: 2.5, min_age: 27}
+    - {phrase: "a slim figure with medium natural breasts and natural adult proportions", short: "slim figure with medium natural breasts", tags: [], weight: 3, min_age: 25}
+    - {phrase: "an athletic, toned figure with medium breasts and a firm round butt", short: "athletic, toned figure with medium breasts and a firm round butt", tags: [athletic, big_butt], weight: 3}
+    - {phrase: "a toned fitness-model figure with defined abs and medium breasts", short: "toned fitness-model figure with medium breasts", tags: [athletic], weight: 2}
+    - {phrase: "a full plus-size figure with large natural breasts and soft curves", short: "full plus-size figure with large natural breasts", tags: [plus_size, big_natural_breasts], weight: 2}
+    - {phrase: "a figure with a big round butt, wide hips and medium breasts", short: "figure with a big round butt, wide hips and medium breasts", tags: [big_butt, curvy], weight: 3}
+  makeup:               # `short` goes into the identity sentence
+    - {phrase: "soft makeup: light brown eyeshadow, black mascara and nude-pink lipstick", short: "soft makeup", weight: 3}
+    - {phrase: "a natural bare-faced look with groomed brows", short: "a natural bare-faced look", weight: 2}
+    - {phrase: "glamorous makeup with winged eyeliner and red lipstick", short: "winged eyeliner and red lipstick", weight: 1.5}
+    - {phrase: "smoky eye makeup and nude lips", short: "smoky eye makeup", weight: 1.5}
+    - {phrase: "dewy makeup with glossy pink lips", short: "glossy pink lips", weight: 1.5}
+    - {phrase: "dark gothic makeup with black lipstick", short: "black lipstick", weight: 0.2}
+  extras:            # optional, max 1 per character; weak ones stay simple
+    - {phrase: "thin black-framed glasses", status: ok}
+    - {phrase: "light freckles across her nose", status: ok}
+    - {phrase: "a small rose tattoo on her shoulder", status: ok}
+    - {phrase: "subtle bikini tan lines", status: ok}
+
+him:   # his head is mostly outside the frame; keep him simple and consistent
+  age_bands: [{range: [25, 32], weight: 2}, {range: [33, 42], weight: 4}, {range: [43, 55], weight: 2}]
+  build:
+    - "a tall, broad-shouldered masculine build"
+    - "a lean, athletic build"
+    - "a muscular, heavy-set build"
+    - "a tall, slim build"
+    - "a stocky, strong build"
+  skin: [fair, light olive, tanned, medium-brown, deep brown]
+  nude_details: ["a flat hairy chest and hairy legs", "a smooth chest and lightly hairy legs", "a muscular chest with light hair"]
+  hair_face_couple_mode:   # only when shot 1 shows him (couple mode)
+    - "short dark brown hair and a clean-shaven face"
+    - "short black hair and a trimmed beard"
+    - "buzzed hair and light stubble"
+    - "short grey-flecked hair and a short beard"
+    - "short sandy-blond hair and a clean-shaven face"

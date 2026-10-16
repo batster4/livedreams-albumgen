@@ -1,0 +1,133 @@
+# Character archetypes (who she is, who he is). All adults; jobs are adult jobs. Write roles in the story,
+# not as labels in the prompt ("she is a real estate agent" → her outfit and the location carry it).
+# `age` is the suggested numeric range; the sampler still uses appearance.yaml.
+
+her:
+  - {id: housewife, label: "Housewife", age: [30, 45]}
+  - {id: tradwife, label: "Traditional homemaker in a modest dress", age: [27, 40]}
+  - {id: milf_neighbor, label: "Experienced neighbour", age: [38, 48]}
+  - {id: divorcee, label: "Recently divorced woman", age: [35, 48]}
+  - {id: bride, label: "Bride on her wedding day", age: [26, 38]}
+  - {id: bridesmaid, label: "Bridesmaid", age: [24, 36]}
+  - {id: girlfriend, label: "Girlfriend", age: [23, 35]}
+  - {id: wife_anniversary, label: "Wife celebrating an anniversary", age: [28, 45]}
+  - {id: hotwife, label: "Married woman meeting a lover", age: [28, 45]}
+  - {id: tourist, label: "Tourist on holiday", age: [23, 40]}
+  - {id: hitchhiker, label: "Traveller who needs a ride", age: [23, 35]}
+  - {id: landlady, label: "Landlady", age: [35, 50]}
+  - {id: tenant, label: "Tenant", age: [23, 38]}
+  - {id: secretary, label: "Executive assistant", age: [24, 38]}
+  - {id: boss_woman, label: "CEO / boss", age: [32, 48]}
+  - {id: coworker_f, label: "Coworker", age: [24, 40]}
+  - {id: new_hire, label: "New employee on her first week", age: [24, 32]}
+  - {id: lawyer_f, label: "Lawyer", age: [28, 45]}
+  - {id: real_estate_agent, label: "Real estate agent", age: [26, 42]}
+  - {id: hotel_receptionist, label: "Hotel receptionist", age: [24, 35]}
+  - {id: hotel_maid, label: "Hotel housekeeper", age: [24, 40]}
+  - {id: cleaning_lady, label: "House cleaner", age: [25, 45]}
+  - {id: flight_attendant, label: "Flight attendant", age: [25, 38]}
+  - {id: pilot_f, label: "Pilot", age: [28, 42]}
+  - {id: nurse_staff, label: "Nurse (staff, on a break)", age: [25, 42]}
+  - {id: doctor_f, label: "Doctor (staff)", age: [30, 45]}
+  - {id: scientist, label: "Lab scientist", age: [27, 42]}
+  - {id: librarian, label: "Librarian", age: [27, 45]}
+  - {id: teacher_adult_context, label: "Teacher after work, with a fellow adult", age: [28, 45], notes: "never with a student"}
+  - {id: personal_trainer_f, label: "Personal trainer", age: [24, 38]}
+  - {id: yoga_instructor, label: "Yoga instructor", age: [25, 40]}
+  - {id: fitness_model, label: "Fitness model", age: [23, 35]}
+  - {id: dancer, label: "Dancer", age: [23, 35]}
+  - {id: stripper, label: "Exotic dancer", age: [23, 35]}
+  - {id: model_f, label: "Model at a photoshoot", age: [23, 35]}
+  - {id: photographer_f, label: "Photographer", age: [26, 40]}
+  - {id: artist_f, label: "Painter", age: [25, 42]}
+  - {id: musician_f, label: "Singer", age: [24, 38]}
+  - {id: streamer, label: "Streamer / content creator", age: [23, 33]}
+  - {id: influencer, label: "Influencer", age: [23, 33]}
+  - {id: waitress, label: "Waitress", age: [23, 35]}
+  - {id: bartender_f, label: "Bartender", age: [24, 38]}
+  - {id: barista, label: "Barista", age: [23, 33]}
+  - {id: chef_f, label: "Chef", age: [27, 42]}
+  - {id: florist, label: "Florist", age: [25, 40]}
+  - {id: masseuse, label: "Massage therapist", age: [25, 42]}
+  - {id: hairdresser, label: "Hairdresser", age: [24, 40]}
+  - {id: tattoo_artist_f, label: "Tattoo artist", age: [25, 38]}
+  - {id: mechanic_f, label: "Car mechanic", age: [25, 38]}
+  - {id: firefighter_f, label: "Firefighter", age: [26, 40]}
+  - {id: police_costume_f, label: "Woman in a police costume at a party", age: [24, 40]}
+  - {id: soldier_costume_f, label: "Woman in a military-style costume", age: [24, 38]}
+  - {id: cowgirl_ranch, label: "Ranch owner", age: [26, 42]}
+  - {id: surfer_f, label: "Surfer", age: [23, 35]}
+  - {id: lifeguard_f, label: "Lifeguard", age: [23, 33]}
+  - {id: tennis_player, label: "Tennis player", age: [23, 35]}
+  - {id: golfer_f, label: "Golfer", age: [27, 42]}
+  - {id: gamer_f, label: "Gamer", age: [23, 33], notes: "write 'woman', never 'girl'"}
+  - {id: cosplayer, label: "Cosplayer in an original costume", age: [23, 33]}
+  - {id: socialite, label: "Rich socialite", age: [28, 45]}
+  - {id: sugar_partner, label: "Glamorous woman with a wealthy older lover", age: [24, 35], notes: "never 'daddy'"}
+  - {id: succubus_char, label: "Succubus (costume fantasy)", age: [25, 38]}
+  - {id: witch_char, label: "Witch (costume fantasy)", age: [25, 40]}
+  - {id: vampire_char, label: "Vampire (costume fantasy)", age: [25, 40]}
+  - {id: goddess_char, label: "Greek goddess (costume fantasy)", age: [25, 38]}
+  - {id: pirate_char, label: "Pirate captain (costume)", age: [26, 40]}
+  - {id: space_officer_f, label: "Starship officer (costume)", age: [26, 40]}
+  - {id: pinup_char, label: "1950s pin-up", age: [24, 38]}
+  - {id: femme_fatale, label: "1940s femme fatale", age: [27, 40]}
+  - {id: medieval_lady, label: "Medieval lady", age: [24, 38]}
+  - {id: saloon_owner, label: "Wild West saloon owner", age: [28, 42]}
+
+him:
+  - {id: pizza_guy, label: "Pizza delivery man", age: [25, 40]}
+  - {id: courier, label: "Package courier", age: [25, 45]}
+  - {id: plumber, label: "Plumber", age: [28, 50]}
+  - {id: electrician, label: "Electrician", age: [28, 50]}
+  - {id: cable_tech, label: "Internet technician", age: [25, 45]}
+  - {id: pool_cleaner, label: "Pool cleaner", age: [25, 40]}
+  - {id: gardener, label: "Gardener", age: [25, 45]}
+  - {id: handyman, label: "Handyman", age: [30, 50]}
+  - {id: locksmith, label: "Locksmith", age: [28, 50]}
+  - {id: mover, label: "Furniture mover", age: [25, 40]}
+  - {id: window_cleaner, label: "Window cleaner", age: [25, 45]}
+  - {id: firefighter, label: "Firefighter", age: [27, 45]}
+  - {id: police_costume_m, label: "Man in a police costume, off duty at a party", age: [28, 45]}
+  - {id: soldier_home, label: "Soldier home on leave", age: [26, 40]}
+  - {id: mechanic, label: "Car mechanic", age: [26, 50]}
+  - {id: tow_driver, label: "Tow truck driver", age: [28, 50]}
+  - {id: taxi_driver, label: "Taxi driver", age: [28, 50], notes: "no brand"}
+  - {id: chauffeur, label: "Chauffeur", age: [30, 50]}
+  - {id: boss_man, label: "Boss", age: [35, 55]}
+  - {id: coworker_m, label: "Coworker", age: [26, 45]}
+  - {id: client, label: "Client", age: [30, 55]}
+  - {id: landlord, label: "Landlord", age: [35, 55]}
+  - {id: neighbor_m, label: "Neighbour", age: [25, 50]}
+  - {id: husband, label: "Husband", age: [28, 50]}
+  - {id: boyfriend, label: "Boyfriend", age: [24, 40]}
+  - {id: lover, label: "Lover", age: [25, 45]}
+  - {id: ex, label: "Ex-boyfriend", age: [25, 45]}
+  - {id: friends_roommate, label: "Her best friend's roommate", age: [26, 40]}
+  - {id: groomsman, label: "Groomsman", age: [26, 40]}
+  - {id: stranger_bar, label: "Stranger from the bar", age: [25, 50]}
+  - {id: blind_date, label: "Blind date", age: [25, 45]}
+  - {id: tourist_m, label: "Fellow tourist", age: [25, 45]}
+  - {id: personal_trainer_m, label: "Personal trainer", age: [25, 40]}
+  - {id: masseur, label: "Massage therapist", age: [27, 45]}
+  - {id: yoga_student_m, label: "Man in her yoga class", age: [25, 45]}
+  - {id: photographer_m, label: "Photographer", age: [28, 50]}
+  - {id: painter_m, label: "Painter", age: [28, 50]}
+  - {id: director_m, label: "Film director", age: [35, 55]}
+  - {id: producer_m, label: "Music producer", age: [30, 50]}
+  - {id: tattoo_artist_m, label: "Tattoo artist", age: [26, 45]}
+  - {id: doctor_m, label: "Doctor (colleague)", age: [32, 52]}
+  - {id: pilot_m, label: "Pilot", age: [32, 52]}
+  - {id: chef_m, label: "Chef", age: [28, 50]}
+  - {id: bartender_m, label: "Bartender", age: [25, 40]}
+  - {id: security_guard, label: "Night security guard", age: [28, 50]}
+  - {id: lifeguard_m, label: "Lifeguard", age: [24, 35]}
+  - {id: surf_instructor, label: "Surf instructor", age: [25, 40]}
+  - {id: ski_instructor, label: "Ski instructor", age: [26, 42]}
+  - {id: rich_older_man, label: "Wealthy older man", age: [45, 60]}
+  - {id: knight, label: "Knight (period costume)", age: [26, 45]}
+  - {id: pirate_m, label: "Pirate (costume)", age: [28, 45]}
+  - {id: cowboy, label: "Cowboy", age: [26, 50]}
+  - {id: gladiator, label: "Roman soldier (costume)", age: [26, 40]}
+  - {id: starship_captain, label: "Starship captain (costume)", age: [30, 50]}
+  - {id: detective, label: "1940s private detective", age: [30, 50]}

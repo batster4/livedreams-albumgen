@@ -1,0 +1,1095 @@
+# Story themes (v2). mode: couple = shot 1 shows them meeting with both faces (his face may appear later);
+# solo = told through his eyes (she looks into the camera, his face never shows); ff = two women.
+# shot1 = the scene of shot 1; opening = the first story pages [cam, her clothing stage, his state, scene];
+# {A} / {B} = the two women in ff themes. locations / outfits / arcs are ids from the other files.
+service_visit:
+- id: pizza_delivery
+  title: Late-night pizza
+  mode: couple
+  cast: mf
+  hook: She orders pizza at midnight and invites the delivery man in to share it.
+  her: night-owl customer
+  her_age: [24, 42]
+  locations: [apartment_door_night]
+  her_outfits: [silk_robe_set, oversized_shirt]
+  shot1: She stands barefoot in her open front door, with a flirtatious look, reaching for the pizza box with both hands; he stands in the hallway holding the box out to her and looking back at her.
+  opening:
+  - {cam: pair_seated, stage: outfit, his: clothed, scene: 'They sit close together on the sofa, the open pizza box on the coffee table. She feeds him a slice, her bare knee touching his leg; his hand rests on her knee.'}
+  arcs: [classic, quickie]
+  kinks: [service_visit]
+  status: ok
+  him: pizza delivery man
+  him_age: [24, 38]
+  his_outfits: [delivery_uniform]
+- id: plumber_leak
+  title: The leaking sink
+  mode: couple
+  cast: mf
+  hook: Her kitchen sink floods; the plumber fixes it while she gets soaked helping him.
+  her: homeowner
+  her_age: [30, 48]
+  locations: [home_kitchen]
+  her_outfits: [tank_denim_shorts, sundress]
+  shot1: He kneels by the open cabinet under the kitchen sink with a wrench; she stands beside him holding a towel, her clothes splashed with water, looking down at him with an amused, flirtatious look.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'Water sprays from the tap; she wipes water from her soaked top, which clings to her breasts, while he stands up close to her, his eyes on her body.'}
+  arcs: [classic, quickie]
+  kinks: [service_visit, wet_look]
+  status: ok
+  him: plumber
+  him_age: [30, 50]
+  his_outfits: [plumber_overalls]
+- id: electrician_blackout
+  title: Lights out
+  mode: couple
+  cast: mf
+  hook: A blackout; the electrician fixes the fuse box by candlelight and they decide to keep the lights off.
+  her: divorcee
+  her_age: [32, 48]
+  locations: [fireplace_lounge, living_room_sofa]
+  her_outfits: [slip_dress, satin_chemise]
+  shot1: She holds a lit candle in the dark living room while he works at the open fuse box with a flashlight; both look at each other in the warm candlelight.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'The lights are back on but she blows out the candle; they stand close in the doorway, her hand on his chest, his hand on her waist.'}
+  arcs: [slow_tease, classic]
+  kinks: [service_visit, romantic]
+  status: ok
+  him: electrician
+  him_age: [30, 50]
+  his_outfits: [electrician_workwear]
+- id: pool_cleaner_sunscreen
+  title: Sunscreen
+  mode: couple
+  cast: mf
+  hook: She sunbathes by the pool and asks the pool cleaner to put sunscreen on her back.
+  her: homeowner
+  her_age: [34, 48]
+  locations: [backyard_pool]
+  her_outfits: [string_bikini, red_one_piece]
+  shot1: She lies on her stomach on a sun lounger by the pool, holding a bottle of sunscreen up to him over her shoulder; he stands beside the lounger with a pool net, looking at her.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: He kneels beside the lounger rubbing sunscreen into her bare back with both hands; she has untied her top and looks back at him over her shoulder.}
+  arcs: [outdoor, classic]
+  kinks: [service_visit, oiled_body, milf]
+  status: ok
+  him: pool cleaner
+  him_age: [24, 34]
+  his_outfits: [pool_cleaner]
+- id: locksmith_towel
+  title: Locked out in a towel
+  mode: couple
+  cast: mf
+  hook: She steps out for the post in a towel and locks herself out; the locksmith lets her in.
+  her: tenant
+  her_age: [25, 40]
+  locations: [apartment_hallway_neighbor]
+  her_outfits: [towel_wrap]
+  shot1: She stands in the hallway wrapped in a white towel, holding it closed at her chest, while he kneels at her door picking the lock and glancing up at her.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'Inside her apartment she thanks him, still in the towel, standing close; the towel slips down to her breasts as she reaches for his hand.'}
+  arcs: [quickie, classic]
+  kinks: [service_visit, comedy_setup]
+  status: ok
+  him: locksmith
+  him_age: [28, 48]
+  his_outfits: [electrician_workwear]
+- id: movers_new_home
+  title: Moving day
+  mode: couple
+  cast: mf
+  hook: On moving day the last box is unpacked and she christens the new bedroom with the mover.
+  her: new tenant
+  her_age: [24, 38]
+  locations: [master_bedroom, studio_apartment]
+  her_outfits: [jeans_crop_top, leggings_hoodie]
+  shot1: They carry a big cardboard box together into her new bedroom, surrounded by stacked boxes, glancing at each other over it.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: She sits on the bare mattress among the boxes and pulls him down by his t-shirt toward her.}
+  arcs: [classic, quickie]
+  kinks: [service_visit]
+  status: ok
+  him: mover
+  him_age: [24, 38]
+  his_outfits: [tshirt_jeans]
+- id: courier_signature
+  title: Sign here
+  mode: solo
+  cast: mf
+  hook: A courier needs her signature; she answers the door in a towel and invites him in.
+  her: homeowner
+  her_age: [28, 45]
+  locations: [entry_hallway]
+  her_outfits: [towel_wrap, fluffy_robe]
+  shot1: She stands in her open front door wrapped in a white towel, holding a pen and a delivery tablet, looking into the camera with a slow, inviting look.
+  opening:
+  - {cam: pov, stage: outfit, his: clothed, scene: 'She leans on the door frame, lets the towel slip a little, and beckons into the camera with one finger.'}
+  arcs: [quickie, classic]
+  kinks: [service_visit, pov]
+  status: ok
+  him: courier
+  him_age: [28, 48]
+  his_outfits: [courier_uniform]
+- id: handyman_new_bed
+  title: Testing the new bed
+  mode: couple
+  cast: mf
+  hook: The handyman finishes assembling her new bed; she insists they test it together.
+  her: divorcee
+  her_age: [30, 46]
+  locations: [master_bedroom]
+  her_outfits: [tshirt_panties, tank_denim_shorts]
+  shot1: He tightens the last screw of a new wooden bed frame with a screwdriver while she sits on the new mattress, bouncing on it and watching him with a playful look.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She lies back on the new bed and pulls him onto it by his tool belt; he leans over her on his arms, both looking into each other''s eyes.'}
+  arcs: [quickie, classic]
+  kinks: [service_visit]
+  status: ok
+  him: handyman
+  him_age: [30, 48]
+  his_outfits: [electrician_workwear]
+chance_meeting:
+- id: car_accident
+  title: Fender bender
+  mode: couple
+  cast: mf
+  hook: A small car accident on a deserted street turns from a shouting match into sex on the car.
+  her: driver
+  her_age: [30, 45]
+  locations: [suburban_street_dusk]
+  her_outfits: [wrap_dress, little_black_dress]
+  shot1: Two cars are stopped bumper to bumper after a small collision; she points angrily at the dented bumper while he argues back with his hands spread; both faces show anger.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'They stand nose to nose beside the dented car, still arguing, her finger pressed against his chest, his hand gripping her wrist, the anger turning into a heated, lustful stare.'}
+  arcs: [quickie, outdoor]
+  kinks: [passionate_rough, outdoor_secluded]
+  status: ok
+  him: other driver
+  him_age: [32, 50]
+  his_outfits: [shirt_trousers]
+  footwear: black heels
+- id: noisy_neighbor
+  title: The noisy neighbour
+  mode: couple
+  cast: mf
+  hook: She knocks to complain about his loud music at night and stays for a drink.
+  her: neighbour
+  her_age: [25, 42]
+  locations: [apartment_hallway_neighbor]
+  her_outfits: [silk_pajama_shorts, tshirt_panties]
+  shot1: She stands at his open door in her pyjamas, arms crossed, scolding him; he leans on the door frame with a sheepish, charming look.
+  opening:
+  - {cam: pair_seated, stage: outfit, his: clothed, scene: 'They sit on her sofa with two glasses of wine, her legs tucked under her, leaning toward each other.'}
+  arcs: [classic, quickie]
+  kinks: [neighbors]
+  status: ok
+  him: neighbour
+  him_age: [25, 42]
+  his_outfits: [hoodie_m]
+- id: double_booked_room
+  title: One room, one bed
+  mode: couple
+  cast: mf
+  hook: A hotel double-books a room; two strangers argue over it and end up sharing the bed.
+  her: business traveller
+  her_age: [28, 45]
+  locations: [hotel_room_double_booked]
+  her_outfits: [skirt_suit, wrap_dress]
+  shot1: Two suitcases stand by the door; she holds up her key card and he holds up his, both staring at the single king-size bed in disbelief.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: She sits on the edge of the bed and pats the mattress beside her with a challenging look; he loosens his tie.}
+  arcs: [slow_tease, classic]
+  kinks: [vacation_fling]
+  status: ok
+  him: business traveller
+  him_age: [30, 50]
+  his_outfits: [business_suit]
+- id: laundromat_late
+  title: Laundry night
+  mode: couple
+  cast: mf
+  hook: Two strangers wait for their washing at an empty laundromat late at night.
+  her: night owl
+  her_age: [24, 38]
+  locations: [laundromat_night]
+  her_outfits: [leggings_hoodie, jeans_crop_top]
+  shot1: She sits on a washing machine swinging her legs while he folds a shirt on the long table; they exchange a long look across the empty room.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'He stands between her knees as she sits on the vibrating machine, her hands pulling his hoodie toward her.'}
+  arcs: [quickie]
+  kinks: [amateur_look]
+  status: weak
+  him: night owl
+  him_age: [24, 40]
+  his_outfits: [hoodie_m]
+- id: hitchhiker_ride
+  title: The ride
+  mode: couple
+  cast: mf
+  hook: A traveller with a backpack gets a lift and a motel room for the night.
+  her: traveller
+  her_age: [24, 36]
+  locations: [motel_room]
+  her_outfits: [denim_skirt_blouse, tank_denim_shorts]
+  shot1: In the neon-lit motel room she drops her backpack on the floor and he sets the room key on the dresser; they look at each other across the double bed.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She pulls off her boots and sits on the bed, patting the floral bedspread beside her.'}
+  arcs: [classic]
+  kinks: [vacation_fling]
+  status: ok
+  him: driver
+  him_age: [28, 45]
+  his_outfits: [tshirt_jeans]
+workplace:
+- id: boss_late_contract
+  title: The late contract
+  mode: couple
+  cast: mf
+  hook: The last two in the office at night celebrate a signed contract.
+  her: assistant
+  her_age: [25, 38]
+  locations: [corner_office]
+  her_outfits: [blouse_pencil_skirt, secretary_glasses_look]
+  shot1: Night city lights glow behind the glass; she leans over his desk handing him a signed contract while he sits in his leather chair looking up at her.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She sits on the edge of his desk, crossing her legs; he stands between her knees loosening his tie.'}
+  arcs: [classic, costume_keep_on]
+  kinks: [boss_assistant, coworker]
+  status: ok
+  him: boss
+  him_age: [35, 52]
+  his_outfits: [business_suit]
+  footwear: black heels
+- id: she_is_ceo
+  title: The CEO
+  mode: couple
+  cast: mf
+  hook: She is the CEO; her assistant brings the files to her penthouse late at night.
+  her: CEO
+  her_age: [34, 48]
+  locations: [penthouse_living]
+  her_outfits: [skirt_suit, pantsuit]
+  shot1: She stands by the floor-to-ceiling window with a glass of wine while he holds out a folder of documents; she looks him up and down with a commanding look.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She pushes him down onto the white leather sofa and stands over him, taking off her blazer.'}
+  arcs: [she_leads]
+  kinks: [femdom_light, coworker]
+  status: ok
+  him: assistant
+  him_age: [25, 35]
+  his_outfits: [shirt_trousers]
+- id: office_party
+  title: After the office party
+  mode: couple
+  cast: mf
+  hook: When the office party winds down, two coworkers slip into the empty conference room.
+  her: coworker
+  her_age: [25, 40]
+  locations: [conference_room]
+  her_outfits: [little_black_dress, sheath_dress_office]
+  shot1: Paper party streamers hang over the long meeting table; she pulls him into the dark glass conference room by his tie, both holding glasses of champagne.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She sits on the meeting table, pulling him close by his tie; he slides his hand up her thigh.'}
+  arcs: [quickie, classic]
+  kinks: [coworker, party]
+  status: ok
+  him: coworker
+  him_age: [26, 42]
+  his_outfits: [shirt_trousers]
+- id: layover_crew
+  title: Layover
+  mode: couple
+  cast: mf
+  hook: Pilot and flight attendant share a layover night in a hotel far from home.
+  her: flight attendant
+  her_age: [26, 38]
+  locations: [luxury_hotel_suite]
+  her_outfits: [flight_attendant]
+  shot1: They walk into the hotel suite pulling their crew suitcases, still in uniform; she glances back at him over her shoulder at the door.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She loosens her silk neck scarf and his tie at the same time, standing close by the bed.'}
+  arcs: [costume_keep_on, classic]
+  kinks: [uniform_roleplay]
+  status: ok
+  him: pilot
+  him_age: [32, 50]
+  his_outfits: [pilot_uniform]
+  footwear: navy heels
+- id: night_shift_doctors
+  title: Night shift
+  mode: couple
+  cast: mf
+  hook: Two hospital colleagues share a quiet break in the staff lounge on the night shift.
+  her: doctor
+  her_age: [30, 44]
+  locations: [doctors_lounge]
+  her_outfits: [doctor_coat]
+  shot1: Both in work clothes, they stand by the coffee machine in the empty staff lounge at 3 a.m., handing each other a paper cup and holding the look a moment too long.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'He closes the lounge door behind them; she leans back against the lockers, pulling him close by his scrubs.'}
+  arcs: [quickie]
+  kinks: [coworker]
+  status: ok
+  him: doctor
+  him_age: [32, 48]
+  his_outfits: [doctor_scrubs]
+- id: bartender_last_call
+  title: Last call
+  mode: couple
+  cast: mf
+  hook: The bartender pours the last customer one more on the house after closing.
+  her: bartender
+  her_age: [25, 40]
+  locations: [bar_after_closing]
+  her_outfits: [bartender_vest]
+  shot1: She leans over the bar pouring him a drink while he sits on a stool across from her; the chairs are already up on the tables.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She climbs onto the bar counter and sits facing him, her knees on either side of him, a bottle still in her hand.'}
+  arcs: [quickie]
+  kinks: [quickie]
+  status: ok
+  him: regular
+  him_age: [28, 48]
+  his_outfits: [shirt_trousers]
+- id: open_house
+  title: Open house
+  mode: couple
+  cast: mf
+  hook: The real estate agent shows a buyer every room of the empty house, the bedroom last.
+  her: real estate agent
+  her_age: [28, 44]
+  locations: [empty_show_house]
+  her_outfits: [real_estate_suit, sheath_dress_office]
+  shot1: She opens the front door of the bright empty house, holding a folder and a set of keys, welcoming him in with a polite, professional look.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'In the staged bedroom she sits on the bed and puts the keys on the pillow, looking at him with a different, hungrier look.'}
+  arcs: [classic]
+  kinks: [high_heels]
+  status: ok
+  him: buyer
+  him_age: [30, 50]
+  his_outfits: [shirt_trousers]
+  footwear: black heels
+- id: tattoo_session
+  title: First tattoo
+  mode: couple
+  cast: mf
+  hook: Her first tattoo session runs late and she is the last client in the studio.
+  her: client
+  her_age: [24, 38]
+  locations: [tattoo_studio]
+  her_outfits: [leather_pants_bralette, tank_denim_shorts]
+  shot1: She lies on the padded tattoo chair, her top pulled up, while he leans over her hip with the tattoo machine; she watches him with a heated look.
+  opening:
+  - {cam: pair_close, stage: partial, his: clothed, scene: 'The session is over; she sits up on the chair, pulls him close by his t-shirt and kisses him.'}
+  arcs: [classic]
+  kinks: [tattoos]
+  status: ok
+  him: tattoo artist
+  him_age: [26, 42]
+  his_outfits: [tshirt_jeans]
+relationships:
+- id: date_night_in
+  title: Date night in
+  mode: couple
+  cast: mf
+  hook: They skip the restaurant and have date night at home.
+  her: girlfriend
+  her_age: [25, 40]
+  locations: [dining_room, living_room_sofa]
+  her_outfits: [little_black_dress, wrap_dress]
+  shot1: Candles burn on the dining table set for two; he pours her wine while she sits across from him with her chin on her hand, looking at him.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She gets up, walks around the table and sits on his lap, kissing him.'}
+  arcs: [romantic, classic]
+  kinks: [date_night, romantic]
+  status: ok
+  him: boyfriend
+  him_age: [27, 42]
+  his_outfits: [shirt_trousers]
+- id: anniversary_lingerie
+  title: Anniversary surprise
+  mode: solo
+  cast: mf
+  hook: She surprises her husband on their anniversary with new lingerie, seen through his eyes.
+  her: wife
+  her_age: [28, 45]
+  locations: [master_bedroom, luxury_hotel_suite]
+  her_outfits: [red_lace_set, garter_stockings_set, teddy_red]
+  shot1: She kneels on the bed in her new lingerie with a red ribbon tied around her waist like a gift, looking into the camera with a seductive look.
+  opening:
+  - {cam: pov, stage: outfit, his: clothed, scene: 'She crawls toward the camera across the bed on her hands and knees, holding his gaze.'}
+  arcs: [slow_tease, romantic]
+  kinks: [lingerie, pov, romantic]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+- id: lazy_sunday
+  title: Lazy Sunday
+  mode: solo
+  cast: mf
+  hook: A slow Sunday morning in his shirt that stays in bed until noon, seen through his eyes.
+  her: girlfriend
+  her_age: [24, 38]
+  locations: [loft_bedroom, airbnb_loft]
+  her_outfits: [mens_shirt_morning, tshirt_panties]
+  shot1: She sits cross-legged in the rumpled bed in his unbuttoned shirt, holding a coffee mug with both hands, looking into the camera with a soft, heavy-lidded, inviting look.
+  opening:
+  - {cam: pov, stage: outfit, his: clothed, scene: 'She puts the mug down and lets the shirt slide off one shoulder, reaching toward the camera.'}
+  arcs: [romantic, two_rounds]
+  kinks: [amateur_look, pov]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+- id: wedding_night
+  title: Wedding night
+  mode: couple
+  cast: mf
+  hook: The bride and groom finally escape the reception to the honeymoon suite.
+  her: bride
+  her_age: [26, 38]
+  locations: [honeymoon_suite]
+  her_outfits: [wedding_dress]
+  shot1: He carries her over the threshold of the honeymoon suite in her white wedding dress, both looking into each other's eyes, rose petals on the bed behind them.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: She stands with her back to him by the canopy bed while he unlaces the back of her wedding dress.}
+  arcs: [slow_tease, romantic]
+  kinks: [wedding, romantic]
+  status: ok
+  him: groom
+  him_age: [28, 42]
+  his_outfits: [tuxedo]
+- id: ex_reunion
+  title: The ex
+  mode: couple
+  cast: mf
+  hook: She runs into her ex at a party and remembers why it was good.
+  her: ex-girlfriend
+  her_age: [25, 40]
+  locations: [party_bedroom]
+  her_outfits: [jeans_crop_top, little_black_dress]
+  shot1: In a bedroom piled with coats at a house party they stand face to face, surprised to see each other, each holding a drink.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: He pushes the door shut; she drops her drink on the dresser and pulls him into a kiss.}
+  arcs: [quickie, classic]
+  kinks: [party, passionate_rough]
+  status: ok
+  him: ex-boyfriend
+  him_age: [26, 42]
+  his_outfits: [tshirt_jeans]
+- id: blind_date
+  title: Blind date
+  mode: couple
+  cast: mf
+  hook: A blind date goes better than either expected.
+  her: date
+  her_age: [25, 40]
+  locations: [boutique_hotel_room, city_bedroom_night]
+  her_outfits: [wrap_dress, velvet_bodycon]
+  shot1: They stumble into her apartment kissing after the date, her back against the door, his hands on her waist.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She kicks off her shoes and leads him toward the bed by the hand, looking back over her shoulder.'}
+  arcs: [classic, slow_tease]
+  kinks: [date_night]
+  status: ok
+  him: date
+  him_age: [27, 42]
+  his_outfits: [shirt_trousers]
+- id: borrow_sugar
+  title: A cup of sugar
+  mode: couple
+  cast: mf
+  hook: She knocks next door to borrow sugar in her pyjamas.
+  her: neighbour
+  her_age: [28, 45]
+  locations: [home_kitchen]
+  her_outfits: [silk_pajama_shorts, tshirt_panties]
+  shot1: She stands in his kitchen holding an empty cup, in her silk pyjamas; he reaches for the sugar jar on a high shelf, his arm brushing hers.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She sits on the kitchen counter as he pours the sugar, her bare feet hooked around his legs.'}
+  arcs: [classic]
+  kinks: [neighbors]
+  status: ok
+  him: neighbour
+  him_age: [26, 45]
+  his_outfits: [tshirt_jeans]
+- id: hotwife_hotel
+  title: Hotel afternoon
+  mode: couple
+  cast: mf
+  hook: A married woman meets her lover in a hotel for the afternoon.
+  her: married woman
+  her_age: [30, 46]
+  locations: [luxury_hotel_suite, boutique_hotel_room]
+  her_outfits: [little_black_dress, black_lace_set]
+  shot1: She takes off her wedding ring and places it on the bedside table while he watches her from the door, room key in hand.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She pulls him to the bed by his tie, her dress already unzipped at the back.'}
+  arcs: [classic]
+  kinks: [hotwife_lover, cheating]
+  status: ok
+  him: lover
+  him_age: [30, 48]
+  his_outfits: [business_suit]
+- id: soldier_homecoming
+  title: Homecoming
+  mode: couple
+  cast: mf
+  hook: He comes home from deployment and she has waited long enough.
+  her: wife
+  her_age: [25, 40]
+  locations: [entry_hallway, master_bedroom]
+  her_outfits: [sundress, red_lace_set]
+  shot1: He walks through the front door with his duffel bag on his shoulder; she runs into his arms, jumping up to hug him.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'They kiss hungrily against the hallway wall, his bag dropped on the floor.'}
+  arcs: [quickie, two_rounds]
+  kinks: [romantic, passionate_rough]
+  status: ok
+  him: soldier
+  him_age: [26, 42]
+  his_outfits: [military_uniform_m]
+- id: divorce_party
+  title: Divorce party
+  mode: couple
+  cast: mf
+  hook: She celebrates her divorce with the bartender she just met.
+  her: divorcee
+  her_age: [35, 48]
+  locations: [luxury_hotel_suite]
+  her_outfits: [sequin_mini, red_satin_gown]
+  shot1: She holds up a champagne glass and her divorce papers, toasting him with a wicked look in the hotel suite.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She rips the papers in half and throws them over her shoulder, pulling him close.'}
+  arcs: [classic]
+  kinks: [milf, party]
+  status: ok
+  him: bartender
+  him_age: [26, 36]
+  his_outfits: [shirt_trousers]
+travel:
+- id: beach_fling
+  title: Holiday fling
+  mode: couple
+  cast: mf
+  hook: On holiday she meets a fellow tourist on the beach and invites him to her villa.
+  her: tourist
+  her_age: [24, 40]
+  locations: [beach_villa, beach_cabana]
+  her_outfits: [string_bikini, white_bikini_wet]
+  shot1: On the sand by the villa she offers him a cocktail; he stands dripping from the sea with a towel over his shoulder.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'They kiss in the doorway of the villa, sand on their feet, her hands on his wet chest.'}
+  arcs: [outdoor, classic]
+  kinks: [vacation_fling]
+  status: ok
+  him: tourist
+  him_age: [26, 42]
+  his_outfits: [swim_shorts]
+- id: ski_chalet
+  title: Apres-ski
+  mode: couple
+  cast: mf
+  hook: After the last run her ski instructor warms her up by the chalet fire.
+  her: tourist
+  her_age: [25, 40]
+  locations: [ski_chalet]
+  her_outfits: [knit_sweater_dress]
+  shot1: They come in from the snow, stamping their boots by the door of the wooden chalet; she unwinds her scarf, cheeks red from the cold, looking at him with warm, bright eyes.
+  opening:
+  - {cam: pair_seated, stage: outfit, his: clothed, scene: 'They sit on the fur rug by the fire with two mugs of hot chocolate, her legs over his.'}
+  arcs: [romantic, classic]
+  kinks: [vacation_fling, romantic]
+  status: ok
+  him: ski instructor
+  him_age: [26, 40]
+  his_outfits: [hoodie_m]
+- id: road_trip_motel
+  title: Road trip
+  mode: solo
+  cast: mf
+  hook: A road trip with her boyfriend stops for the night at a neon-lit motel, seen through his eyes.
+  her: girlfriend
+  her_age: [24, 36]
+  locations: [motel_room]
+  her_outfits: [denim_skirt_blouse, tank_denim_shorts]
+  shot1: She falls back onto the motel bed, arms spread, the neon sign glowing pink through the blinds, looking up into the camera with a playful, tired look.
+  opening:
+  - {cam: pov, stage: outfit, his: clothed, scene: 'She sits up on the bed and starts unbuttoning her blouse, holding the camera''s gaze.'}
+  arcs: [classic, two_rounds]
+  kinks: [amateur_look, pov]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+- id: couples_spa
+  title: Couples spa
+  mode: couple
+  cast: mf
+  hook: A couples massage at a resort spa; the therapist leaves and they stay.
+  her: wife
+  her_age: [28, 45]
+  locations: [hotel_spa_room]
+  her_outfits: [towel_wrap]
+  shot1: They lie side by side on two massage tables under white towels, candles around them, reaching across to hold hands.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'He gets up and pours warm oil on her bare back as she lies on her stomach, looking back at him.'}
+  arcs: [romantic, slow_tease]
+  kinks: [massage, oiled_body, romantic]
+  status: ok
+  him: husband
+  him_age: [30, 48]
+  his_outfits: [bathrobe_m]
+nightlife:
+- id: strip_poker
+  title: Strip poker
+  mode: couple
+  cast: mf
+  hook: A game of strip poker where she loses on purpose.
+  her: girlfriend
+  her_age: [25, 40]
+  locations: [basement_den]
+  her_outfits: [little_black_dress, black_lace_set]
+  shot1: They sit at the card table with chips and cards; she lays down her cards with a sly look, already missing her shoes.
+  opening:
+  - {cam: pair_seated, stage: partial, his: clothed, scene: She stands and slowly unzips her dress after losing the hand while he watches from his chair.}
+  arcs: [slow_tease]
+  kinks: [games_bet]
+  status: ok
+  him: boyfriend
+  him_age: [27, 42]
+  his_outfits: [shirt_trousers]
+- id: halloween_party
+  title: Halloween party
+  mode: couple
+  cast: mf
+  hook: At a Halloween costume party, the woman in the devil costume picks her partner.
+  her: party guest
+  her_age: [24, 38]
+  locations: [party_bedroom]
+  her_outfits: [devil_costume, witch_costume]
+  shot1: In a hallway decorated with orange string lights and paper bats she pulls him by the hand toward a bedroom door, in her costume, looking back at him with a wicked look.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'Inside the bedroom she pushes him onto the bed full of coats and climbs onto him, still in costume.'}
+  arcs: [costume_keep_on]
+  kinks: [fantasy_costume, party]
+  status: ok
+  him: party guest
+  him_age: [24, 40]
+  his_outfits: [tshirt_jeans]
+- id: vip_lounge
+  title: VIP
+  mode: couple
+  cast: mf
+  hook: She meets him in the VIP lounge and they leave for his suite.
+  her: clubber
+  her_age: [24, 38]
+  locations: [nightclub_vip, luxury_hotel_suite]
+  her_outfits: [sequin_mini, velvet_bodycon]
+  shot1: In the neon VIP booth she sits close to him, her hand on his knee, whispering into his ear, champagne on the table.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'In his suite she pushes him back against the door, kissing him, her dress straps falling.'}
+  arcs: [classic]
+  kinks: [party, glamour]
+  status: ok
+  him: stranger
+  him_age: [28, 45]
+  his_outfits: [shirt_trousers]
+- id: game_bet
+  title: The bet
+  mode: solo
+  cast: mf
+  hook: She lost a bet on the big game and has to wear his jersey, and only his jersey, seen through his eyes.
+  her: girlfriend
+  her_age: [23, 35]
+  locations: [living_room_sofa]
+  her_outfits: [sports_fan_jersey]
+  shot1: She stands in front of the TV in his oversized red jersey, arms crossed, pouting at the camera like a sore loser.
+  opening:
+  - {cam: pov_seated, stage: outfit, his: clothed, scene: 'She climbs onto the sofa and straddles the camera''s lap in the jersey, holding the remote out of reach.'}
+  arcs: [quickie, classic]
+  kinks: [games_bet, pov]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+fitness_and_wellness:
+- id: trainer_overtime
+  title: Overtime
+  mode: couple
+  cast: mf
+  hook: Her personal trainer keeps her after the gym closes for one more set.
+  her: client
+  her_age: [24, 38]
+  locations: [gym_after_hours]
+  her_outfits: [gym_set, running_shorts]
+  shot1: She lies on a weight bench pressing a barbell while he spots her, standing over her with his hands under the bar.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She sits up on the bench, sweaty and flushed, pulling him down by his tank top.'}
+  arcs: [classic, quickie]
+  kinks: [sports_fitness, athletic]
+  status: ok
+  him: personal trainer
+  him_age: [26, 40]
+  his_outfits: [gym_wear_m]
+- id: private_yoga
+  title: Private yoga
+  mode: couple
+  cast: mf
+  hook: A private yoga lesson where the instructor corrects her posture very closely.
+  her: yoga client
+  her_age: [25, 40]
+  locations: [yoga_studio]
+  her_outfits: [yoga_set]
+  shot1: She holds a deep forward bend on a yoga mat, hands on the floor, while he stands behind her, his hands on her hips correcting her posture.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She rises and turns in his arms, her body pressed against his.'}
+  arcs: [slow_tease, classic]
+  kinks: [sports_fitness]
+  status: ok
+  him: yoga instructor
+  him_age: [28, 42]
+  his_outfits: [gym_wear_m]
+- id: oil_massage
+  title: Deep tissue
+  mode: couple
+  cast: mf
+  hook: A full-body oil massage where she asks him to keep going.
+  her: client
+  her_age: [28, 46]
+  locations: [spa_massage_room]
+  her_outfits: [towel_wrap]
+  shot1: She lies on her stomach on the massage table under a white towel, looking back at him as he warms oil between his hands.
+  opening:
+  - {cam: pair_close, stage: partial, his: clothed, scene: 'He massages oil into her bare shoulders and back, the towel low on her hips, her eyes half-closed.'}
+  arcs: [slow_tease, classic]
+  kinks: [massage, oiled_body]
+  status: ok
+  him: masseur
+  him_age: [28, 45]
+  his_outfits: [massage_uniform_m]
+- id: boxing_sparring
+  title: Sparring
+  mode: couple
+  cast: mf
+  hook: A sparring session in an empty boxing gym turns into a different kind of wrestling.
+  her: boxer
+  her_age: [24, 36]
+  locations: [boxing_gym]
+  her_outfits: [boxing_outfit]
+  shot1: They circle each other in the ring with gloves up, both sweating, her eyes locked on his.
+  opening:
+  - {cam: pair_close, stage: partial, his: clothed, scene: 'She pins him against the ropes, gloves off, her hand on his chest, breathing hard.'}
+  arcs: [quickie]
+  kinks: [sports_fitness, passionate_rough]
+  status: ok
+  him: sparring partner
+  him_age: [25, 38]
+  his_outfits: [gym_wear_m]
+pov:
+- id: boudoir_shoot
+  title: Boudoir shoot
+  mode: solo
+  cast: mf
+  hook: A boudoir photoshoot where the photographer puts the camera down, seen through his eyes.
+  her: model
+  her_age: [25, 42]
+  locations: [photo_studio]
+  her_outfits: [lace_bodysuit, black_lace_set, satin_chemise]
+  shot1: She sits on a stool against the white paper backdrop in lingerie, softboxes on either side, looking into the camera with a confident, sultry look.
+  opening:
+  - {cam: pov, stage: outfit, his: clothed, scene: 'She lies on the floor on the white paper, propped on her elbows, beckoning the camera closer.'}
+  arcs: [photoshoot]
+  kinks: [photoshoot, glamour, pov]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+- id: painter_muse
+  title: The muse
+  mode: solo
+  cast: mf
+  hook: She poses nude for a painter and becomes more than a muse, seen through his eyes.
+  her: model
+  her_age: [24, 40]
+  locations: [art_studio]
+  her_outfits: [silk_robe_set, oversized_shirt]
+  shot1: She stands by a draped sofa in a painter's studio, letting a silk robe slip off her shoulders, looking into the camera over a half-finished canvas on an easel.
+  opening:
+  - {cam: pov, stage: partial, his: clothed, scene: 'She reclines on the draped sofa in the classic painter''s pose, one hand behind her head, holding the camera''s gaze.'}
+  arcs: [photoshoot, slow_tease]
+  kinks: [photoshoot, romantic, pov]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+- id: girlfriend_morning
+  title: Good morning
+  mode: solo
+  cast: mf
+  hook: She wakes him up her way, seen through his eyes.
+  her: girlfriend
+  her_age: [24, 38]
+  locations: [city_bedroom_night, master_bedroom]
+  her_outfits: [tshirt_panties, silk_pajama_shorts]
+  shot1: She lies on her side in bed next to the camera, propped on one elbow, her hair messy from sleep, looking into the camera with a mischievous look.
+  opening:
+  - {cam: pov, stage: outfit, his: clothed, scene: 'She pulls off her t-shirt and climbs over the camera, her hair falling around her face.'}
+  arcs: [quickie, romantic]
+  kinks: [pov, amateur_look]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+mature:
+- id: mature_neighbor_groceries
+  title: Heavy bags
+  mode: couple
+  cast: mf
+  hook: The neighbour from downstairs carries her shopping bags up the stairs; she invites him in for lemonade and more.
+  her: neighbour
+  her_age: [25, 45]
+  locations: [home_kitchen, living_room_sofa]
+  her_outfits: [wrap_dress, knit_sweater_dress]
+  shot1: He carries two heavy shopping bags into her kitchen while she holds the door open, looking at him with grateful, warm eyes.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'She hands him a glass of lemonade and lets her hand linger on his arm, looking up at him with an experienced, knowing look.'}
+  arcs: [classic, she_leads]
+  kinks: [milf, cougar]
+  status: ok
+  him: neighbour from downstairs
+  him_age: [25, 35]
+  his_outfits: [tshirt_jeans]
+  look: &id001
+    age: [56, 66]
+    figure: a full, curvy mature figure with very large, heavy natural breasts, a defined waist and wide hips
+    figure_short: full curvy mature figure with very large, heavy natural breasts
+    extra: natural age lines and fine wrinkles around her eyes
+    hair_colours: [silver-grey, ash-blonde, dark brown, auburn]
+- id: mature_hotel_bar
+  title: The silver fox
+  mode: couple
+  cast: mf
+  hook: An older woman at a hotel bar picks up a handsome stranger and takes him upstairs.
+  her: guest
+  her_age: [25, 45]
+  locations: [hotel_bar, luxury_hotel_suite]
+  her_outfits: [little_black_dress, red_satin_gown]
+  shot1: She sits on a velvet stool at the hotel bar with a martini, turning toward him with an inviting look as he takes the seat next to her.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: 'In her suite she sits on the bed and unzips her dress, looking up at him.'}
+  arcs: [she_leads, classic]
+  kinks: [milf, cougar, femdom_light]
+  status: ok
+  him: hotel guest
+  him_age: [26, 38]
+  his_outfits: [shirt_trousers]
+  look: *id001
+- id: mature_yoga
+  title: The instructor
+  mode: couple
+  cast: mf
+  hook: A mature yoga instructor gives a private lesson to a man from her evening class.
+  her: yoga instructor
+  her_age: [25, 45]
+  locations: [yoga_studio]
+  her_outfits: [yoga_set]
+  shot1: She stands behind him on the mat, her hands on his hips, correcting his pose with a warm, knowing look.
+  opening:
+  - {cam: pair_close, stage: outfit, his: clothed, scene: She sits on the mat facing him and peels off her yoga top.}
+  arcs: [she_leads]
+  kinks: [milf, sports_fitness]
+  status: ok
+  him: yoga client
+  him_age: [25, 35]
+  his_outfits: [gym_wear_m]
+  look: *id001
+busty:
+- id: busty_bra_fitting
+  title: The fitting
+  mode: couple
+  cast: mf
+  hook: At her lingerie boutique after closing, she asks her boyfriend which bra he likes best.
+  her: boutique owner
+  her_age: [28, 44]
+  locations: [lingerie_boutique]
+  her_outfits: [black_lace_set, red_lace_set, white_lace_set]
+  shot1: She steps out of the fitting room in a lace bra, holding two more on hangers, presenting herself to him as he sits on the padded bench.
+  opening:
+  - {cam: pair_close, stage: underwear, his: clothed, scene: 'She sits on his lap on the bench, guiding his hands to the clasp of her bra.'}
+  arcs: [slow_tease, classic]
+  kinks: [big_natural_breasts, lingerie]
+  status: ok
+  him: boyfriend
+  him_age: [28, 45]
+  his_outfits: [shirt_trousers]
+  look: &id002 {figure: 'a curvy figure with enormous natural breasts, a narrow waist and wide hips', figure_short: curvy figure with enormous natural breasts}
+- id: busty_sunbathing
+  title: Over the fence
+  mode: couple
+  cast: mf
+  hook: He catches his neighbour sunbathing topless and she invites him over.
+  her: neighbour
+  her_age: [30, 46]
+  locations: [garden_terrace, backyard_pool]
+  her_outfits: [string_bikini]
+  shot1: She lies on a sun lounger in her bikini, propped up on her elbows, waving him over the garden fence with a playful look.
+  opening:
+  - {cam: pair_close, stage: partial, his: clothed, scene: 'He sits on the edge of her lounger rubbing sunscreen onto her breasts, her bikini top untied.'}
+  arcs: [outdoor, classic]
+  kinks: [big_natural_breasts, neighbors]
+  status: ok
+  him: neighbour
+  him_age: [28, 45]
+  his_outfits: [tshirt_jeans]
+  look: *id002
+feet:
+- id: foot_massage_after_heels
+  title: After the heels
+  mode: couple
+  cast: mf
+  hook: After a long night in high heels she asks him to rub her aching feet, and he worships them.
+  her: girlfriend
+  her_age: [25, 42]
+  locations: [living_room_sofa, master_bedroom]
+  her_outfits: [little_black_dress, slip_dress]
+  shot1: She sits on the sofa kicking off her high heels with a tired, inviting look, stretching her bare feet toward him as he sits at the other end.
+  opening:
+  - {cam: pair_seated, stage: outfit, his: clothed, scene: 'Her bare feet rest in his lap; he massages her soles with his thumbs while she leans back, eyes half-closed.'}
+  arcs: [feet_focus]
+  kinks: [feet, high_heels]
+  status: ok
+  him: boyfriend
+  him_age: [27, 45]
+  his_outfits: [shirt_trousers]
+  look: &id003 {extra: freshly painted red toenails}
+- id: pedicure_reveal
+  title: Fresh pedicure
+  mode: solo
+  cast: mf
+  hook: She comes home with a fresh red pedicure and shows it off, seen through his eyes.
+  her: girlfriend
+  her_age: [24, 40]
+  locations: [master_bedroom, loft_bedroom]
+  her_outfits: [slip_dress, tshirt_panties]
+  shot1: She sits on the bed with her legs stretched toward the camera, wiggling her freshly painted toes, looking into the camera with a teasing look.
+  opening:
+  - {cam: pov, stage: outfit, his: clothed, scene: 'She lies back on the bed and lifts one bare foot toward the camera, her toes pointed.'}
+  arcs: [feet_focus]
+  kinks: [feet, pov]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+  look: *id003
+- id: stocking_worship
+  title: Stockings
+  mode: solo
+  cast: mf
+  hook: She dresses slowly in stockings and lets him admire her legs and feet, seen through his eyes.
+  her: lover
+  her_age: [26, 44]
+  locations: [luxury_hotel_suite]
+  her_outfits: [corset_stockings_heels, garter_stockings_set]
+  shot1: She sits on the edge of the hotel bed rolling a sheer black stocking up her leg, her foot pointed toward the camera, looking into the camera with a sultry look.
+  opening:
+  - {cam: pov_seated, stage: outfit, his: clothed, scene: 'She rests her stockinged foot on the camera''s knee, toes pointed.'}
+  arcs: [feet_focus]
+  kinks: [feet, stockings_garters]
+  status: ok
+  him: ''
+  him_age: [28, 48]
+  his_outfits: [tshirt_jeans]
+  look: *id003
+two_women:
+- id: ff_roommates
+  title: Movie night
+  mode: ff
+  cast: ff
+  hook: Two roommates share a blanket for movie night and the movie is forgotten.
+  her: roommate
+  her_age: [24, 38]
+  locations: [living_room_sofa]
+  her_outfits: [silk_pajama_shorts, tshirt_panties]
+  shot1: '{A} and {B} sit side by side on the sofa under one blanket, sharing a bowl of popcorn, the TV light on their faces, {A} glancing at {B}.'
+  opening:
+  - {cam: ff_pair, stage: outfit, his: absent, scene: '{A} leans over and kisses {B}; the popcorn bowl tips onto the blanket.'}
+  arcs: [ff_classic]
+  kinks: [amateur_look]
+  status: ok
+- id: ff_massage
+  title: The masseuse
+  mode: ff
+  cast: ff
+  hook: A massage therapist and her last client of the day.
+  her: therapist
+  her_age: [26, 44]
+  locations: [spa_massage_room]
+  her_outfits: [towel_wrap]
+  shot1: '{B} lies on her stomach on the massage table under a white towel; {A} in a black tunic warms oil between her hands, standing beside the table.'
+  opening:
+  - {cam: ff_pair, stage: partial, his: absent, scene: '{A} massages oil into {B}''s bare back and thighs, leaning close; {B} looks back at her over her shoulder.'}
+  arcs: [ff_classic]
+  kinks: [massage, oiled_body]
+  status: ok
+- id: ff_bridesmaids
+  title: The bridesmaids
+  mode: ff
+  cast: ff
+  hook: Two bridesmaids share a hotel room after the wedding.
+  her: bridesmaid
+  her_age: [25, 38]
+  locations: [boutique_hotel_room]
+  her_outfits: [bridesmaid_dress]
+  shot1: '{A} and {B} stumble into their hotel room in matching pink bridesmaid dresses, holding their high heels in their hands, leaning on each other.'
+  opening:
+  - {cam: ff_pair, stage: outfit, his: absent, scene: '{A} unzips the back of {B}''s dress and kisses her shoulder.'}
+  arcs: [ff_classic]
+  kinks: [wedding, party]
+  status: ok
+- id: ff_pool_friends
+  title: Poolside
+  mode: ff
+  cast: ff
+  hook: Two friends sunbathing by a private pool.
+  her: friend
+  her_age: [24, 40]
+  locations: [backyard_pool]
+  her_outfits: [string_bikini, white_bikini_wet]
+  shot1: '{A} and {B} lie on two sun loungers by the turquoise pool; {A} rubs sunscreen onto {B}''s shoulders.'
+  opening:
+  - {cam: ff_pair, stage: partial, his: absent, scene: '{A} unties {B}''s bikini top, both looking at each other with sudden heat.'}
+  arcs: [ff_classic]
+  kinks: [outdoor_secluded]
+  status: ok
+- id: ff_neighbors_wine
+  title: Wine night
+  mode: ff
+  cast: ff
+  hook: Two neighbours share a bottle of wine and a secret.
+  her: neighbour
+  her_age: [28, 45]
+  locations: [living_room_sofa, master_bedroom]
+  her_outfits: [slip_dress, jeans_crop_top]
+  shot1: '{A} and {B} sit on the floor against the sofa clinking wine glasses, an open bottle between them, {B}''s head on {A}''s shoulder.'
+  opening:
+  - {cam: ff_pair, stage: outfit, his: absent, scene: '{B} turns and kisses {A} slowly, her hand on {A}''s cheek.'}
+  arcs: [ff_classic]
+  kinks: [romantic]
+  status: ok
+- id: ff_lingerie_try_on
+  title: Try-on
+  mode: ff
+  cast: ff
+  hook: Two friends try on lingerie together in a boutique after closing.
+  her: friend
+  her_age: [24, 40]
+  locations: [lingerie_boutique]
+  her_outfits: [black_lace_set, red_lace_set]
+  shot1: '{A} and {B} stand in front of the fitting-room curtain in new lace lingerie, {A} adjusting {B}''s bra strap.'
+  opening:
+  - {cam: ff_pair, stage: underwear, his: absent, scene: '{A} slips {B}''s bra strap off her shoulder and kisses her neck.'}
+  arcs: [ff_classic]
+  kinks: [lingerie]
+  status: ok

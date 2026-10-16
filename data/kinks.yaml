@@ -1,0 +1,87 @@
+# Genre and fetish tags. focus: allowed (can be the centre of a page) | background_only (a detail, "по касательной") | forbidden.
+# status: canvas fit. `popularity` is a rough 1-5 from public category rankings (2024-2025 year-in-review coverage,
+# uniform-fantasy surveys); use it as a sampling weight together with status.
+
+genres:
+  - {id: milf, label: "MILF / experienced woman (her age 38-48)", popularity: 5, status: strong, focus: allowed}
+  - {id: cougar, label: "Older woman, younger adult man (she 40-50, he 25-32)", popularity: 4, status: strong, focus: allowed}
+  - {id: pov, label: "Point of view from his eyes", popularity: 5, status: strong, focus: allowed, notes: "our strongest sex angles are POV"}
+  - {id: amateur_look, label: "Homemade look: natural light, casual room", popularity: 5, status: strong, focus: allowed}
+  - {id: glamour, label: "Glamour: lingerie, styled hair, soft studio light", popularity: 3, status: strong, focus: allowed}
+  - {id: romantic, label: "Sensual and romantic", popularity: 3, status: strong, focus: allowed}
+  - {id: passionate_rough, label: "Passionate, rough but consensual (hair pulled back, hands on hips)", popularity: 4, status: ok, focus: allowed}
+  - {id: coworker, label: "Coworkers / workplace", popularity: 5, status: strong, focus: allowed, notes: "rising search trend"}
+  - {id: boss_assistant, label: "Boss and assistant (mutual, she flirts first)", popularity: 4, status: strong, focus: allowed}
+  - {id: casting_audition, label: "Audition / interview where she is eager", popularity: 4, status: ok, focus: allowed, notes: "she is enthusiastic, never pressured"}
+  - {id: massage, label: "Massage that turns sexual", popularity: 5, status: strong, focus: allowed}
+  - {id: service_visit, label: "Service visit (delivery, repair) that turns into flirting", popularity: 5, status: strong, focus: allowed}
+  - {id: neighbors, label: "Neighbours", popularity: 4, status: strong, focus: allowed}
+  - {id: cheating, label: "Cheating / affair between adults", popularity: 4, status: strong, focus: allowed}
+  - {id: hotwife_lover, label: "Hotwife with a lover (husband absent, only two people in frame)", popularity: 3, status: ok, focus: allowed}
+  - {id: tradwife, label: "Tradwife / modest housewife who lets loose", popularity: 3, status: strong, focus: allowed, notes: "rising search trend"}
+  - {id: modest_demure, label: "Modest, demure look that becomes explicit", popularity: 3, status: strong, focus: allowed, notes: "rising search trend"}
+  - {id: vacation_fling, label: "Vacation fling", popularity: 3, status: strong, focus: allowed}
+  - {id: date_night, label: "Date night / girlfriend experience (adult couple)", popularity: 4, status: strong, focus: allowed}
+  - {id: wedding, label: "Wedding night / bride / bridesmaid", popularity: 3, status: ok, focus: allowed}
+  - {id: party, label: "Party hookup", popularity: 3, status: strong, focus: allowed}
+  - {id: games_bet, label: "Strip game or a lost bet between adults", popularity: 3, status: strong, focus: allowed}
+  - {id: sports_fitness, label: "Fitness, gym, yoga, sports", popularity: 4, status: strong, focus: allowed}
+  - {id: photoshoot, label: "Photoshoot that goes further", popularity: 4, status: strong, focus: allowed}
+  - {id: uniform_roleplay, label: "Uniforms and costume roleplay between adults", popularity: 5, status: ok, focus: allowed, notes: "military 18%, police 14%, firefighter 9%, nurse 9% in uniform-fantasy surveys"}
+  - {id: fantasy_costume, label: "Fantasy costumes (succubus, devil, witch, vampire, goddess)", popularity: 3, status: ok, focus: allowed}
+  - {id: period_retro, label: "Retro / period (50s pin-up, 70s, noir, Wild West, medieval)", popularity: 2, status: ok, focus: allowed}
+  - {id: sci_fi, label: "Sci-fi / cyberpunk", popularity: 2, status: ok, focus: allowed}
+  - {id: outdoor_secluded, label: "Outdoors in a secluded place", popularity: 4, status: ok, focus: allowed, notes: "no bystanders"}
+  - {id: exhibitionist_tease, label: "She poses by a window or on a balcony at night", popularity: 3, status: ok, focus: allowed, notes: "no onlookers in frame"}
+  - {id: quickie, label: "Quickie in an unusual place", popularity: 3, status: ok, focus: allowed}
+  - {id: comedy_setup, label: "Comedy setup (stuck in a window, locked out, wrong apartment)", popularity: 3, status: weak, focus: background_only, notes: "setup page only; she is laughing and fine"}
+  - {id: femdom_light, label: "She is in charge (rides him, gives orders, pins his wrists playfully)", popularity: 3, status: ok, focus: allowed}
+  - {id: interethnic, label: "Couples of different ethnicities", popularity: 4, status: strong, focus: allowed, notes: "a character combination, not a label in the prompt"}
+
+body_and_look:   # applied through appearance.yaml; listed here for sampling weight
+  - {id: big_natural_breasts, popularity: 5, status: strong, focus: allowed}
+  - {id: big_butt, popularity: 5, status: strong, focus: allowed}
+  - {id: curvy, popularity: 4, status: strong, focus: allowed}
+  - {id: plus_size, popularity: 3, status: ok, focus: allowed}
+  - {id: athletic, popularity: 3, status: strong, focus: allowed}
+  - {id: slim_small_breasts, popularity: 3, status: strong, focus: allowed, notes: "write 'slim adult figure with small natural breasts'"}
+  - {id: redhead, popularity: 3, status: strong, focus: allowed}
+  - {id: glasses, popularity: 3, status: ok, focus: allowed}
+  - {id: natural_hairy, popularity: 2, status: ok, focus: allowed}
+  - {id: tan_lines, popularity: 2, status: ok, focus: allowed}
+  - {id: freckles, popularity: 2, status: ok, focus: background_only, notes: "kept across 2 pages"}
+  - {id: tattoos, popularity: 3, status: ok, focus: background_only, notes: "one small tattoo kept across 2 pages"}
+  - {id: piercings, popularity: 2, status: weak, focus: background_only}
+
+fetish:
+  - {id: lingerie, popularity: 5, status: strong, focus: allowed}
+  - {id: stockings_garters, popularity: 5, status: ok, focus: allowed}
+  - {id: high_heels, popularity: 4, status: ok, focus: allowed, notes: "name them on every page they are on"}
+  - {id: leather, popularity: 3, status: strong, focus: allowed}
+  - {id: latex_pvc, popularity: 3, status: ok, focus: allowed}
+  - {id: oiled_body, popularity: 4, status: ok, focus: allowed, notes: "CLONE once with a three-quarter view + his hands; top-down view with his hands on her back passed"}
+  - {id: wet_look, popularity: 3, status: ok, focus: allowed}
+  - {id: blindfold, popularity: 3, status: ok, focus: allowed, notes: "1/1; 1 page max: hides her eyes and likeness"}
+  - {id: light_bondage, popularity: 3, status: ok, focus: background_only, notes: "silk scarf 1/1, fur cuffs 1/1"}
+  - {id: spanking, popularity: 3, status: ok, focus: allowed, notes: "1/1: result only, a pink handprint on her buttock, his hand on her hip"}
+  - {id: hair_pulling, popularity: 3, status: ok, focus: background_only, notes: "1/2: needs 'his right hand gripping her hair at the back of her head'"}
+  - {id: choker_collar, popularity: 2, status: ok, focus: allowed}
+  - {id: uniform_fetish, popularity: 4, status: ok, focus: allowed}
+  - {id: feet, popularity: 3, status: ok, focus: background_only, notes: "feet close-up 1/1 clean; footjob weak"}
+  - {id: anal, popularity: 5, status: avoid, focus: allowed, notes: "0/2: renders as rear vaginal penetration; the act cannot be guaranteed"}
+  - {id: creampie, popularity: 4, status: ok, focus: allowed, notes: "1/1"}
+  - {id: facial, popularity: 4, status: strong, focus: allowed}
+  - {id: cum_on_body, popularity: 4, status: strong, focus: allowed}
+  - {id: titjob, popularity: 3, status: avoid, focus: allowed, notes: "0/2"}
+  - {id: toys, popularity: 3, status: ok, focus: background_only, notes: "1/1"}
+  - {id: masturbation_solo, popularity: 3, status: ok, focus: allowed, notes: "1/1, fingers clean"}
+  - {id: food_play, popularity: 2, status: ok, focus: background_only, notes: "whipped cream 1/1"}
+  - {id: squirt, popularity: 3, status: weak, focus: allowed, notes: "1/1 rendered plausibly; still a fluid gamble"}
+  - {id: smoking, popularity: 1, status: avoid, focus: forbidden}
+
+out_of_scope_now:   # popular, but not for the 1 woman + 1 man canvas album format
+  - {id: lesbian, popularity: 5, why: "two women from one reference → clone risk; needs a two-woman reference profile"}
+  - {id: threesome, popularity: 5, why: "three people; clone and limb artifacts"}
+  - {id: group, popularity: 3, why: "many people"}
+  - {id: hentai_anime, popularity: 5, why: "drawn style; this model is photoreal"}
+  - {id: trans_femboy, popularity: 4, why: "different character profile; possible later as its own album format"}

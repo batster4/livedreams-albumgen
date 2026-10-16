@@ -1,0 +1,232 @@
+# Story arcs: the 15 canvas pages after shot 1. Each page: [slot, her clothing stage, his presence].
+# Clothing stages: outfit -> partial -> underwear -> topless -> nude. Clothes only come off; the album ends naked,
+# messy and tired (afterglow pages), never dressed again. At most 1 weak position per album, never in a climax slot.
+- id: classic
+  label: "Flirt \u2192 tease \u2192 oral \u2192 five positions \u2192 two finishes \u2192 afterglow"
+  pages:
+  - [intro, outfit, clothed]
+  - [tease, underwear, clothed]
+  - [solo, topless, absent]
+  - [tease, topless, nude]
+  - [oral, nude, nude]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  cast: mf
+- id: slow_tease
+  label: Long seduction, short and intense finish
+  pages:
+  - [intro, outfit, clothed]
+  - [intro, outfit, clothed]
+  - [tease, partial, clothed]
+  - [tease, underwear, clothed]
+  - [solo, underwear, absent]
+  - [solo, topless, absent]
+  - [tease, nude, shirtless]
+  - [oral, nude, nude]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  cast: mf
+- id: quickie
+  label: 'Straight to it: little talk, lots of positions'
+  pages:
+  - [intro, outfit, clothed]
+  - [oral, partial, nude]
+  - [oral, topless, nude]
+  - [sex, partial, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  cast: mf
+- id: photoshoot
+  label: Solo shoot that turns into sex with the photographer
+  pages:
+  - [solo, outfit, absent]
+  - [solo, partial, absent]
+  - [tease, underwear, absent]
+  - [solo, underwear, absent]
+  - [solo, topless, absent]
+  - [solo, nude, absent]
+  - [tease, nude, clothed]
+  - [oral, nude, nude]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  cast: mf
+- id: oral_focus
+  label: Oral-heavy album
+  pages:
+  - [intro, outfit, clothed]
+  - [tease, underwear, clothed]
+  - [tease, topless, nude]
+  - [oral, topless, nude]
+  - [oral, nude, nude]
+  - [oral, nude, nude]
+  - [oral, nude, nude]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  cast: mf
+- id: romantic
+  label: Date night, gentle POV sex, long afterglow
+  pages:
+  - [intro, outfit, clothed]
+  - [intro, outfit, clothed]
+  - [tease, partial, clothed]
+  - [tease, underwear, shirtless]
+  - [solo, underwear, absent]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  cast: mf
+- id: two_rounds
+  label: First round, a break, then round two
+  pages:
+  - [intro, outfit, clothed]
+  - [tease, underwear, clothed]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [solo, nude, absent]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  cast: mf
+- id: she_leads
+  label: 'She is in charge: undresses him, rides him, decides the finish'
+  pages:
+  - [intro, outfit, clothed]
+  - [tease, outfit, shirtless]
+  - [tease, underwear, nude]
+  - [oral, underwear, nude]
+  - [oral, topless, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [solo, nude, absent]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  cast: mf
+- id: costume_keep_on
+  label: 'Costume or uniform album: the costume stays on for the tease and the oral pages'
+  pages:
+  - [intro, outfit, clothed]
+  - [tease, outfit, clothed]
+  - [solo, partial, absent]
+  - [tease, partial, clothed]
+  - [oral, partial, nude]
+  - [oral, partial, nude]
+  - [tease, underwear, nude]
+  - [oral, topless, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  cast: mf
+- id: outdoor
+  label: Outdoors or by the water; blanket, towel or daybed instead of a bed
+  pages:
+  - [intro, outfit, clothed]
+  - [solo, outfit, absent]
+  - [tease, underwear, clothed]
+  - [solo, topless, absent]
+  - [oral, nude, nude]
+  - [oral, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+  notes: replace 'bed' with the location's daybed, blanket or towel in every recipe
+  cast: mf
+- id: feet_focus
+  label: 'Foot-fetish album: her feet in every scene, from tease to the finish'
+  cast: mf
+  pages:
+  - [intro, outfit, clothed]
+  - [feet, underwear, absent]
+  - [feet, underwear, any]
+  - [tease, topless, shirtless]
+  - [oral, nude, nude]
+  - [feet, nude, nude]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [feet, nude, absent]
+  - [sex, nude, nude]
+  - [sex, nude, nude]
+  - [climax, nude, nude]
+  - [climax, nude, nude]
+  - [outro, nude, absent]
+  - [outro, nude, absent]
+- id: ff_classic
+  label: 'Two women: flirt, undress each other, oral, fingering, 69, afterglow'
+  cast: ff
+  pages:
+  - [intro, outfit, absent]
+  - [intro, outfit, absent]
+  - [tease, underwear, absent]
+  - [tease, topless, absent]
+  - [oral, topless, absent]
+  - [oral, nude, absent]
+  - [sex, nude, absent]
+  - [oral, nude, absent]
+  - [sex, nude, absent]
+  - [sex, nude, absent]
+  - [sex, nude, absent]
+  - [oral, nude, absent]
+  - [sex, nude, absent]
+  - [outro, nude, absent]
+  - [outro, nude, absent]

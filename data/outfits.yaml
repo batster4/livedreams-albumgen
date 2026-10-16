@@ -1,0 +1,172 @@
+# Outfits. `phrase` is used verbatim in shot 1 and on clothed pages; `parts` is the undressing order
+# (outer first). status for canvas: strong | ok | weak | avoid.
+# Model notes: solid fabrics, lace, satin, leather and latex render well. Fine mesh, many thin straps,
+# chains, text, logos and complex print patterns drift between pages (weak). Shoes carry into nude
+# pages unless named as off.
+
+her:
+  everyday:
+    - {id: tank_denim_shorts, phrase: "a white ribbed tank top and short denim shorts", parts: [tank top, denim shorts, cotton panties], status: strong}
+    - {id: oversized_shirt, phrase: "an oversized white button-up shirt over black panties", parts: [shirt, panties], status: strong}
+    - {id: sundress, phrase: "a light floral sundress with thin straps", parts: [sundress, white lace panties], status: strong}
+    - {id: jeans_crop_top, phrase: "a cropped black top and high-waisted blue jeans", parts: [crop top, jeans, black bra, black thong], status: strong}
+    - {id: knit_sweater_dress, phrase: "a soft beige knitted sweater dress", parts: [sweater dress, nude bra, nude panties], status: strong}
+    - {id: leggings_hoodie, phrase: "a cropped grey hoodie and black leggings", parts: [hoodie, leggings, sports bra, thong], status: ok}
+    - {id: tshirt_panties, phrase: "a loose white t-shirt and pink cotton panties", parts: [t-shirt, panties], status: strong}
+    - {id: wrap_dress, phrase: "a red wrap dress", parts: [wrap dress, red lace bra, red lace panties], status: strong}
+    - {id: denim_skirt_blouse, phrase: "a white peasant blouse and a short denim skirt", parts: [blouse, denim skirt, white panties], status: strong}
+    - {id: housewife_apron, phrase: "a pastel 1950s-style dress with a white frilled apron", parts: [apron, dress, white lingerie], status: ok}
+  office:
+    - {id: blouse_pencil_skirt, phrase: "a white silk blouse and a black pencil skirt", parts: [blouse, pencil skirt, black lace bra, black lace thong], status: strong}
+    - {id: skirt_suit, phrase: "a fitted navy skirt suit with a cream camisole", parts: [jacket, skirt, camisole, nude lingerie], status: strong}
+    - {id: pantsuit, phrase: "a tailored grey trouser suit and a black silk top", parts: [jacket, trousers, silk top, black lingerie], status: ok}
+    - {id: sheath_dress_office, phrase: "a fitted burgundy sheath dress", parts: [dress, burgundy lace bra, burgundy lace thong], status: strong}
+    - {id: secretary_glasses_look, phrase: "a cream blouse, a high-waisted grey pencil skirt and thin black-framed glasses", parts: [blouse, pencil skirt, black lingerie], status: strong, notes: "glasses can stay on; name them on every page"}
+  evening:
+    - {id: little_black_dress, phrase: "a short black cocktail dress", parts: [dress, black lace lingerie], status: strong}
+    - {id: red_satin_gown, phrase: "a long red satin evening gown with a thigh slit", parts: [gown, red lace lingerie], status: strong}
+    - {id: sequin_mini, phrase: "a gold sequin mini dress", parts: [dress, nude thong], status: ok, notes: "sequins kept"}
+    - {id: slip_dress, phrase: "a champagne satin slip dress", parts: [slip dress, nude thong], status: strong}
+    - {id: leather_mini_corset, phrase: "a black leather corset with thin straps and a short black leather mini skirt", parts: [mini skirt, corset, black thong], status: strong, notes: "tested in our album"}
+    - {id: velvet_bodycon, phrase: "a burgundy velvet strapless top and a black satin mini skirt", parts: [skirt, top, burgundy lace thong], status: strong}
+    - {id: backless_dress, phrase: "an emerald green backless silk dress", parts: [dress, green lace thong], status: strong}
+  lingerie:
+    - {id: black_lace_set, phrase: "a black lace bra and a matching lace thong", parts: [bra, thong], status: strong}
+    - {id: red_lace_set, phrase: "a red lace balconette bra and matching panties", parts: [bra, panties], status: strong}
+    - {id: white_lace_set, phrase: "a white lace bra and matching panties", parts: [bra, panties], status: strong}
+    - {id: garter_stockings_set, phrase: "a black lace bra, a lace garter belt, sheer black stockings and a thong", parts: [bra, thong, garter belt, stockings], status: ok, notes: "keep stockings on for nude pages if wanted: name them"}
+    - {id: babydoll_sheer, phrase: "a sheer pink chiffon short nightie over a matching thong", parts: [short nightie, thong], status: strong, notes: "never call it a baby doll"}
+    - {id: satin_chemise, phrase: "a black satin chemise with lace trim", parts: [chemise, black thong], status: strong}
+    - {id: lace_bodysuit, phrase: "a black lace bodysuit", parts: [bodysuit], status: strong}
+    - {id: teddy_red, phrase: "a red lace teddy", parts: [teddy], status: strong}
+    - {id: corset_lingerie, phrase: "a satin corset with suspenders, sheer stockings and a lace thong", parts: [corset, thong, stockings], status: ok}
+    - {id: bralette_set, phrase: "a soft lilac bralette and matching high-cut panties", parts: [bralette, panties], status: strong}
+    - {id: open_cup_bra, phrase: "a black strappy bra with open cups and a matching thong", parts: [bra, thong], status: weak, notes: "shot 1 on qwen-image-3 drew a regular strappy bra"}
+    - {id: bridal_lingerie, phrase: "a white lace bridal corset, a garter on her thigh and white stockings", parts: [corset, white thong, garter, stockings], status: ok}
+    - {id: silk_robe_set, phrase: "a short black silk robe over a black lace set", parts: [robe, bra, thong], status: strong}
+    - {id: fishnet_bodystocking, phrase: "a black fishnet bodystocking", parts: [bodystocking], status: ok, notes: "kept across pages in the 2026-10-14 test"}
+    - {id: thong_only, phrase: "only a small black thong", parts: [thong], status: strong}
+  sleepwear:
+    - {id: silk_pajama_shorts, phrase: "a pale pink silk camisole and matching shorts", parts: [camisole, shorts], status: strong}
+    - {id: mens_shirt_morning, phrase: "his oversized blue shirt, open, over bare skin", parts: [shirt], status: strong}
+    - {id: fluffy_robe, phrase: "a white fluffy hotel bathrobe", parts: [bathrobe], status: strong}
+    - {id: towel_wrap, phrase: "a white bath towel wrapped around her body", parts: [towel], status: strong}
+  swim_sport:
+    - {id: string_bikini, phrase: "a small black string bikini", parts: [bikini top, bikini bottom], status: strong}
+    - {id: red_one_piece, phrase: "a red high-cut one-piece swimsuit", parts: [swimsuit], status: strong}
+    - {id: white_bikini_wet, phrase: "a white bikini, wet from the sea", parts: [bikini top, bikini bottom], status: ok}
+    - {id: gym_set, phrase: "a black sports bra and grey high-waisted gym leggings", parts: [sports bra, leggings, thong], status: strong}
+    - {id: yoga_set, phrase: "a sage green yoga bra and matching leggings", parts: [yoga bra, leggings, thong], status: strong}
+    - {id: tennis_outfit, phrase: "a white tennis dress and white sneakers", parts: [tennis dress, white panties], status: ok}
+    - {id: running_shorts, phrase: "a neon pink sports bra and short black running shorts", parts: [sports bra, shorts, thong], status: strong}
+    - {id: boxing_outfit, phrase: "a black sports bra, boxing shorts and hand wraps", parts: [hand wraps, shorts, sports bra, thong], status: ok, notes: "hand wraps off before oral/sex beats"}
+  uniforms_roleplay:
+    - {id: nurse_costume, phrase: "a white short-sleeved nurse costume dress with white stockings", parts: [costume dress, white lingerie, stockings], status: ok, notes: "she is the nurse; nobody is a patient"}
+    - {id: doctor_coat, phrase: "a white doctor's coat over a fitted blue dress", parts: [coat, dress, black lingerie], status: ok}
+    - {id: maid_costume, phrase: "a black French maid costume with a white frilled apron and black stockings", parts: [apron, costume dress, black lingerie, stockings], status: ok}
+    - {id: flight_attendant, phrase: "a navy flight attendant uniform with a fitted jacket, pencil skirt and silk neck scarf", parts: [jacket, scarf, skirt, blouse, navy lingerie], status: ok, notes: "no airline logos"}
+    - {id: police_costume, phrase: "a dark blue police-style costume shirt and short skirt with a toy badge", parts: [shirt, skirt, black lingerie], status: ok, notes: "costume only; no arrest or handcuff coercion"}
+    - {id: firefighter_costume, phrase: "an open firefighter jacket over a red bra and black shorts", parts: [jacket, shorts, red bra, thong], status: ok}
+    - {id: military_costume, phrase: "a fitted khaki military-style costume shirt and shorts", parts: [shirt, shorts, khaki bra, thong], status: ok, notes: "no real insignia"}
+    - {id: waitress_uniform, phrase: "a black waitress uniform with a white apron", parts: [apron, uniform dress, black lingerie], status: ok}
+    - {id: bartender_vest, phrase: "a white shirt, a black waistcoat and a short black skirt", parts: [waistcoat, shirt, skirt, black lingerie], status: ok}
+    - {id: lab_coat_glasses, phrase: "a white lab coat over a black dress, with thin glasses", parts: [lab coat, dress, black lingerie], status: ok}
+    - {id: real_estate_suit, phrase: "a fitted red blazer and a black mini skirt", parts: [blazer, skirt, black lingerie], status: strong}
+    - {id: cowgirl_outfit, phrase: "a denim shirt tied at the waist, denim shorts, a cowboy hat and brown leather boots", parts: [hat, shirt, shorts, boots, panties], status: ok}
+    - {id: hotel_maid_uniform, phrase: "a grey housekeeping uniform dress with a white collar", parts: [uniform dress, white lingerie], status: ok}
+    - {id: massage_therapist, phrase: "a black fitted massage therapist tunic and black trousers", parts: [tunic, trousers, black lingerie], status: ok}
+    - {id: trainer_outfit, phrase: "a fitted black training top and black leggings", parts: [top, leggings, sports bra, thong], status: strong}
+    - {id: mechanic_overalls, phrase: "grey mechanic overalls unzipped to the waist over a black sports bra", parts: [overalls, sports bra, thong], status: ok}
+    - {id: tradwife_dress, phrase: "a modest blue gingham dress with a cardigan", parts: [cardigan, dress, white lingerie], status: strong}
+  costumes_fantasy:
+    - {id: devil_costume, phrase: "a red satin corset, a short red skirt and small red devil horns", parts: [horns, skirt, corset, red thong], status: ok}
+    - {id: angel_costume, phrase: "a white satin corset, white feather wings and a white skirt", parts: [wings, skirt, corset, white thong], status: ok, notes: "wings kept on the intro page"}
+    - {id: succubus_costume, phrase: "a black latex corset, black horns and long black gloves", parts: [gloves, horns, corset, black thong], status: ok}
+    - {id: witch_costume, phrase: "a black witch costume dress, a pointed hat and striped stockings", parts: [hat, dress, black lingerie, stockings], status: ok}
+    - {id: vampire_costume, phrase: "a black velvet gown with a high collar and a red lace corset under it", parts: [gown, red corset, black thong], status: ok, notes: "no blood"}
+    - {id: pirate_costume, phrase: "a white off-shoulder blouse, a brown leather corset belt and a short skirt", parts: [blouse, corset belt, skirt, panties], status: ok}
+    - {id: goddess_toga, phrase: "a white draped Greek goddess dress with gold arm cuffs", parts: [toga dress, gold cuffs], status: ok}
+    - {id: harem_dancer, phrase: "a jewelled bra top and sheer harem trousers", parts: [harem trousers, bra top, thong], status: ok, notes: "jewelled top kept"}
+    - {id: superheroine_generic, phrase: "an original glossy blue superheroine bodysuit with a short red cape", parts: [cape, bodysuit], status: ok, notes: "original design only, no franchise"}
+    - {id: space_officer, phrase: "a fitted silver sci-fi uniform", parts: [uniform, black lingerie], status: ok}
+    - {id: pinup_50s, phrase: "a red polka-dot halter dress and a red headscarf", parts: [headscarf, dress, black lingerie], status: strong}
+    - {id: disco_70s, phrase: "a gold lamé halter top and high-waisted flared trousers", parts: [trousers, halter top, panties], status: ok}
+    - {id: aerobics_80s, phrase: "a shiny pink 1980s leotard, leg warmers and a sweatband", parts: [sweatband, leg warmers, leotard], status: ok}
+    - {id: flapper_20s, phrase: "a beaded 1920s flapper dress and a feather headband", parts: [headband, dress, black lingerie], status: ok, notes: "beaded dress and headband kept"}
+    - {id: noir_dress, phrase: "a fitted 1940s black dress with seamed stockings", parts: [dress, black lingerie, stockings], status: ok}
+    - {id: victorian_corset, phrase: "a Victorian lace-up corset, a long skirt and a high-necked blouse", parts: [blouse, skirt, corset, chemise], status: ok, notes: "corset, chemise and skirt kept"}
+    - {id: medieval_dress, phrase: "a green medieval gown with a laced bodice", parts: [gown, linen chemise], status: ok}
+  fetish_wear:
+    - {id: latex_catsuit, phrase: "a black glossy latex catsuit with a front zip", parts: [catsuit], status: ok, notes: "zip open is a good tease beat"}
+    - {id: latex_dress, phrase: "a red glossy latex mini dress", parts: [latex dress, red thong], status: ok}
+    - {id: pvc_set, phrase: "a black PVC bra and high-waisted PVC shorts", parts: [PVC shorts, PVC bra], status: ok}
+    - {id: leather_harness_set, phrase: "a black leather chest harness over a black bra and thong", parts: [harness, bra, thong], status: weak, notes: "shot 1 on qwen-image-3 drew a studded bra instead of a harness"}
+    - {id: leather_pants_bralette, phrase: "tight black leather trousers and a black lace bralette", parts: [leather trousers, bralette, thong], status: ok}
+    - {id: thigh_boots_bodysuit, phrase: "a black satin bodysuit and black thigh-high boots", parts: [bodysuit, boots], status: ok}
+    - {id: sheer_mesh_dress, phrase: "a sheer black mesh mini dress over a black thong", parts: [mesh dress, thong], status: ok, notes: "mesh kept"}
+    - {id: corset_stockings_heels, phrase: "a black underbust corset, black stockings and black heels", parts: [heels, corset, stockings], status: ok}
+    - {id: ripped_pantyhose, phrase: "a black mini skirt, a black top and sheer black pantyhose", parts: [top, skirt, pantyhose, thong], status: ok}
+    - {id: collar_lingerie, phrase: "a black lace set and a black leather choker", parts: [bra, thong, choker], status: ok}
+  seasonal:
+    - {id: santa_costume, phrase: "a red velvet Santa-style dress with white fur trim and a Santa hat", parts: [hat, dress, red lingerie], status: ok}
+    - {id: christmas_lingerie, phrase: "red velvet lingerie with white fur trim", parts: [bra, panties], status: ok}
+    - {id: valentine_set, phrase: "a red satin robe over a red heart-print lace set", parts: [robe, bra, panties], status: ok}
+    - {id: wedding_dress, phrase: "a white strapless lace wedding dress", parts: [wedding dress, white bridal lingerie], status: ok}
+    - {id: bridesmaid_dress, phrase: "a dusty pink satin bridesmaid dress", parts: [dress, nude thong], status: strong}
+    - {id: new_year_dress, phrase: "a silver sequin party dress", parts: [dress, black thong], status: ok}
+    - {id: sports_fan_jersey, phrase: "a plain oversized red sports jersey and black panties", parts: [jersey, panties], status: strong, notes: "no team names"}
+    - {id: oktoberfest_dirndl, phrase: "a dirndl dress with a white blouse and a green apron", parts: [apron, dirndl, blouse, white lingerie], status: ok}
+
+his:
+  - {id: tshirt_jeans, phrase: "a plain dark grey t-shirt, long dark blue jeans and black sneakers", status: strong, notes: "tested"}
+  - {id: business_suit, phrase: "a dark navy business suit, a white shirt and black leather shoes", status: strong}
+  - {id: shirt_trousers, phrase: "a white dress shirt with rolled sleeves and charcoal trousers", status: strong}
+  - {id: delivery_uniform, phrase: "a plain red delivery polo shirt, black trousers and a red cap", status: strong, notes: "no brand"}
+  - {id: courier_uniform, phrase: "a brown courier shirt and brown shorts", status: strong}
+  - {id: plumber_overalls, phrase: "blue work overalls and a grey t-shirt", status: strong}
+  - {id: electrician_workwear, phrase: "a dark work shirt, cargo trousers and a tool belt", status: strong}
+  - {id: firefighter_gear, phrase: "firefighter turnout trousers with suspenders over a navy t-shirt", status: strong}
+  - {id: police_costume_m, phrase: "a dark blue police-style costume uniform", status: ok, notes: "costume, off duty"}
+  - {id: military_uniform_m, phrase: "a plain olive military-style uniform", status: ok, notes: "no real insignia"}
+  - {id: doctor_scrubs, phrase: "navy medical scrubs", status: strong}
+  - {id: pilot_uniform, phrase: "a white pilot shirt with plain epaulettes and dark trousers", status: strong}
+  - {id: chef_whites, phrase: "a white chef's jacket and black trousers", status: strong}
+  - {id: gym_wear_m, phrase: "a black tank top and grey gym shorts", status: strong}
+  - {id: trainer_polo, phrase: "a fitted black polo shirt and black track trousers", status: strong}
+  - {id: massage_uniform_m, phrase: "a white massage therapist tunic and white trousers", status: strong}
+  - {id: mechanic_coveralls, phrase: "grey mechanic coveralls", status: strong}
+  - {id: pool_cleaner, phrase: "a white polo shirt and blue board shorts", status: strong}
+  - {id: gardener_wear, phrase: "a green work shirt and khaki trousers", status: strong}
+  - {id: security_uniform, phrase: "a black security guard uniform", status: strong}
+  - {id: chauffeur_suit, phrase: "a black chauffeur suit and a black cap", status: strong}
+  - {id: casual_linen, phrase: "a white linen shirt and beige linen trousers", status: strong}
+  - {id: swim_shorts, phrase: "navy swim shorts", status: strong}
+  - {id: bathrobe_m, phrase: "a white hotel bathrobe", status: strong}
+  - {id: tuxedo, phrase: "a black tuxedo and a bow tie", status: strong}
+  - {id: cowboy_m, phrase: "a denim shirt, jeans, a leather belt and cowboy boots", status: strong}
+  - {id: pirate_m, phrase: "a loose white shirt, black trousers and tall boots", status: ok}
+  - {id: knight_m, phrase: "a dark tunic and leather trousers", status: ok, notes: "no armour in sex beats"}
+  - {id: roman_m, phrase: "a white Roman tunic and leather sandals", status: ok}
+  - {id: photographer_m, phrase: "a black t-shirt and black jeans with a camera strap", status: strong}
+  - {id: hoodie_m, phrase: "a grey hoodie and black joggers", status: strong}
+  - {id: santa_m, phrase: "a red Santa-style jacket and trousers", status: ok, notes: "no white beard in close shots"}
+
+footwear:
+  - {id: barefoot, phrase: "barefoot", status: strong, notes: "default"}
+  - {id: black_stilettos, phrase: "black stiletto heels", status: ok}
+  - {id: red_heels, phrase: "red patent heels", status: ok}
+  - {id: thigh_boots, phrase: "black thigh-high boots", status: ok}
+  - {id: ankle_boots, phrase: "black leather ankle boots", status: ok}
+  - {id: sneakers, phrase: "white sneakers", status: ok}
+  - {id: sandals, phrase: "flat leather sandals", status: ok}
+
+accessories:
+  - {id: glasses, phrase: "thin black-framed glasses", status: ok}
+  - {id: choker, phrase: "a black velvet choker", status: ok}
+  - {id: pearl_necklace, phrase: "a pearl necklace", status: weak, notes: "beads vary"}
+  - {id: gold_hoops, phrase: "gold hoop earrings", status: ok}
+  - {id: hair_ribbon, phrase: "a silk ribbon in her hair", status: ok}
+  - {id: blindfold, phrase: "a black silk blindfold", status: ok, notes: "covers her eyes: hurts likeness, use on 1 page max"}
+  - {id: fur_cuffs, phrase: "fluffy pink handcuffs on her wrists", status: ok, notes: "1/1"}
+  - {id: silk_scarf_wrists, phrase: "a red silk scarf loosely around her wrists", status: ok, notes: "1/1"}
+  - {id: wedding_ring, phrase: "a thin gold wedding ring", status: ok}

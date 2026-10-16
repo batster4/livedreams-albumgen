@@ -1,0 +1,74 @@
+# Facial expressions per album slot. Code checks every emotion sentence against these rules and falls back to the
+# pool. During oral, sex and the climax her face always shows pleasure; flirting shows desire; there is no laughing.
+
+banned_everywhere: [laugh, laughs, laughing, laughed, giggle, giggles, giggling, grin, grins, grinning, beaming, toothy,
+                    cheerful, cheerfully, happily, joyful, joyfully, "wide smile", "big smile", "broad smile", "smiles widely",
+                    # knitted brows, grimaces and wide-open eyes render as pain or fright (review 2026-10-15)
+                    "brows knitted", "knitted brows", "eyebrows drawn together", "brows drawn together", furrowed, frown,
+                    frowning, grimace, grimacing, wince, wincing, "clenched teeth", "wide-eyed", "eyes wide"]
+banned_in_slots:
+  oral: [smile, smiles, smiling, smiled, "bites her lower lip", "bites her lip", "biting her lip"]  # lip biting renders as a smirk
+  sex: [smile, smiles, smiling, smiled, "bites her lower lip", "bites her lip", "biting her lip"]  # lip biting renders as a smirk
+  climax: [smile, smiles, smiling, smiled, "bites her lower lip", "bites her lip", "biting her lip"]  # lip biting renders as a smirk
+  outro: [smile, smiles, smiling, smiled]  # a "faint satisfied smile" rendered as a wide one; tired and satisfied instead
+
+pools:
+  intro:
+    - "She gives him a slow, flirtatious look from under her lashes, her lips slightly parted."
+    - "She holds his gaze with a knowing, seductive half-smile."
+    - "Her eyes linger on him with open desire, her lips parted."
+    - "She bites her lower lip, her eyes dark with interest."
+  tease:
+    - "She looks into the camera with heavy-lidded, sultry eyes, her lips parted."
+    - "Her gaze is slow and smouldering, a faint seductive half-smile on her lips."
+    - "She bites her lower lip and looks up through her lashes with open desire."
+    - "Her eyes are half-closed and her lips parted, her breathing deep."
+  solo:
+    - "She looks into the camera with heavy-lidded, sultry eyes, her lips slightly parted."
+    - "Her eyes are half-closed in languid pleasure, her lips parted."
+    - "She gazes into the camera with a slow, confident, seductive look."
+  feet:
+    - "She looks into the camera over her toes with a slow, teasing, heavy-lidded look."
+    - "Her gaze is playful and seductive, her lips slightly parted."
+    - "She watches the camera with a knowing, smouldering look, her chin resting on her hand."
+  oral:
+    - "She looks up at him with hungry, heavy-lidded eyes."
+    - "Her eyes are half-closed in concentration and pleasure, her cheeks flushed."
+    - "She looks up into the camera with lustful, glistening eyes."
+  sex:
+    - "Her eyes are half-closed and her lips parted in a moan, her cheeks flushed with pleasure."
+    - "Her head is tilted back, her eyes half-closed, her lips parted in a soft moan of pleasure."
+    - "She looks into the camera with dazed, heavy-lidded eyes, her lips parted, breathing hard."
+    - "Her eyes are nearly closed, her face relaxed and flushed with pleasure, her lips parted in a gasp."
+    - "Her mouth is open in a moan, her eyes half-closed with pleasure, her skin flushed."
+  climax:
+    - "She looks up with dazed, heavy-lidded, satisfied eyes, her lips parted."
+    - "Her eyes are half-closed and her mouth open, her face flushed and glowing."
+    - "She looks up into the camera with lustful, satisfied eyes, breathing hard."
+  outro:
+    - "She looks into the camera with tired, heavy-lidded, satisfied eyes, her lips slightly parted."
+    - "Her eyes are half-closed in exhausted contentment, her lips softly parted."
+    - "She gazes into the camera with a lazy, dreamy, spent look."
+
+# Two-women albums: the emotion is written for both of them (code uses these, never the "him" lines above).
+ff_pools:
+  intro:
+    - "Both women look at each other with slow, flirtatious desire, their lips slightly parted."
+    - "They hold each other's gaze with a knowing, seductive look."
+  tease:
+    - "Both have heavy-lidded, sultry eyes and parted lips, their cheeks flushed."
+    - "They look at each other with open desire, breathing deeply."
+  oral:
+    - "The woman receiving has her eyes half-closed and her mouth open in a moan, her cheeks flushed with pleasure."
+    - "The woman receiving has her head tilted back, her eyes nearly closed, her face relaxed and flushed, her lips parted."
+  sex:
+    - "Both faces are flushed with pleasure, their eyes half-closed and their lips parted in moans."
+    - "The woman receiving has her mouth open in a gasp of pleasure, her eyes nearly closed."
+  climax:
+    - "The woman receiving has her head thrown back in orgasm, her mouth open, her face flushed and glowing."
+  outro:
+    - "Both look into the camera with tired, heavy-lidded, satisfied eyes."
+    - "Both have a lazy, dreamy, spent look, their lips slightly parted."
+
+# Words the image model must see on every page after the first sex page, so she looks progressively more "used".
+after_sex_look: "her hair messy and tangled, her makeup slightly smudged, her skin flushed and glistening with sweat"

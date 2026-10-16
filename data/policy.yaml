@@ -1,0 +1,49 @@
+# Content policy for the generator. These popular porn genres are EXCLUDED or REFRAMED because the
+# LiveDreams content policy refuses them (minors, non-consent, incapacity, family, real people, animals)
+# or because the canvas album format cannot render them well. The validator enforces `never_words`.
+
+min_age_default: 23          # LiveDreams allows 18+; 23 keeps faces clearly adult (a 22-year-old character read young)
+max_people_in_frame: 2
+
+excluded_genres:             # popular, but never generated
+  - {genre: "step-family / any family relation (stepmom, stepsister, stepdaughter, 'family')", why: "family relations between partners are refused"}
+  - {genre: "teen / college / schoolgirl / cheerleader / babysitter / nanny / student-teacher", why: "youth framing is refused even for adults"}
+  - {genre: "sleeping / drunk / drugged / unconscious / hypnotised", why: "incapacity is refused"}
+  - {genre: "forced / blackmail / caught shoplifting / arrested / 'pays the rent' / debt", why: "coercion and non-consent are refused"}
+  - {genre: "hidden camera / voyeur filming / peeping", why: "no consent from the person filmed"}
+  - {genre: "doctor examining a patient / gynaecologist / dentist chair", why: "nobody is a patient; vulnerability framing"}
+  - {genre: "celebrity look-alikes, named pornstars, franchise cosplay (any studio's characters)", why: "real people and trademarks are refused"}
+  - {genre: "animal costumes and words (bunny, kitten, puppy, pony play)", why: "animal words in sexual context are refused"}
+  - {genre: "public sex with bystanders", why: "bystanders do not consent; secluded outdoors only"}
+  - {genre: "religious roleplay (nun, priest)", why: "off by default for brand safety; enable only on request"}
+
+reframed:                    # popular tropes kept in a safe form
+  - {trope: "Casting couch", as: "eager audition or interview where she initiates; nothing promised in exchange"}
+  - {trope: "Landlord / rent", as: "a repair visit or an inspection; never rent, money or debt"}
+  - {trope: "Stuck (washing machine, window, under the bed)", as: "comedy setup page only: she is laughing, clothed and fine; sex happens after she is free"}
+  - {trope: "Cop / arrest", as: "police-style costume at a party; playful questioning; no handcuffs or detention"}
+  - {trope: "Hotwife / cuckold", as: "she meets a lover; the husband is absent; two people in frame"}
+  - {trope: "Sugar daddy", as: "a glamorous woman and her wealthy older lover; never the word 'daddy'"}
+  - {trope: "Nurse / doctor", as: "hospital staff on a break, or a costume at home; nobody is a patient"}
+  - {trope: "Teacher", as: "an adult teacher with another adult after work; never a student, never a school location"}
+  - {trope: "Hitchhiker / taxi", as: "she chooses to stay; nothing owed for the ride; no brand names"}
+  - {trope: "Succubus / witch / vampire", as: "costume fantasy; both awake and willing; no spells, potions, mind control or blood"}
+
+never_words:                 # whole words, case-insensitive; validator rejects a prompt that contains any
+  age: [girl, girls, teen, teens, teenage, teenager, young, youthful, child, childlike, kid, kids, baby, minor, underage, preteen, loli, jailbait, schoolgirl, school, student, college, sorority, cheerleader, freshman, "barely legal", "just turned 18", petite, tiny, innocent, virgin, pigtails, braces, lollipop, "teddy bear", daddy, mommy, babysitter, nanny]
+  incapacity: [asleep, sleeping, sleepy, drowsy, unconscious, "passed out", drugged, drunk, tipsy, intoxicated, sedated, hypnotized, hypnotised, "mind control", limp, helpless]
+  coercion: [forced, rape, "non-consensual", "against her will", blackmail, struggling, resisting, trapped, "pinned down", "held down", begging, reluctant, scared, crying, tears, screaming, hurt, pain]
+  family: [stepmom, step-mom, "step mom", stepsister, step-sister, "step sister", stepdaughter, step-daughter, stepbrother, step-brother, "step brother", stepdad, step-dad, "step dad", stepson, step-son, mother, father, sister, brother, daughter, son, aunt, uncle, cousin, niece, nephew, mommy, daddy]
+  medical: [patient, "hospital gown", examination, anaesthesia, anesthesia]
+  animals: [bunny, kitten, puppy, pony, dog, cat, horse]
+  notes: "plain 'step' (stairs) is allowed; only step-family words are listed"
+
+swaps:                       # everyday phrases that collide with never_words
+  "baby blue": "pale blue"
+  "baby oil": "body oil"
+  "baby doll": "short sheer nightie"
+  "puppy-dog eyes": "wide eager eyes"
+  "kitten heels": "low heels"
+  "cat ears": "satin ear headband"
+  "dog collar": "leather choker"
+  "patient monitor": "bedside monitor"

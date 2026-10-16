@@ -1,0 +1,887 @@
+# Poses for canvas albums (one woman + one man, 2:3 vertical), grouped by album slot.
+# status: strong (>=85% passed) | ok | weak (untested or <60%: max 1 per album, never a climax) | avoid (never; replace_with).
+# Fields the code uses verbatim (the LLM only writes her pose variation and emotion):
+#   camera   - camera sentence
+#   her      - her pose and hands (LLM may adapt furniture; clothing is added by code from the arc stage)
+#   act      - exact mechanics of the act, inserted by code
+#   man      - his place, hands and framing; man_full: true = a full sentence ("Only his ...")
+#   penetration: true - she is completely naked on this page (code names what is off)
+#   his      - his state on the page: clothed | shirtless | nude | any
+#   stages   - her clothing stages where the pose makes sense
+#   needs    - location must contain one of these words (bed|sofa|...)
+#   opening: action_first + action_line - the page opens with the action (fixes near copies of shot 1)
+#   needs_his_face - shows his face: only in couple mode or with album.allow_his_face
+#   cameras  - other angles for a repeat of the same pose in one album; shows - front|back|face (semen carry)
+#   needs_his - his outfit must contain this word (unbuttoning needs a shirt, a t-shirt has no buttons)
+#   couple_weight - weight multiplier in couple albums (poses that draw badly with his face in the reference)
+#   modes    - album modes where the pose may appear (default: all)
+#   emotion  - a fixed face for this pose (kisses: eyes nearly closed, flushed with desire)
+intro:
+- id: seated_flirt_clothed
+  status: strong
+  evidence: 6/7
+  camera: three-quarter view from her front right at face height, her whole seated body and his body in frame
+  her: sits on the edge of the bed, legs crossed, both hands flat on the mattress beside her hips, looking up at him with a soft, inviting look
+  man: stands in front of her on the right of the photo, facing her, arms at his sides, shown from the chest down, his head outside the frame
+  stages: [outfit, partial, underwear]
+  his: clothed
+  needs: bed|sofa|bench|seat
+- id: doorway_arrival
+  status: ok
+  evidence: 1/1; couple albums repeat their meeting with it (batch 4-5), solo only
+  camera: three-quarter view from inside the room at chest height, her whole standing body in frame
+  her: stands in the doorway, leaning her shoulder against the door frame, her left hand on the frame and her right hand on her hip
+  man: stands at the right edge of the photo; only his shoulder and arm are visible, his head outside the frame
+  modes: [solo]
+  stages: [outfit, partial, underwear]
+  his: clothed
+- id: both_seated_sofa
+  status: ok
+  evidence: passed earlier
+  camera: front view at seated eye level, her whole body in the centre of the frame
+  her: sits on the sofa pressed close to him, her left hand on his knee and her right hand on her own thigh, looking into the camera
+  man: sits at the left edge of the photo, which cuts through his body; only his shoulder, arm and leg are visible, his head outside the frame
+  stages: [outfit, partial, underwear]
+  his: clothed
+  needs: sofa|couch|bench|daybed|lounger|sunbed|seat
+- id: setup_stuck_comic
+  status: ok
+  evidence: reaching variant 1/1
+  camera: three-quarter view at floor level, her whole body in frame
+  her: lies on her stomach on the floor beside the bed, her right arm reaching under the bed frame up to her shoulder, her left hand flat on the floor, looking back toward the camera with a playful look
+  man: none
+  stages: [outfit]
+  only_with_kink: comedy_setup
+  needs: bed
+- {id: kneeling_reference_pose, status: avoid, evidence: 'identical to shot 1: invites a copy of the reference', replace_with: seated_flirt_clothed}
+- id: intro_drink_together
+  status: weak
+  evidence: untested
+  camera: three-quarter view from her front left at seated eye level, her whole seated body and his knees in frame
+  her: sits on the sofa holding a glass of wine in her right hand, her left hand on the cushion, legs crossed, with a playful, flirtatious look
+  man: sits beside her at the right edge of the photo, which cuts through his body; only his shoulder, arm and knee are visible
+  stages: [outfit, partial]
+  his: clothed
+  needs: sofa|couch|bench|daybed|lounger
+- id: kiss_clothed_couple
+  status: ok
+  evidence: '2026-10-14 couple test: 1/1'
+  camera: three-quarter view at face height, both of them from the waist up
+  her: stands kissing him deeply on the mouth, her arms around his neck, eyes nearly closed
+  man: holds her waist, kissing her back, his face in profile
+  stages: [outfit, partial, underwear, topless]
+  his: any
+  needs_his_face: true
+  emotion: Her face is flushed with desire, her eyes nearly closed, her lips pressed to his.
+- id: ff_lingerie_kneel
+  status: ok
+  evidence: shot-1 style
+  camera: three-quarter view at chest height, both kneeling bodies in frame
+  her: '{A} and {B} kneel side by side on the bed facing the camera, each with an arm around the other''s waist'
+  man: none
+  cast: ff
+  stages: [outfit, partial, underwear]
+tease:
+- id: tease_pov_from_chair
+  status: strong
+  evidence: 6/7
+  camera: point-of-view shot from the eyes of a man seated on a chair, her body from the top of her head to her knees in frame
+  her: stands in front of him, weight on one leg, both hands on her hips, a slow, seductive look with heavy-lidded eyes
+  man: He is seated; only his knees are visible at the bottom edge of the frame.
+  man_full: true
+  stages: [outfit, partial, underwear, topless, nude]
+  his: clothed
+  cameras: ['point-of-view shot from the eyes of a man seated on a chair, closer, her body from the top of her head to her hips in frame']
+- id: striptease_standing
+  status: strong
+  evidence: solo 3/3
+  camera: front view at chest height, about two metres away, her body from the top of her head to her knees
+  her: stands facing the camera and slides one strap off her shoulder with her right hand, her left hand on her hip, a teasing look
+  man: none
+  stages: [outfit, partial, underwear]
+- id: tease_bend_over_look_back
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: three-quarter rear view at hip height, her body from the top of her head to her knees in frame
+  her: stands bending forward with both hands flat on the bed, her back arched and her feet apart, looking back over her shoulder into the camera
+  man: none
+  stages: [partial, underwear, topless, nude]
+  needs: bed|sofa|table|counter|desk|bench|lounger|sunbed|daybed
+- id: neck_kiss_from_behind
+  status: ok
+  evidence: '2026-10-14: 1/1, his face shows in profile (couple mode only)'
+  camera: three-quarter front view at chest height, her body from the top of her head to her hips in frame
+  her: stands with her back against his chest, her head tilted to the side, eyes nearly closed, her right hand reaching back to his hip
+  man: stands close behind her, kissing the side of her neck, both his hands on her waist
+  stages: [outfit, partial, underwear, topless, nude]
+  his: any
+  needs_his_face: true
+- id: undress_mechanics
+  status: ok
+  evidence: passed earlier
+  camera: three-quarter front view at chest height, her whole kneeling body in frame
+  her: kneels on the bed, both thumbs hooked into the sides of her underwear, slowly sliding it down her hips
+  man: none
+  stages: [underwear, topless]
+- id: undress_him
+  status: ok
+  evidence: passed earlier
+  camera: three-quarter front view at her eye level, her whole kneeling body and his lower body in frame
+  her: kneels on the floor in front of him, looking up at him with a teasing look
+  act: She pulls his trousers down his thighs with both hands.
+  man: stands in front of her on the right of the photo, shirtless, his trousers halfway down his thighs, shown from the chest down, his head outside the frame
+  stages: [outfit, partial, underwear, topless]
+  his: shirtless
+  his_strict: true
+  needs_his: trousers|jeans|shorts|pants|chinos
+- {id: lap_dance, status: avoid, evidence: '0/2: never sits astride his lap', replace_with: tease_pov_from_chair}
+- id: tease_on_bed_kneeling_pov
+  status: weak
+  evidence: untested
+  camera: point-of-view shot from the eyes of a man standing at the foot of the bed, looking down at her face and body
+  her: kneels on the bed facing the camera, sitting back on her heels, both hands sliding up her thighs, looking up into the camera with a playful look
+  man: none
+  stages: [outfit, partial, underwear, topless]
+- id: tease_unbutton_his_shirt
+  status: weak
+  evidence: untested
+  camera: three-quarter view from her front right at the height of her face, her body from the top of her head to her hips and his chest in frame
+  her: stands close in front of him, both hands on his shirt, unbuttoning it, looking up at him with a teasing look
+  man: stands facing her on the right of the photo; the top edge of the frame cuts him at the shoulders, his head above the frame
+  stages: [outfit, partial, underwear]
+  his: clothed
+  his_strict: true
+  needs_his: shirt
+- id: tease_breasts_kneeling
+  status: ok
+  evidence: 'batch 5: 2/2'
+  camera: front view at chest height, about two metres away, her whole kneeling body in frame
+  her: kneels upright on the bed, cupping and pressing her bare breasts together with both hands, looking into the camera
+  man: none
+  stages: [topless, nude]
+- id: ff_kiss_standing
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: three-quarter view at chest height, both women from the hips up
+  her: '{A} and {B} stand facing each other, kissing deeply on the mouth, eyes nearly closed, {B}''s hands in {A}''s hair, {A}''s hands on {B}''s waist'
+  man: none
+  cast: ff
+  stages: [underwear, topless, nude]
+  cameras: ['close view at face height, both women from the shoulders up']
+  emotion: Both faces are flushed with desire, their eyes nearly closed.
+- id: ff_undress_each_other
+  status: ok
+  evidence: 'batch 5: 1/1'
+  camera: three-quarter view at chest height, both women from the knees up
+  her: '{A} stands behind {B}, unhooking {B}''s bra with both hands and kissing her shoulder; {B} leans back against her, eyes half-closed'
+  man: none
+  cast: ff
+  stages: [underwear]
+- id: ff_kiss_lying
+  status: ok
+  evidence: iteration 3 (variant of ff_kiss_standing + ff_breast_kiss)
+  camera: three-quarter view at mattress height from beside the bed, both women in frame
+  her: '{A} and {B} lie on their sides on the bed facing each other, kissing deeply on the mouth, {A}''s hand on {B}''s breast, {B}''s hand on {A}''s hip, their legs entwined'
+  man: none
+  cast: ff
+  stages: [topless, nude]
+  emotion: Both faces are flushed with desire, their eyes nearly closed.
+solo:
+- id: solo_kneel_hands_behind_head
+  status: strong
+  evidence: 7/7
+  camera: front view at chest height, about two metres away, her whole kneeling body in frame
+  her: kneels on the bed, both hands behind her head, elbows out, a confident, smouldering look into the camera
+  man: none
+  stages: [outfit, partial, underwear, topless, nude]
+  cameras: ['three-quarter view from her right at chest height, her whole kneeling body in frame']
+- id: solo_seated_side_legs
+  status: strong
+  evidence: 7/7
+  camera: three-quarter front view at the height of her face, about two metres away, her whole seated body in frame
+  her: sits with her legs folded to one side, leaning on her straight left arm, her right hand on her thigh, with a soft, inviting look
+  man: none
+  stages: [outfit, partial, underwear, topless, nude]
+- id: solo_lying_top_down
+  status: strong
+  evidence: 7/7
+  camera: high angle from directly above, her body from the top of her head to her knees
+  her: lies on her back on the bed, arms over her head on the pillow, legs together, looking up into the camera
+  man: none
+  stages: [underwear, topless, nude]
+- id: solo_all_fours_look_back
+  status: ok
+  evidence: 1/1
+  camera: three-quarter rear view at mattress height, her whole body in frame
+  her: is on all fours on the bed, back arched, looking back over her shoulder into the camera
+  man: none
+  stages: [underwear, topless, nude]
+- id: solo_standing_window_light
+  status: ok
+  evidence: 1/1
+  camera: front view at chest height, her body from the top of her head to her knees
+  her: stands by the window, her right hand in her hair and her left hand on her hip, her face turned toward the room
+  man: none
+  stages: [outfit, partial, underwear, topless, nude]
+- id: solo_bath_tease
+  status: weak
+  evidence: untested
+  camera: three-quarter view at the height of the bathtub rim
+  her: sits on the rim of the bathtub, her legs in the foam water, both hands on the rim
+  man: none
+  stages: [nude]
+  needs: bath
+- id: solo_touching
+  status: ok
+  evidence: 1/1
+  camera: front view at chest height, her whole reclining body in frame
+  her: reclines against the pillows, knees apart, her right hand resting between her thighs, her left hand on her breast, eyes nearly closed
+  man: none
+  stages: [underwear, topless, nude]
+- id: solo_toy
+  status: ok
+  evidence: 1/1
+  camera: three-quarter view at mattress level, her whole body in frame
+  her: lies on her back, knees apart, holding a smooth pink vibrator against herself with her right hand, her left hand gripping the sheet
+  man: none
+  stages: [underwear, topless, nude]
+oral:
+- id: oral_kneeling_profile
+  status: strong
+  evidence: 7/7 + 2 in batch 1
+  camera: exact side-profile view from her left at the height of her head, her whole kneeling body and his body in frame
+  her: kneels upright on the floor, both hands resting on her own thighs, looking up at him
+  act: 'Oral sex: his erect penis is in her mouth, her lips wrapped around the shaft.'
+  man: stands on the left of the photo facing her, arms at his sides, shown from the chest down, his head outside the frame
+  stages: [partial, underwear, topless, nude]
+  his: nude
+  opening: action_first
+  action_line: Oral sex, kneeling, side view.
+  cameras: ['three-quarter view from her front right at the height of her head, her whole kneeling body and his body from the chest down in frame']
+- id: oral_lying_stomach_bed_edge
+  status: strong
+  evidence: 'passed earlier; batch 1: 2 of 3 (one location bug)'
+  camera: three-quarter view at mattress height from beside the bed, her whole body and his body in frame
+  her: lies flat on her stomach across the bed, her head at the side edge of the mattress, propped on her elbows, her legs stretched out behind her
+  act: 'Oral sex: his erect penis is in her mouth, her lips wrapped around the shaft.'
+  man: stands on the floor beside the bed in front of her face, arms at his sides, shown from the chest down, his head outside the frame
+  stages: [partial, underwear, topless, nude]
+  his: nude
+  needs: bed|daybed|massage table|lounger|sunbed
+- id: oral_kneeling_seated_man
+  status: weak
+  evidence: 'batch 1: 1 of 2; 2026-10-14: 1/1; batch 3: 0 of 2 (he is drawn standing)'
+  camera: side view from slightly in front of her at the height of her head, her whole kneeling body and his lower body in frame, the top edge of the frame at his chest
+  her: kneels on the floor between his knees, both hands resting on his thighs
+  act: 'Oral sex: his erect penis is in her mouth, her lips wrapped around the shaft.'
+  man: sits on the edge of the bed, his feet on the floor on either side of her, his hands resting on the mattress; the top edge of the frame cuts him at the chest, his head and shoulders above the frame
+  stages: [partial, underwear, topless, nude]
+  his: nude
+  needs: bed|sofa|chair|seat|bench
+  opening: action_first
+  action_line: Oral sex, kneeling between his knees, side view.
+- id: oral_sitting_bed_edge_3q
+  status: ok
+  evidence: 'passed earlier; batch 1: 2 of 2'
+  camera: three-quarter view from the side of the bed at the height of her face, her whole seated body in frame
+  her: sits on the edge of the bed, leaning forward, her left hand on her own knee
+  act: 'Oral sex: her right hand holds the base of his erect penis and the rest of the shaft is in her mouth, her lips wrapped around it.'
+  man: stands right in front of her, his hands on his hips, shown from the chest down, his head outside the frame
+  stages: [partial, underwear, topless, nude]
+  his: nude
+  needs: bed|sofa|bench|seat|lounger|sunbed|daybed
+- id: oral_pov_kneeling_steep
+  status: ok
+  evidence: 'passed earlier; batch 1: 3 of 4 (once only at her face)'
+  camera: steep high-angle point-of-view shot from the eyes of a standing man, looking straight down at her, her whole kneeling body visible below
+  her: kneels on the floor, both hands resting on her thighs, looking up into the camera
+  act: 'Oral sex: the head and half of his erect penis are inside her mouth, her lips wrapped tightly around the shaft.'
+  man: Only his lower stomach and the base of his erect penis are visible at the top of the frame.
+  man_full: true
+  stages: [partial, underwear, topless, nude]
+  his: nude
+- id: oral_pov_sitting_bed_edge
+  status: avoid
+  evidence: '4/9; batch 4-5: 1 of 3 (between the breasts, then in front of her) -- replaced'
+  camera: first-person point of view from the standing man's own eyes, looking straight down at her upturned face
+  her: sits on the edge of the lowered bed, leaning forward, both hands on the mattress, looking up into the camera
+  act: 'Oral sex: his erect penis points away from the camera into her mouth, her lips wrapped around the shaft.'
+  man: Only his hairy lower belly is visible, closest to the lens at the bottom edge.
+  replace_with: oral_pov_kneeling_steep
+  man_full: true
+  man_sentence: false
+  stages: [partial, underwear, topless, nude]
+  his: nude
+  needs: bed|sofa|bench|seat
+- id: cunnilingus
+  status: ok
+  evidence: 'top-down 0/2, three-quarter 0/1 (his face); 2026-10-14: 2/2 from the foot of the bed'
+  camera: view from the foot of the bed at mattress height, looking along the bed past the back of his head to her face
+  her: lies on her back on the bed, her head on the pillow at the far end, thighs spread wide, knees bent, both hands gripping the sheet beside her hips
+  act: 'Cunnilingus: his mouth is pressed against her bare vulva, his tongue licking her clitoris.'
+  man: lies on his stomach between her thighs with his back to the camera; only the back of his head with short dark hair, his shoulders and his hands on her thighs are visible in the foreground, his face hidden against her vulva
+  stages: [nude]
+  his: nude
+  needs: bed|daybed|massage table|lounger|sunbed
+- id: handjob
+  status: weak
+  evidence: 'batch 2: act right 5/5 but his face in frame 3/5; chest-cut framing untested'
+  camera: three-quarter view from her front right at the height of her face, her whole kneeling body and his lower body in frame, the top edge of the frame at his chest
+  her: kneels upright facing him, her left hand resting on her own thigh, looking up at him with heavy-lidded eyes
+  act: 'Handjob: her right hand is wrapped around the middle of his erect penis, stroking it; the head of his penis shows above her fist, a hand''s width from her face.'
+  man: stands on the right of the photo facing her, his left arm at his side; the top edge of the frame cuts him at the chest, his head and shoulders above the frame
+  stages: [partial, underwear, topless, nude]
+  his: nude
+  opening: action_first
+  action_line: Handjob, kneeling.
+- {id: titjob, status: avoid, evidence: 0/2, replace_with: oral_pov_kneeling_steep}
+- {id: oral_69, status: avoid, evidence: 0/2, replace_with: oral_lying_stomach_bed_edge}
+- id: ff_breast_kiss
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: three-quarter view at mattress height, both women in frame
+  her: '{A} lies on her back on the bed, her head on the pillow, eyes half-closed with pleasure; {B} lies beside her propped on one elbow, kissing {A}''s breast, her other hand on {A}''s stomach'
+  man: none
+  cast: ff
+  stages: [topless, nude]
+  cameras: ['high angle from directly above the bed, both women in frame', 'close view at mattress height, both faces and {A}''s breasts in frame']
+- id: ff_cunnilingus
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: view from the foot of the bed at mattress height, looking along the bed to {A}'s face
+  her: '{A} lies on her back on the bed, thighs spread, both hands gripping the sheet, head tilted back; {B} lies on her stomach between {A}''s thighs with her back to the camera, her mouth pressed against {A}''s vulva; only the back of {B}''s head, her shoulders
+    and her back are visible'
+  man: none
+  cast: ff
+  stages: [nude]
+  cameras: ['three-quarter view from beside the bed at mattress height, both women in frame, {A}''s face clearly visible']
+- id: ff_cunnilingus_swap
+  status: ok
+  evidence: '2026-10-14: 1/1 (same recipe, roles swapped)'
+  camera: view from the foot of the bed at mattress height, looking along the bed to {B}'s face
+  her: '{B} lies on her back on the bed, thighs spread, both hands gripping the sheet, head tilted back; {A} lies on her stomach between {B}''s thighs with her back to the camera, her mouth pressed against {B}''s vulva; only the back of {A}''s head, her shoulders
+    and her back are visible'
+  man: none
+  cast: ff
+  stages: [nude]
+  cameras: ['three-quarter view from beside the bed at mattress height, both women in frame, {B}''s face clearly visible']
+- id: ff_cunnilingus_edge
+  status: ok
+  evidence: iteration 3 (kneeling oral is the model's strength)
+  camera: three-quarter view from the side at the height of {A}'s face, both women in frame
+  her: '{A} sits on the edge of the bed, leaning back on her hands, thighs spread, head tilted back; {B} kneels on the floor between {A}''s thighs, her mouth pressed against {A}''s vulva, both hands on {A}''s thighs'
+  man: none
+  cast: ff
+  stages: [nude]
+  needs: bed|sofa|daybed|armchair|lounger
+sex:
+- id: cowgirl_pov_below
+  status: strong
+  evidence: 7/7 + 7 in batch 1
+  camera: low-angle point-of-view shot from the eyes of a man lying on his back, looking up at her face and body
+  her: sits upright astride him, her knees on the bed on either side of his hips, both hands flat on his chest
+  act: 'Vaginal sex in the cowgirl position: his erect penis is deep inside her vagina.'
+  man: He lies on his back under her; only his chest, stomach and thighs are visible at the bottom of the frame, his head below the bottom edge of the frame.
+  stages: [nude]
+  his: nude
+  man_full: true
+  penetration: true
+  cameras: ['low-angle point-of-view shot from the eyes of a man lying on his back, a little from the side, looking up at her face and body']
+- id: missionary_pov
+  status: strong
+  evidence: 6/7 + 7 in batch 1
+  camera: point-of-view shot from the eyes of a man kneeling between her legs, looking down along her body to her face
+  her: lies on her back, head on the pillow, legs spread and bent at the knees, both hands on the pillow beside her head
+  act: 'Missionary sex: his erect penis is deep inside her vagina.'
+  man: Only his lower stomach, his penis inside her and both his hands holding her knees are visible at the bottom of the frame.
+  stages: [nude]
+  his: nude
+  man_full: true
+  penetration: true
+  cameras: ['point-of-view shot from the eyes of a man kneeling between her legs, a little higher, looking down along her body to her face']
+- id: from_behind_standing_pov
+  status: ok
+  evidence: '5/7; batches 1-2: good'
+  camera: first-person point-of-view shot from the eyes of a man standing upright behind her, looking down along her arched back to her face
+  her: stands bent forward over the bed, palms flat on the mattress, back arched, feet apart on the floor, looking back over her shoulder into the camera
+  act: 'Sex from behind: he stands upright on the floor directly behind her, his hips pressed against her bare buttocks at the same height, and his erect penis is deep inside her vagina, its base hidden between her buttocks.'
+  man: Only his lower stomach, the base of his penis and both his hands on her hips are visible at the bottom of the frame; his legs stand on the floor behind hers.
+  stages: [nude]
+  his: nude
+  man_full: true
+  needs: bed|sofa|table|counter|desk|bench|lounger|sunbed|daybed|machine|copier|ledge|railing|island|hood
+  penetration: true
+- id: doggy_pov_kneeling
+  status: ok
+  evidence: 'batches 1-2: 12 of 15; 3 times drawn from the side or with him lying under her; geometry wording added'
+  camera: first-person point-of-view shot from the eyes of a man kneeling upright on the bed behind her, looking straight down at her lower back and buttocks, her face turned back toward the camera
+  her: is on all fours on the bed, knees apart, back arched, looking back over her shoulder into the camera
+  act: 'Doggy-style sex: he kneels upright directly behind her, his thighs against the backs of her thighs, his hips pressed against her bare buttocks, and his erect penis is deep inside her vagina, its base hidden between her buttocks.'
+  man: Only his lower stomach, the base of his penis and both his hands gripping her hips are visible at the bottom of the frame.
+  stages: [nude]
+  his: nude
+  man_full: true
+  penetration: true
+  couple_weight: 0.3
+- id: doggy_side_3q
+  status: avoid
+  evidence: '3/8; batch 3: 0/1 -- doggy from the side draws no penetration'
+  camera: three-quarter view from her front left at mattress level, her whole body and his body in frame
+  her: is on all fours on the bed, palms flat, back arched, mouth open
+  act: 'Doggy-style sex: his hips are pressed flat against her bare buttocks, his erect penis fully inside her vagina and hidden by her body.'
+  man: kneels upright right behind her, both hands on her hips, shown from the chest down, his head outside the frame
+  stages: [nude]
+  his: nude
+  replace_with: doggy_pov_kneeling
+  penetration: true
+- id: bed_edge_over_shoulder
+  status: weak
+  evidence: 4/9
+  camera: from just behind and above the man's right shoulder, looking down at her; his bare right shoulder and upper arm fill the left edge of the frame, his head outside the frame
+  her: lies on her back across the edge of the raised mattress, thighs spread on both sides of his hips, knees bent, both hands gripping the sheet beside her head
+  act: His erect penis is inside her vagina.
+  man: stands on the floor between her thighs, both hands on her hips
+  stages: [nude]
+  his: nude
+  opening: action_first
+  action_line: Standing sex at the edge of a raised bed, seen over the man's right shoulder.
+  needs: bed
+  penetration: true
+- id: reverse_cowgirl
+  status: ok
+  evidence: 'front view: his face behind her in 3 of 9; batch 2: the POV from his eyes passed 4/4 when the model chose it'
+  camera: first-person point-of-view shot from the eyes of a man lying on his back, looking down along his own body at her back and buttocks
+  her: sits astride his hips facing away from the camera, her knees on the bed on either side of his hips, both hands on his thighs, looking back over her shoulder into the camera
+  act: 'Reverse cowgirl sex: his erect penis is deep inside her vagina, its base hidden between her buttocks.'
+  man: Only his stomach, the base of his penis and both his hands on her buttocks are visible at the bottom of the frame.
+  stages: [nude]
+  his: nude
+  man_full: true
+  penetration: true
+- {id: spooning, status: avoid, evidence: '3 failures: renders as doggy from the side with his head in frame', replace_with: doggy_pov_kneeling}
+- id: against_wall_from_behind
+  status: weak
+  evidence: 'batch 2: 5/6; 2026-10-14: height wording still draws his body lying under her'
+  camera: first-person point-of-view shot from the eyes of a man standing upright behind her, the camera at the height of a standing man's eyes, looking down along her arched back to her face
+  her: stands bent slightly forward with both palms flat on the wall at shoulder height, back arched, feet apart on the floor, her head turned back over her shoulder into the camera
+  act: 'Standing sex from behind: he stands upright directly behind her, his hips pressed against her bare buttocks at the same height, and his erect penis is deep inside her vagina, its base hidden between her buttocks.'
+  man: Only his lower stomach, the base of his penis and both his hands on her hips are visible at the bottom of the frame; his legs stand on the floor behind hers.
+  stages: [nude]
+  his: nude
+  man_full: true
+  penetration: true
+- id: chair_riding_pov
+  status: ok
+  evidence: '1/1; batch 1: 1 of 2 (once his face)'
+  camera: point-of-view shot from the eyes of a man seated in an armchair, looking up at her face and body
+  her: straddles him in the armchair facing the camera, her knees on the seat on either side of his hips, both hands on the backrest behind him
+  act: 'Vaginal sex: his erect penis is deep inside her vagina.'
+  man: Only his thighs, his stomach and his hands on her waist are visible at the bottom of the frame.
+  stages: [nude]
+  his: nude
+  man_full: true
+  needs: armchair|chair|seat|sofa
+  penetration: true
+- id: bed_edge_missionary_pov
+  status: ok
+  evidence: 'batch 1: 0 of 3 with the old wording; 2026-10-14: 1/1 with her head on a pillow toward the headboard'
+  camera: point-of-view shot from the eyes of a man standing at the foot of the bed between her legs, looking down along her body to her face
+  her: lies on her back along the bed with her hips at the foot edge of the mattress and her head on a pillow toward the headboard, her face upright, legs spread and lifted, both hands gripping the sheet beside her hips
+  act: 'Missionary sex: his erect penis is deep inside her vagina.'
+  man: Only his lower stomach, his penis inside her and both his hands holding her thighs are visible at the bottom of the frame.
+  stages: [nude]
+  his: nude
+  man_full: true
+  needs: bed
+  penetration: true
+- id: missionary_side_3q
+  status: weak
+  evidence: his face shows in profile
+  camera: three-quarter view from beside the bed at mattress height, both bodies in frame
+  her: lies on her back, legs wrapped around his waist, arms around his back, her face toward the camera
+  act: 'Missionary sex: his erect penis is inside her vagina.'
+  man: lies on top of her between her legs
+  stages: [nude]
+  his: nude
+  needs_his_face: true
+  penetration: true
+- id: desk_edge_missionary_pov
+  status: weak
+  evidence: untested
+  camera: point-of-view shot from the eyes of a man standing between her legs, looking down along her body to her face
+  her: lies back on the desk, legs spread and lifted, both hands gripping the desk edge
+  act: 'Missionary sex: his erect penis is deep inside her vagina.'
+  man: Only his lower stomach, his penis inside her and his hands on her knees are visible at the bottom of the frame.
+  stages: [nude]
+  his: nude
+  man_full: true
+  needs: desk
+  penetration: true
+- id: kiss_on_mouth
+  status: ok
+  evidence: 1/1; framed from the chest up since 2026-10-15 (from the waist up the model put her panties back on, 3 times)
+  camera: close three-quarter view at face height, both of them from the top of the head to the chest
+  her: stands kissing him deeply on the mouth, eyes nearly closed, her arms around his neck
+  man: holds her waist, his face in profile
+  stages: [nude]
+  his: nude
+  needs_his_face: true
+  penetration: false
+  emotion: Her face is flushed with desire, her eyes nearly closed, her lips pressed to his.
+- id: cowgirl_faces_couple
+  status: ok
+  evidence: '2026-10-14 couple test: 1/1'
+  camera: three-quarter view from beside the sofa or bed at seat height, both bodies and both faces in frame
+  her: sits astride him facing him, her knees on either side of his hips, both hands on his shoulders, her head tilted back
+  act: 'Vaginal sex: his erect penis is deep inside her vagina.'
+  man: sits back against the backrest, both hands on her hips, looking up at her face
+  stages: [nude]
+  his: nude
+  needs_his_face: true
+  needs: sofa|bed|armchair|daybed
+  penetration: true
+- id: missionary_faces_couple
+  status: ok
+  evidence: '2026-10-14 couple test: 1/1'
+  camera: three-quarter view from beside the bed at the height of their faces, both bodies in frame
+  her: lies on her back, her legs wrapped around his waist, her face turned toward the camera
+  act: 'Missionary sex: his erect penis is deep inside her vagina.'
+  man: lies on top of her between her legs, propped on his arms, his face above hers in profile
+  stages: [nude]
+  his: nude
+  needs_his_face: true
+  needs: bed|sofa|daybed|lounger|sunbed
+  penetration: true
+- id: from_behind_side_couple
+  status: ok
+  evidence: '2026-10-14 couple test: 1/1 (car hood)'
+  camera: three-quarter rear view at hip height, both whole bodies in frame
+  her: stands bent forward with both palms flat on the bed, back arched, feet apart on the floor, looking back over her shoulder at him
+  act: 'Sex from behind: he stands upright directly behind her, his hips pressed against her bare buttocks, and his erect penis is deep inside her vagina.'
+  man: stands behind her, both hands gripping her hips, his face visible in profile
+  stages: [nude]
+  his: nude
+  needs_his_face: true
+  needs: bed|sofa|table|counter|desk|bench|hood|lounger|sunbed|daybed
+  penetration: true
+- {id: legs_on_shoulders_pov, status: avoid, evidence: 0/2, replace_with: missionary_pov}
+- {id: standing_side_view, status: avoid, evidence: 0/6, replace_with: from_behind_standing_pov}
+- {id: standing_carry, status: avoid, evidence: 0/2, replace_with: against_wall_from_behind}
+- {id: anal_doggy_pov, status: avoid, evidence: '0/2: reads as vaginal', replace_with: doggy_pov_kneeling}
+- {id: threesome_any, status: avoid, evidence: more than two people, replace_with: missionary_pov}
+- id: feet_on_chest_pov
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: point-of-view shot from the eyes of a man kneeling between her legs, looking down along her raised legs to her face, her bare soles close to the camera
+  her: lies on her back on the bed, both legs raised, the soles of both bare feet resting flat on his chest close to the camera, her hands gripping the sheet
+  act: 'Vaginal sex: his erect penis is deep inside her vagina.'
+  man: Only his chest, his stomach, the base of his penis and his hands holding her ankles are visible.
+  stages: [nude]
+  his: nude
+  man_full: true
+  penetration: true
+- id: cowgirl_lean_forward_pov
+  status: ok
+  evidence: 'batch 5: 4/4 (one drawn upright, penetration right)'
+  camera: low-angle point-of-view shot from the eyes of a man lying on his back, her face and breasts close above the camera
+  her: leans forward over him, her knees on the bed on either side of his hips, both hands on the bed beside his head, her face close above the camera
+  act: 'Vaginal sex in the cowgirl position: his erect penis is deep inside her vagina.'
+  man: He lies on his back under her; only his chest and his hands on her waist are visible at the bottom of the frame, his head below the bottom edge of the frame.
+  stages: [nude]
+  his: nude
+  man_full: true
+  penetration: true
+- id: lotus_faces_couple
+  status: weak
+  evidence: 'iteration 5 (new geometry: both seated, face to face)'
+  camera: three-quarter side view at the height of their faces, both seated bodies and both faces in frame
+  her: sits in his lap facing him, her legs wrapped around his waist, her arms around his neck, her forehead close to his
+  act: 'Vaginal sex: his erect penis is deep inside her vagina.'
+  man: sits upright on the bed with his legs crossed under her, both arms around her back, his face close to hers
+  stages: [nude]
+  his: nude
+  needs_his_face: true
+  needs: bed|sofa|daybed|mattress
+  penetration: true
+- id: ff_fingering
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: three-quarter view from beside the bed at mattress height, both women in frame
+  her: '{B} lies on her back on the bed, legs apart, eyes half-closed, lips parted in a moan; {A} lies beside her on her side, kissing her neck, her right hand between {B}''s thighs, two fingers inside her vagina'
+  man: none
+  cast: ff
+  stages: [nude]
+  cameras: ['high angle from directly above the bed, both women in frame', 'close view at mattress height, both faces in frame']
+- id: ff_69
+  status: avoid
+  evidence: '1/4: from above the bodies tangle, from the side it reads as a hug or cunnilingus'
+  camera: three-quarter view from beside the bed at mattress height, both women in frame, both heads clearly visible
+  her: '{B} lies on her back on the bed; {A} lies on top of her facing the other way, her head between {B}''s thighs, licking her vulva, while {B}''s face is between {A}''s thighs'
+  man: none
+  cast: ff
+  stages: [nude]
+  replace_with: ff_cunnilingus_edge
+  cameras: ['three-quarter view from the other side of the bed at mattress height, both women in frame']
+- id: ff_facesit
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: three-quarter view at mattress height from beside the bed, {A}'s face and body in frame
+  her: '{B} lies on her back on the bed; {A} kneels astride {B}''s face, facing the camera, her hands on the headboard, her head tilted back in pleasure; {B}''s face is hidden under {A}''s thighs'
+  man: none
+  cast: ff
+  stages: [nude]
+  cameras: ['front view at the height of {A}''s face, {A}''s whole kneeling body in frame']
+- id: ff_scissor
+  status: avoid
+  evidence: '0/3 clearly: legs crossed or side by side'
+  camera: three-quarter view from above the bed, both women in frame
+  her: '{A} and {B} lie facing each other on the bed, propped on their elbows, their legs interlocked so that their vulvas press together, both with eyes half-closed and mouths open in pleasure'
+  man: none
+  cast: ff
+  stages: [nude]
+  replace_with: ff_spoon_fingering
+- id: ff_spoon_fingering
+  status: ok
+  evidence: iteration 3 (variant of ff_fingering)
+  camera: three-quarter front view at mattress height, both women in frame
+  her: '{B} lies on her side on the bed, her top leg lifted and bent; {A} lies behind her, pressed against her back, kissing her neck, her right hand between {B}''s thighs, two fingers inside her vagina; {B}''s eyes are half-closed and her lips parted in a moan'
+  man: none
+  cast: ff
+  stages: [nude]
+feet:
+- id: feet_soles_closeup
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: low angle at mattress level from the foot of the bed, her bare soles and toes large and sharp in the foreground, her face in the background
+  her: lies on her stomach on the bed, knees bent, her bare feet raised and crossed at the ankles, soles toward the camera, toes relaxed, her chin on her hands
+  man: none
+  stages: [underwear, topless, nude]
+- id: feet_stockings_tease
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: low angle from the floor in front of her, her feet large in the foreground and her face in the background
+  her: sits on the edge of the bed, leaning back on her hands, her legs stretched out toward the camera, the soles of both stockinged feet facing the camera, toes pointed
+  man: none
+  clothing: She wears only sheer black stockings and a black lace thong.
+  stages: [underwear, topless]
+  needs: bed|sofa|daybed|chair
+- id: feet_massage
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: close three-quarter view at the height of her feet, her bare feet in the foreground and her face in the background
+  her: lies back on the pillows with her legs stretched out, her right bare foot resting in his hands
+  man: Only his two hands and forearms are visible, massaging the sole of her foot with his thumbs.
+  man_full: true
+  man_sentence: false
+  stages: [underwear, topless, nude]
+  his: any
+- id: feet_kiss_toes
+  status: weak
+  evidence: untested
+  camera: close three-quarter view at the height of her feet, her bare foot in the foreground and her face in the background
+  her: reclines on the bed, propped on her elbows, one leg raised with her bare foot held up to his mouth
+  act: He kisses her toes, holding her foot by the heel.
+  man: Only his hand on her heel and his lips at her toes are visible at the edge of the frame.
+  man_full: true
+  man_sentence: false
+  stages: [underwear, topless, nude]
+  his: any
+- id: footjob
+  status: ok
+  evidence: '2026-10-14: 1/1 (soles around the shaft)'
+  camera: high-angle view from above the bed, looking down at her legs and his hips, her face in the background
+  her: sits back on the bed leaning on her hands, knees bent and apart
+  act: 'Footjob: the soles of both her bare feet are pressed together around the shaft of his erect penis, her toes curled around it.'
+  man: kneels upright on the bed facing her; only his hips, thighs and erect penis are visible
+  stages: [topless, nude]
+  his: nude
+climax:
+- id: cum_on_feet
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: low angle at mattress level from the foot of the bed, her bare feet large in the foreground and her face in the background
+  her: lies back on the bed propped on her elbows, her legs stretched toward the camera, her bare soles facing the camera
+  act: White semen lies across the soles and toes of her feet.
+  man: none
+  stages: [nude]
+  semen: feet
+  only_with_kink: feet
+- id: cumshot_breasts_kneeling
+  status: strong
+  evidence: 7/7 + 6 in batch 1
+  camera: three-quarter view from her front left at chest height, her whole kneeling body and his body in frame
+  her: kneels upright on the floor, both hands resting on her thighs, her chest pushed forward, looking up at him
+  act: 'He has just pulled out: his erect penis is outside her body, held near her breasts, and thick strands of white semen lie across her breasts and drip down her cleavage.'
+  man: stands on the left of the photo facing her, his left arm at his side, shown from the chest down, his head outside the frame
+  stages: [topless, nude]
+  his: nude
+  semen: breasts
+- id: facial_closeup
+  status: strong
+  evidence: '7/7; batch 1: 4 of 5 (once refused by the content check)'
+  camera: medium close-up from slightly above at her front right, her head and upper body to the waist
+  her: kneels and looks up into the camera, mouth open, tongue out
+  act: His erect penis is outside her mouth, held close to her chin; white semen lies across her cheek, nose, lips and chin, with a few drops on her tongue and breasts.
+  man: Only his lower stomach, his erect penis and his upper thighs are visible at the right edge of the frame.
+  man_full: true
+  stages: [topless, nude]
+  his: nude
+  semen: face, chin and breasts
+- id: cum_on_stomach_lying
+  status: ok
+  evidence: 'with him in frame 1 of 5 (his hand or penis at her vulva): solo version, as the afterglow-with-semen pages that passed'
+  camera: high angle from above, her body from the top of her head to her knees in frame
+  her: lies on her back on the bed, her legs straight and pressed together, both arms relaxed beside her head, looking into the camera
+  act: White semen lies across her stomach and breasts.
+  man: none
+  stages: [nude]
+  semen: stomach and breasts
+- id: creampie_closeup
+  status: ok
+  evidence: 1/1
+  camera: low angle at mattress level between her thighs, her body up to her face in frame
+  her: lies back on the bed, propped on her elbows, thighs apart, looking into the camera
+  act: His penis is out of her; white semen drips from her vagina onto the sheet.
+  man: none
+  stages: [nude]
+  semen: inner thighs
+- id: cum_on_back
+  status: ok
+  evidence: 'batch 1: 2 of 6 with a POV from behind (he stayed inside her); 2026-10-14: 2/2 with the side camera'
+  camera: three-quarter view from beside the bed at mattress height, her whole body in frame
+  her: lies flat on her stomach on the bed, her legs straight and pressed together, her cheek on her folded arms, looking back into the camera
+  act: 'He has finished and pulled out: his erect penis is held in his hand above her lower back, fully outside her body, and thick strands of white semen lie across her lower back and buttocks.'
+  man: kneels on the bed beside her hips at the right edge of the frame; the top edge of the frame cuts him at the chest, only his thighs, his stomach and his hand holding his penis are visible, his head and shoulders above the frame
+  stages: [nude]
+  his: nude
+  semen: lower back and buttocks
+- id: ff_orgasm
+  status: weak
+  evidence: untested
+  camera: three-quarter view from beside the bed at mattress height, both women in frame
+  her: '{B} arches her back on the bed in orgasm, her head thrown back, mouth open, gripping the sheet; {A} lies beside her, two fingers inside {B}''s vagina, kissing her breast'
+  man: none
+  cast: ff
+  stages: [nude]
+outro:
+- id: afterglow_top_down
+  status: ok
+  evidence: '7/7 dressed; 2026-10-14: the messy version copied shot 1 once, now opens with the action'
+  camera: high angle from directly above, her body from the top of her head to her knees
+  her: lies on her back on the rumpled bed, one arm thrown over her head, legs loosely apart
+  man: none
+  stages: [nude]
+  semen_carry: true
+  opening: action_first
+  action_line: 'Afterglow: she lies exhausted on her back on the rumpled bed after sex.'
+  cameras: ['high three-quarter view from the foot of the bed, her whole body in frame']
+  shows: front
+- id: outro_under_sheet
+  status: ok
+  evidence: 2026-10-14 test
+  camera: three-quarter view at mattress height from beside the bed, her head and upper body in frame
+  her: lies on her side under a rumpled white sheet pulled up to her waist, her breasts bare, her cheek on the pillow, one hand under the pillow
+  man: none
+  stages: [nude]
+  semen_carry: true
+  needs: bed
+  opening: action_first
+  action_line: 'Afterglow: she lies naked and spent under a rumpled white sheet after sex.'
+  shows: face
+- id: outro_stomach_spent
+  status: ok
+  evidence: 2026-10-14 test
+  camera: high-angle three-quarter view from beside the bed, her whole body in frame
+  her: lies on her stomach across the rumpled bed, her cheek resting on her folded arms, looking back at the camera
+  man: none
+  stages: [nude]
+  semen_carry: true
+  cameras: ['three-quarter view at the height of her face from the side, her whole body in frame']
+  opening: action_first
+  action_line: 'Afterglow: she lies naked and spent on her stomach across the rumpled bed after sex.'
+  shows: back
+- id: outro_edge_messy
+  status: ok
+  evidence: 2026-10-14 test
+  camera: three-quarter front view at the height of her face, her whole seated body in frame
+  her: sits on the edge of the rumpled bed, leaning back on both hands, knees apart
+  man: none
+  stages: [nude]
+  semen_carry: true
+  needs: bed|sofa|daybed|lounger|sunbed
+  opening: action_first
+  action_line: 'Afterglow: she sits naked and messy on the edge of the rumpled bed after sex.'
+  shows: front
+- id: selfie_in_bed
+  status: ok
+  evidence: 'batches 1-2: 9 of 9'
+  camera: front view at face height, her head and shoulders in frame
+  her: lies in the rumpled bed under the white sheet pulled up to her chest, holding her phone up at arm's length with her right hand
+  man: none
+  stages: [nude]
+  semen_carry: true
+  needs: bed
+  opening: action_first
+  action_line: 'Afterglow selfie: she lies naked in the rumpled bed after sex, taking a photo of herself.'
+  shows: face
+- id: shower_after
+  status: avoid
+  evidence: shower 1/1; the album ends lying, naked and messy (owner, 2026-10-14)
+  camera: three-quarter view at chest height
+  her: stands under the shower, eyes nearly closed, water running over her shoulders, both hands in her wet hair
+  man: none
+  replace_with: outro_under_sheet
+  stages: [nude]
+  needs: shower|bath
+- {id: dressed_again_seated, status: avoid, evidence: 'the album ends naked and messy (owner, 2026-10-14)', replace_with: afterglow_top_down}
+- {id: robe_window_coffee, status: avoid, evidence: 'the album ends naked and messy (owner, 2026-10-14)', replace_with: outro_edge_messy}
+- id: outro_side_curled
+  status: ok
+  evidence: 'batch 4-5: 4/4'
+  camera: three-quarter view from slightly above at the height of her hips, her whole body in frame
+  her: lies on her side on the bed, knees drawn up, one arm under her head, strands of hair across her face, looking into the camera
+  man: none
+  stages: [nude]
+  semen_carry: true
+  opening: action_first
+  action_line: 'Afterglow: she lies naked, curled up and spent on her side after sex.'
+  shows: front
+- id: outro_sprawled_breathless
+  status: ok
+  evidence: 'batch 4-5: 4/4'
+  camera: high three-quarter view from beside her, her whole body in frame
+  her: lies sprawled on her back on the bed, one knee bent, the back of her right hand resting on her forehead, her left arm stretched out, catching her breath
+  man: none
+  stages: [nude]
+  semen_carry: true
+  opening: action_first
+  action_line: 'Afterglow: she lies naked and breathless, sprawled on her back after sex.'
+  shows: front
+- id: ff_afterglow
+  status: ok
+  evidence: '2026-10-14: 1/1'
+  camera: high angle from directly above the bed, both women in frame
+  her: '{A} and {B} lie together on the rumpled white sheet, their legs entwined, {B}''s head on {A}''s shoulder, both looking up into the camera with tired, satisfied eyes'
+  man: none
+  cast: ff
+  stages: [nude]
+  cameras: ['three-quarter view at mattress height from the foot of the bed, both women in frame']
+  shows: front
+- id: ff_under_sheet
+  status: weak
+  evidence: untested
+  camera: three-quarter view at mattress height from beside the bed, both women in frame
+  her: '{A} and {B} lie close together on their sides under a rumpled white sheet pulled up to their waists, {A} spooning {B} from behind, both looking into the camera'
+  man: none
+  cast: ff
+  stages: [nude]
+- id: ff_afterglow_cuddle
+  status: ok
+  evidence: iteration 3 (variant of ff_afterglow)
+  camera: three-quarter view at mattress height from beside the bed, both women in frame
+  her: '{A} lies on her back on the rumpled bed, one arm behind her head; {B} lies curled against her side, her head on {A}''s breast and her hand on {A}''s stomach, both looking into the camera with tired, satisfied eyes'
+  man: none
+  cast: ff
+  stages: [nude]
+  cameras: ['high angle from directly above the bed, both women in frame']
+  shows: front

@@ -1,0 +1,59 @@
+# albumgen settings. Works as is: the API keys go to .env, nothing here needs to change.
+# Every key is optional; these are the defaults.
+
+llm:                            # OPTIONAL: without a model and key, albums use the tested recipe texts
+  provider: openrouter          # openrouter | openai | custom (custom needs base_url)
+  base_url: null                # e.g. http://localhost:8000/v1 for a self-hosted model
+  model: ""                     # a model that writes explicit adult text, e.g. an OpenRouter model id
+  fallback_model: null          # used when the main model refuses or returns no JSON
+  api_key_env: LLM_API_KEY      # name of the environment variable with the key (.env works)
+  json_mode: true               # response_format=json_object; switched off automatically if unsupported
+  timeout_s: 180
+  max_retries: 3                # network retries inside the SDK (429/5xx)
+  seed: null                    # sampling seed for providers that support it
+  outline:                      # stage 2: the story (creative)
+    temperature: 0.9
+    top_p: 0.95
+    max_tokens: 4000
+  writer:                       # stage 3: page texts (precise)
+    temperature: 0.3
+    top_p: 0.9
+    max_tokens: 9000
+  app_name: albumgen            # OpenRouter X-Title header
+  app_url: null                 # OpenRouter HTTP-Referer header
+
+album:
+  reference_mode: solo          # only for themes without their own mode (each theme sets solo/couple/ff; --mode overrides)
+  min_age: 23                   # numeric age range for her
+  max_age: 52
+  untested: light               # light: weak items allowed (max_weak_per_album, never in a climax) | off: never
+  max_weak_per_album: 1
+  allow_his_face: false         # true enables kiss on the mouth and side-view missionary
+  only_families: []             # e.g. [workplace, travel]; empty = all
+  exclude_families: []          # e.g. [fantasy_and_period]
+  exclude_themes: []            # theme ids
+  exclude_kinks: []             # kink ids from data/kinks.yaml, e.g. [cheating, spanking]
+
+memory:
+  db_path: albumgen.db          # SQLite file; delete it to start fresh
+  theme_window: 5               # a theme does not repeat within this many albums
+  pair_window: 20               # location + outfit pair does not repeat within this many albums
+  position_window: 10           # positions used in the last N albums get a lower weight
+  title_window: 20              # last N titles/loglines are shown to the LLM as "do not repeat"
+  similarity_threshold: 0.5     # logline keyword overlap that triggers one rewrite
+
+render:                         # the LiveDreams API: models and params the prompts were tuned for; do not change
+  base_url: https://api.livedreams.ai/v1
+  api_key_env: LIVEDREAMS_API_KEY
+  max_inflight: 2                # pages in flight; the page deadline counts queue time, keep it at 2
+  poll_s: 3.5
+  job_timeout_s: 900
+  shot1_model: qwen-image-3
+  shot1_resolution: 2k
+  page_model: canvas
+  page_resolution: 1k
+  aspect_ratio: "2:3"
+  output_format: jpeg
+
+data_dir: data                  # the library (YAML) and the LLM instructions
+out_dir: out                    # one folder per album
