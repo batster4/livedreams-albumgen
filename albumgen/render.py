@@ -27,6 +27,19 @@ class Renderer:
         self.http = httpx.Client(base_url=cfg.base_url, timeout=60,
                                  limits=httpx.Limits(keepalive_expiry=2.0),
                                  headers={"Authorization": f"Bearer {key}", "User-Agent": "albumgen/1.0"})
+        self.workers = self._workers()
+        self.log(f"{self.workers} pages in flight")
+
+    def _workers(self) -> int:
+        """Pages in flight: `max_inflight`, capped by the key's own limits and the canvas pool (GET /limits, free).
+        More would only wait in the queue, and the wait counts toward a page's deadline."""
+        n = self.cfg.max_inflight
+        r = self._call("GET", "/limits")
+        if r is not None and r.status_code == 200:
+            lim = r.json()
+            caps = [(lim.get(k) or {}).get("max") for k in ("inflight", "canvas_inflight")]
+            n = min([n] + [c for c in caps if isinstance(c, int) and c > 0])
+        return max(1, n)
 
     def _call(self, method: str, url: str, **kw) -> httpx.Response | None:
         """Retries network errors (dropped connections, timeouts). Same Idempotency-Key = same job, so a repeated
@@ -107,7 +120,7 @@ class Renderer:
         first = run(requests[0], None)
         results = [first]
         if first["status"] == "succeeded" and first.get("id"):
-            with ThreadPoolExecutor(max_workers=self.cfg.max_inflight) as pool:
+            with ThreadPoolExecutor(max_workers=self.workers) as pool:
                 results += list(pool.map(lambda r: run(r, first["id"]), requests[1:]))
             # one more try for pages that timed out or failed on the provider side (a new Idempotency-Key)
             def code(r: dict) -> str:
@@ -118,7 +131,7 @@ class Renderer:
             if retry:
                 prev.update({int(r["shot"]): r for r in retry})
                 by_shot = {int(q["shot"]): q for q in requests}
-                with ThreadPoolExecutor(max_workers=self.cfg.max_inflight) as pool:
+                with ThreadPoolExecutor(max_workers=self.workers) as pool:
                     again = {r["shot"]: r for r in pool.map(lambda r: run(by_shot[int(r["shot"])], first["id"]), retry)}
                 results = [again.get(r["shot"], r) for r in results]
         prev_file.write_text(json.dumps(results, indent=2))

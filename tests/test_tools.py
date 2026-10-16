@@ -62,7 +62,7 @@ def test_render_resumes_and_retries_once(tmp_path):
 
     class R(Renderer):
         def __init__(self):
-            self.cfg, self.log = RenderConfig(), (lambda s: None)
+            self.cfg, self.log, self.workers = RenderConfig(), (lambda s: None), 2
 
         def _one(self, album_id, req, shot1_id, out, attempt=1):
             calls.append((req["shot"], attempt))
@@ -118,3 +118,23 @@ def test_llm_log_is_per_album(cfg, lib):
     for res in (first, second):
         logged = json.loads((res.dir / "plan.json").read_text())["llm"]
         assert 2 <= len(logged) <= 3, logged
+
+
+def test_render_workers_follow_the_key_limits():
+    class Resp:
+        status_code = 200
+
+        def __init__(self, body):
+            self.body = body
+
+        def json(self):
+            return self.body
+
+    class R(Renderer):
+        def __init__(self, body):
+            self.cfg, self.log = RenderConfig(), (lambda s: None)
+            self._call = lambda method, url, **kw: Resp(body) if body is not None else None
+
+    assert R({"inflight": {"max": 8}, "canvas_inflight": {"max": 6}})._workers() == 6
+    assert R({"inflight": {"max": 2}, "canvas_inflight": {"max": 6}})._workers() == 2
+    assert R(None)._workers() == RenderConfig().max_inflight  # /limits unreachable: the configured number

@@ -8,7 +8,8 @@ Everything is pre-configured for the LiveDreams API (endpoint, models, resolutio
 The only thing you add is your API key.
 
 - **[AGENT.md](AGENT.md)**: the short instruction for an AI agent that runs albumgen. Give it to your agent.
-- **[GUIDE.md](GUIDE.md)**: why the prompts look the way they do (facts from 45 rendered albums). Reference only.
+- **[PROMPT_GUIDE.md](PROMPT_GUIDE.md)** + **[POSES.md](POSES.md)**: how to write album prompts by hand (every rule
+  albumgen applies) and the proven wording of every pose. Reference, or for an agent that writes its own prompts.
 - **[examples/](examples)**: two generated albums (requests + story), to see the format before installing.
 
 ## Quick start
@@ -52,7 +53,8 @@ read from there (or pass `-c path/to/config.yaml`).
 
 ## Two ways to render
 
-**1. `albumgen render`** (simplest). Renders the albums in `out/` one at a time, 2 pages in flight. Safe to stop and
+**1. `albumgen render`** (simplest). Renders the albums in `out/` one at a time, up to 6 pages in flight (fewer if
+your key allows fewer). Safe to stop and
 re-run: finished pages are kept, unfinished jobs are picked up again by their Idempotency-Key (no second charge),
 a page that failed or timed out gets one new try. Images land in `out/<album_id>/images/NN.jpg`.
 
@@ -72,7 +74,7 @@ a page that failed or timed out gets one new try. Images land in `out/<album_id>
 
 For each request the API body is `model` + `prompt` + everything in `params`, unchanged. `shot` and `changes` are
 for you, not for the API (the API rejects unknown fields). Render shot 1 first; when it has succeeded, put its job
-id into `images[0].job_id` of pages 2–16 and render them, at most 2 at a time.
+id into `images[0].job_id` of pages 2–16 and render them, up to 6 at a time.
 
 ```python
 import json, time, httpx
@@ -94,7 +96,7 @@ def render(req, album_id, shot1_id=None, attempt=1):
 album_id = "20261016-121359-open-house-3031"
 reqs = json.load(open(f"out/{album_id}/album.json"))
 shot1 = render(reqs[0], album_id)
-pages = [render(r, album_id, shot1["id"]) for r in reqs[1:]]   # run 2 at a time in production
+pages = [render(r, album_id, shot1["id"]) for r in reqs[1:]]   # run up to 6 at a time in production
 ```
 
 A page that failed with `job_timeout` or a provider error: send it again with a new Idempotency-Key (`-a2`).
@@ -109,7 +111,7 @@ A page that failed with `job_timeout` or a provider error: send it again with a 
 | `page_model`, `page_resolution` | `canvas`, `1k` | pages keep the people from shot 1 |
 | `aspect_ratio`, `output_format` | `2:3`, `jpeg` | |
 | `enhance_prompt` (shot 1) | `false` | the prompt is already complete; a rewrite loses details |
-| `max_inflight` | `2` | a page's deadline (~5 min) includes its time in the queue |
+| `max_inflight` | `6` | canvas renders 6 pages at a time; more only wait, and a page's ~5 min deadline includes the wait. Capped by your key's limits (`GET /limits`) |
 | `poll_s`, `job_timeout_s` | `3.5`, `900` | |
 
 The prompts were tuned for exactly these models and parameters. Do not change them, and do not edit prompts.
@@ -124,7 +126,8 @@ The prompts were tuned for exactly these models and parameters. Do not change th
 | `albumgen export [ALBUM ...] -o DIR [--no-zip]` | Complete albums into one folder: images, 4×4 collage, prompts, story; `index.html`; zip. |
 | `albumgen show ALBUM` / `list` | An album's story and prompts / recent albums. |
 | `albumgen themes [--family F]` / `arcs` | Browse the 60 themes and 12 page structures. |
-| `albumgen check out/ALBUM/album.json` | Check any album against the prompting rules (exit code 1 on issues). |
+| `albumgen check out/ALBUM/album.json` | Check any album against the prompting rules, also one you wrote yourself (exit code 1 on issues). |
+| `albumgen poses` | Print the pose catalogue (POSES.md). |
 | `albumgen feedback ALBUM --bad 9,12 --reason "..."` | Poses that failed get a lower weight in later albums (`stats` shows weights). |
 | `albumgen forget ALBUM` | Remove an album from memory (files stay). |
 | `albumgen audit [-n 300]` | Sample albums offline and check every prompt for contradictions. |
@@ -232,7 +235,7 @@ mechanics; she is fully naked on penetration pages with her clothes "on the floo
 exactly one finish, and the album ends naked, messy and lying down; his head out of frame in solo albums; place
 words that fit the place; no negations, no banned words, under 4,000 characters. The library is plain YAML in
 `data/` (`themes`, `arcs`, `positions`, `locations`, `outfits`, `appearance`, `emotions`, `policy`); `albumgen
-doctor` checks it after edits. Details in [GUIDE.md](GUIDE.md).
+doctor` checks it after edits. Details in [PROMPT_GUIDE.md](PROMPT_GUIDE.md).
 
 ## Troubleshooting
 

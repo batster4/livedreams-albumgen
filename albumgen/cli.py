@@ -244,6 +244,61 @@ def forget(album_id: str, config: str = CONFIG):
     typer.echo("forgotten")
 
 
+SLOT_ORDER = ["intro", "tease", "solo", "feet", "oral", "sex", "climax", "outro"]
+STATUS_LABEL = {"strong": "best", "ok": "good", "weak": "weak: at most one per album, never the finish"}
+
+
+def poses_markdown(lib: Library) -> str:
+    """The pose catalogue for people and agents who write prompts by hand: the proven wording of every pose."""
+    poses = [p for p in lib.positions.values() if not p.get("beat")]
+    out = ["# Poses", "",
+           "The proven wording of every pose, generated from `data/positions.yaml` (`albumgen poses > POSES.md`). "
+           "Use it with PROMPT_GUIDE.md: **Camera** is the camera sentence, **She** her pose (start it with \"She\"), "
+           "**Act** the act sentence, **He** his place, hands and framing (start it with \"He\" unless it starts with "
+           "\"Only\"), **Opens with** the first sentence of an action-first page. `{A}`/`{B}` are the two women, "
+           "`{his clothes}` his outfit. Replace bed, sheet and pillow words when the place has no bed.", ""]
+    for cast, title in (("mf", "Woman and man"), ("ff", "Two women")):
+        out.append(f"## {title}")
+        for slot in SLOT_ORDER:
+            group = [p for p in poses if p.get("slot") == slot and p.get("cast", "mf") == cast and p.get("status") != "avoid"]
+            group.sort(key=lambda p: (["strong", "ok", "weak"].index(p.get("status", "ok")), p["id"]))
+            if not group:
+                continue
+            out += ["", f"### {slot}"]
+            for p in group:
+                notes = [STATUS_LABEL.get(p.get("status", "ok"), p.get("status", ""))]
+                if p.get("stages"):
+                    notes.append("her clothing: " + ", ".join(p["stages"]))
+                if p.get("his") and p.get("man") not in (None, "none"):
+                    notes.append(f"he is {p['his']}")
+                if p.get("needs"):
+                    notes.append("needs: " + p["needs"].replace("|", " / "))
+                if p.get("needs_his_face"):
+                    notes.append("couple albums only (his face shows)")
+                out += ["", f"**`{p['id']}`** ({'; '.join(notes)})"]
+                if p.get("action_line"):
+                    out.append(f"- Opens with: {p['action_line']}")
+                for label, key in (("Camera", "camera"), ("She", "her"), ("Clothing", "clothing"), ("Act", "act"),
+                                   ("He", "man"), ("Face", "emotion")):
+                    if p.get(key) and p[key] != "none":
+                        out.append(f"- {label}: {p[key]}")
+                for cam in p.get("cameras", []):
+                    if cam != p.get("camera"):
+                        out.append(f"- Other camera: {cam}")
+        out.append("")
+    avoid = sorted((p for p in poses if p.get("status") == "avoid"), key=lambda p: p["id"])
+    out += ["## Do not use", "", "| Pose | Use instead |", "|---|---|"]
+    out += [f"| `{p['id']}` | {('`' + p['replace_with'] + '`') if p.get('replace_with') else ''} |" for p in avoid]
+    return "\n".join(out) + "\n"
+
+
+@app.command()
+def poses(config: str = CONFIG):
+    """Print the pose catalogue (Markdown): the proven wording of every pose, for writing prompts by hand."""
+    _, lib, _ = _ctx(config)
+    typer.echo(poses_markdown(lib), nl=False)
+
+
 @app.command()
 def audit(n: int = typer.Option(300, "-n", help="How many albums to sample"), config: str = CONFIG):
     """Sample albums without the LLM and check every prompt for contradictions (bed without a bed, dressed while

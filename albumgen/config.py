@@ -74,8 +74,9 @@ class MemoryConfig(BaseModel):
 class RenderConfig(BaseModel):
     base_url: str = "https://api.livedreams.ai/v1"
     api_key_env: str = "LIVEDREAMS_API_KEY"
-    # A page's deadline (~5 min) counts the time it waits in the queue: keep 2 pages in flight, one album at a time.
-    max_inflight: int = 2
+    # Pages in flight. Capped at run time by the key's limits and the canvas pool (GET /limits): the canvas pool runs
+    # 6 pages at a time, more only wait in the queue, and the wait counts toward a page's ~5 min deadline.
+    max_inflight: int = 6
     poll_s: float = 3.5
     job_timeout_s: float = 900
     shot1_model: str = "qwen-image-3"

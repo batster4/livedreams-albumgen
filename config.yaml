@@ -45,7 +45,7 @@ memory:
 render:                         # the LiveDreams API: models and params the prompts were tuned for; do not change
   base_url: https://api.livedreams.ai/v1
   api_key_env: LIVEDREAMS_API_KEY
-  max_inflight: 2                # pages in flight; the page deadline counts queue time, keep it at 2
+  max_inflight: 6                # pages in flight; capped by your key's limits (GET /limits); canvas runs 6 at a time
   poll_s: 3.5
   job_timeout_s: 900
   shot1_model: qwen-image-3

@@ -9,7 +9,8 @@ deliver. Work from the repository folder with the virtual environment active (`s
    Each album is a folder `out/<album_id>/` with `album.json` (16 requests) and `story.md`.
 2. Render: `albumgen render <album_id>` (or `albumgen render` for every album in `out/`).
    If your pipeline renders instead, send the requests from `album.json` as they are (README → "Your own pipeline"):
-   body = `model` + `prompt` + `params`; shot 1 first; then `images[0].job_id` = shot 1's job id; 2 pages at a time.
+   body = `model` + `prompt` + `params`; shot 1 first; then `images[0].job_id` = shot 1's job id; up to 6 pages at
+   a time.
 3. If pages failed: run `albumgen render <album_id>` again. It keeps finished pages and retries only the rest.
 4. Review every page at full size. Reject a page for: a laugh, grin or wide smile; a pained or frightened face;
    clothes back on after they came off; panties during sex; the act missing or a clothed scene instead; his face
@@ -20,11 +21,13 @@ deliver. Work from the repository folder with the virtual environment active (`s
 ## Never
 
 - Never rewrite, shorten, translate, merge or "improve" a prompt, not one word. Every sentence is there for a
-  tested reason (GUIDE.md).
+  tested reason (PROMPT_GUIDE.md).
 - Never change `model`, resolution, aspect ratio or any parameter, and never drop `images` from a page.
 - Never write your own prompts for these albums or reuse a page in another album.
 - Never send `shot` or `changes` to the API: they are not API fields.
-- Never render several albums in parallel or raise pages in flight above `render.max_inflight` (2): extra pages
-  wait in the queue, and the wait counts toward a page's ~5 min deadline (`job_timeout`).
+- Never keep more than 6 pages in flight in total, across all albums: canvas renders 6 at a time, extra pages wait
+  in the queue, and the wait counts toward a page's ~5 min deadline (`job_timeout`).
 
-GUIDE.md explains the rules behind the prompts. Read it only as reference; the script already applies it.
+PROMPT_GUIDE.md and POSES.md explain the rules behind the prompts. Read them only as reference; the script already
+applies them. If you are asked to write an album yourself, follow PROMPT_GUIDE.md exactly and run `albumgen check`
+on it before rendering.
